@@ -933,8 +933,7 @@ const favorites = [
     songTitle: "團長",
     songCreators: "芒果醬",
     createdAt: "2025-10-25T15:42:56.964Z"
-  }
-,
+  },
   {
     id: "fav1761411167179",
     lyrics: `不必花多餘的⼒氣感受`,
@@ -952,7 +951,8 @@ const favorites = [
     songTitle: "安平之光",
     songCreators: "イルカポリス 海豚刑警",
     createdAt: "2025-10-25T16:53:34.837Z"
-  }];
+  }
+];
 
 // 渲染歌曲列表
 function renderSongs() {
@@ -1228,7 +1228,7 @@ document
     statusDiv.className = "upload-status active";
 
     try {
-      const response = await fetch("http://localhost:3000/api/upload-song", {
+      const response = await fetch("/api/upload-song", {
         method: "POST",
         body: formData
       });
@@ -1550,11 +1550,9 @@ async function saveFavorite() {
 
   try {
     // 發送到伺服器
-    const response = await fetch("http://localhost:3000/api/add-favorite", {
+    const response = await fetch("/api/add-favorite", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         lyrics: lyrics,
         note: note,
@@ -1588,11 +1586,9 @@ async function deleteFavorite(id) {
   if (!confirm("確定要刪除這個收藏嗎？")) return;
 
   try {
-    const response = await fetch("http://localhost:3000/api/delete-favorite", {
+    const response = await fetch("/api/delete-favorite", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: id })
     });
 

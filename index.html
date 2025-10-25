@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>verse</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      class="big-post-arrow prev-post-arrow"
+      id="prevPostBtn"
+      aria-label="上一篇"
+      style="display: none"
+    >
+      <span class="big-arrow-shape left"></span>
+    </button>
+    <button
+      class="big-post-arrow next-post-arrow"
+      id="nextPostBtn"
+      aria-label="下一篇"
+      style="display: none"
+    >
+      <span class="big-arrow-shape right"></span>
+    </button>
+
+    <header>
+      <h3></h3>
+      <img src="verse.png" class="verse" />
+      <button class="menu" id="menuBtn">&#9776;</button>
+
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#home" data-page="home" class="nav-link active">首頁</a>
+          </li>
+          <li><a href="#songs" data-page="songs" class="nav-link">音樂</a></li>
+          <li>
+            <a href="#artists" data-page="artists" class="nav-link">歌手</a>
+          </li>
+          <li><a href="#poems" data-page="poems" class="nav-link">詩詞</a></li>
+          <li>
+            <a href="#favorites" data-page="favorites" class="nav-link">句子</a>
+          </li>
+          <li>
+            <a href="#upload" data-page="upload" class="nav-link">新增</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 覆蓋層：手機版選單展開時顯示灰色遮罩 -->
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </header>
+
+    <main>
+      <!-- 首頁 -->
+
+      <div id="home" class="page active">
+        <div class="home-section">
+          <h1>Welcome!</h1>
+          <p class="subtitle">
+            這裡是Verse，一個收藏您喜愛歌曲、文字的地方。<br />
+            您可以一覽您的喜好歌曲，並分類標籤，好好打理自己的歌單。<br />
+            有任何問題，歡迎寄信到<a
+              href="mailto:weiqunc493@gmail.com"
+              style="color: rgba(98, 108, 113, 1)"
+              class="email-link"
+              >weiqunc493@gmail.com</a
+            >
+          </p>
+
+          <!-- 統計資訊 -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" id="statSongs">0</div>
+              <div class="stat-label">首歌曲</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="statArtists">0</div>
+              <div class="stat-label">位歌手</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="statPoems">0</div>
+              <div class="stat-label">首詩詞</div>
+            </div>
+          </div>
+
+          <!-- 熱門歌手 -->
+          <div class="home-section-block">
+            <div class="section-header">
+              <h2>熱門歌手</h2>
+              <a
+                href="#artists"
+                class="view-all"
+                onclick="showPage('artists'); return false;"
+                >查看全部 →</a
+              >
+            </div>
+            <div id="homeArtistGrid" class="artist-grid-mini"></div>
+          </div>
+
+          <!-- 最新歌曲 -->
+          <div class="home-section-block">
+            <div class="section-header">
+              <h2>最新歌曲</h2>
+              <a
+                href="#songs"
+                class="view-all"
+                onclick="showPage('songs'); return false;"
+                >查看全部 →</a
+              >
+            </div>
+            <div id="homeSongGrid" class="song-grid"></div>
+          </div>
+
+          <!-- 最新詩詞 -->
+          <div class="home-section-block">
+            <div class="section-header">
+              <h2>最新詩詞</h2>
+              <a
+                href="#poems"
+                class="view-all"
+                onclick="showPage('poems'); return false;"
+                >查看全部 →</a
+              >
+            </div>
+            <div id="homePoemGrid" class="song-grid"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 歌單列表 -->
+      <div id="songs" class="page">
+        <h2 style="text-align: center; margin-bottom: 32px; font-size: 2rem">
+          歌曲列表
+        </h2>
+        <div class="song-grid" id="songGrid"></div>
+      </div>
+
+      <!-- 詩詞頁面 -->
+      <div id="poems" class="page">
+        <h2 style="text-align: center; margin-bottom: 32px; font-size: 2rem">
+          詩詞
+        </h2>
+        <div class="song-grid" id="poemGrid"></div>
+      </div>
+
+      <!-- 句子頁面 -->
+      <div id="contact" class="page">
+        <div class="contact-section">
+          <h2>美麗的句子</h2>
+          <p>這裡收藏著各種美麗動人的句子，等待你來發現。</p>
+        </div>
+      </div>
+
+      <!-- 歌曲詳情頁面（動態生成） -->
+      <div id="songDetail" class="page"></div>
+
+      <!-- 上傳歌曲頁面 -->
+      <div id="upload" class="page">
+        <div class="upload-section">
+          <h2>新增歌曲</h2>
+          <form id="uploadForm" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="songTitle"
+                >歌曲名稱<span style="color: rgb(255, 68, 68)">*</span></label
+              >
+              <input
+                type="text"
+                id="songTitle"
+                name="title"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="songCreators"
+                >創作者<span style="color: rgb(255, 68, 68)">*</span
+                >（請以逗號分隔，中間不需空格。）</label
+              >
+              <input
+                type="text"
+                id="songCreators"
+                name="creators"
+                class="form-control"
+                placeholder="例：周杰倫 Jay Chou,林俊傑"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="songLyricist">作詞</label>
+              <input
+                type="text"
+                id="songLyricist"
+                name="lyricist"
+                class="form-control"
+                placeholder="例：林夕"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="songComposer">作曲</label>
+              <input
+                type="text"
+                id="songComposer"
+                name="composer"
+                class="form-control"
+                placeholder="例：方大同"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="songAlbum">專輯</label>
+              <input
+                type="text"
+                id="songAlbum"
+                name="albums"
+                class="form-control"
+                placeholder="例：後青春的詩"
+              />
+            </div>
+
+            <!-- 新增：語言選項 -->
+            <div class="form-group">
+              <label for="songLanguage">語言</label>
+              <select id="songLanguage" name="language" class="form-control">
+                <option value="">請選擇</option>
+                <option value="中文">中文</option>
+                <option value="英文">英文</option>
+                <option value="日文">日文</option>
+                <option value="韓文">韓文</option>
+                <option value="其他">其他</option>
+              </select>
+            </div>
+
+            <!-- 新增：風格選項 -->
+            <div class="form-group">
+              <label for="songGenre">風格</label>
+              <select id="songGenre" name="genre" class="form-control">
+                <option value="">請選擇</option>
+                <option value="流行">流行</option>
+                <option value="獨立音樂">獨立音樂</option>
+                <option value="經典">經典</option>
+                <option value="爵士">爵士</option>
+                <option value="古典">古典</option>
+                <option value="嘻哈">嘻哈</option>
+                <option value="R&B">R&B</option>
+                <option value="其他">其他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="songReleaseDate">發行日期</label>
+              <input
+                type="date"
+                id="songReleaseDate"
+                name="release_date"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="songLyrics">歌詞</label>
+              <textarea
+                id="songLyrics"
+                name="lyrics"
+                class="form-control"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="songImage">封面圖片（支援 JPG, PNG）</label>
+              <input
+                type="file"
+                id="songImage"
+                name="image"
+                class="form-control"
+                accept="image/*"
+              />
+              <div id="imagePreview" class="image-preview"></div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn--primary">上傳歌曲</button>
+              <button type="reset" class="btn btn--secondary">清除</button>
+            </div>
+
+            <div id="uploadStatus" class="upload-status"></div>
+          </form>
+        </div>
+      </div>
+      <!-- 歌手清單頁面 -->
+      <div id="artists" class="page">
+        <div class="home-section">
+          <h1>歌手清單</h1>
+          <p>探索所有音樂創作者</p>
+
+          <div class="filter-controls">
+            <select
+              id="artistSort"
+              class="form-control"
+              style="max-width: 200px; margin: 0 auto"
+            >
+              <option value="count">按歌曲數量</option>
+              <option value="name">按字母排序</option>
+            </select>
+          </div>
+
+          <div id="artistGrid" class="artist-grid"></div>
+        </div>
+      </div>
+
+      <!-- 單一歌手的歌曲列表頁面 -->
+      <div id="artistDetail" class="page">
+        <div class="home-section">
+          <a
+            href="#"
+            class="back-btn"
+            onclick="showPage('artists'); return false;"
+            >← 返回歌手清單</a
+          >
+          <h1 id="artistName"></h1>
+          <p id="artistSongCount"></p>
+          <div id="artistSongGrid" class="song-grid"></div>
+        </div>
+      </div>
+      <!-- 收藏的句子頁面 -->
+      <div id="favorites" class="page">
+        <div class="home-section">
+          <h1>收藏的句子</h1>
+          <p>這裡收藏著打動你心的歌詞片段</p>
+
+          <div id="favoriteGrid" class="favorite-grid"></div>
+
+          <div id="emptyFavorites" class="empty-state">
+            <p>還沒有收藏任何句子</p>
+            <p class="subtitle">在歌曲詳細頁面中點擊「收藏歌詞」按鈕開始收藏</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 收藏歌詞的浮動表單 -->
+      <div id="favoriteModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>收藏歌詞</h2>
+            <button class="modal-close" onclick="closeFavoriteModal()">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="favoriteLyrics"
+                >歌詞片段<span style="color: rgb(255, 68, 68)">*</span></label
+              >
+              <textarea
+                id="favoriteLyrics"
+                class="form-control"
+                rows="6"
+                placeholder="輸入你想收藏的歌詞片段..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="favoriteNote">筆記（選填）</label>
+              <textarea
+                id="favoriteNote"
+                class="form-control"
+                rows="3"
+                placeholder="寫點什麼..."
+              ></textarea>
+            </div>
+            <input type="hidden" id="favoriteSongId" />
+            <input type="hidden" id="favoriteSongTitle" />
+            <input type="hidden" id="favoriteSongCreators" />
+          </div>
+          <div class="modal-footer">
+            <div class="modal-footer modal-footer--no-border">
+              <a
+                href="#"
+                class="modal-link modal-link--primary"
+                onclick="saveFavorite(); return false;"
+                >儲存</a
+              >
+              <a
+                href="#"
+                class="modal-link"
+                onclick="closeFavoriteModal(); return false;"
+                >取消</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

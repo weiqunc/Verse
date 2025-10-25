@@ -1,0 +1,1148 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* outline: solid #f00 1px !important;
+  background: #000 !important;
+  color: #fff !important; */
+}
+:root {
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-peach-300: rgb(255, 199, 159);
+  --color-peach-400: rgb(255, 182, 122);
+  --color-peach-500: rgb(255, 178, 120);
+  --color-peach-600: rgb(238, 177, 124);
+  --color-peach-700: rgb(241, 172, 111);
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-peach-500-rgb: 255, 140, 105;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-peach-500);
+  --color-primary-hover: var(--color-peach-600);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --radius-base: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --duration-normal: 250ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-peach-300-rgb: 255, 183, 159;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-peach-300);
+    --color-primary-hover: var(--color-peach-400);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-peach-700)
+  );
+  color: white;
+  padding: var(--space-16) var(--space-20);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: var(--space-12);
+  font-weight: 600;
+}
+
+.verse {
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-15px);
+  object-fit: contain; /* 保持圖片比例 */
+  width: 180px;
+}
+
+.menu {
+  display: none;
+  background: rgba(255, 255, 255, 0.13);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: var(--space-8);
+  border-radius: var(--radius-base);
+  position: absolute;
+  top: var(--space-16);
+  right: var(--space-16);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+  opacity: 0;
+  transition: opacity var(--duration-normal);
+}
+
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-32);
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  transition: background var(--duration-normal);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-32) var(--space-20);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-section {
+  text-align: center;
+  padding: var(--space-32) 0;
+}
+
+.home-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-20);
+  color: var(--color-text);
+}
+
+.home-section p {
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-32);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-32);
+}
+
+.email-link {
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.song-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  margin-top: var(--space-32);
+}
+
+.song-card {
+  display: flex;
+  align-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-12);
+  cursor: pointer;
+  transition: transform var(--duration-normal),
+    box-shadow var(--duration-normal);
+  box-shadow: var(--shadow-sm);
+  gap: var(--space-16);
+  height: 80px;
+}
+
+.song-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* 固定尺寸圖片 */
+.song-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: var(--radius-base);
+  flex-shrink: 0;
+}
+
+/* 內容區填滿剩餘空間 */
+.song-card-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 0;
+  gap: var(--space-16);
+}
+
+.song-info {
+  flex: 0 0 200px;
+  min-width: 0;
+}
+
+.song-card-content h3 {
+  font-size: 1rem;
+  margin: 0 0 4px 0;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-card-content p {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-card-content p.creator {
+  margin-bottom: 2px;
+}
+
+.song-card-content p.album {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+}
+
+/* 桌面版額外資訊 */
+.song-meta {
+  display: flex;
+  gap: var(--space-24);
+  flex: 1;
+  min-width: 0;
+}
+
+.meta-item {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+.mobile-show {
+  display: none;
+}
+
+/* 箭頭圖示 */
+.song-card-arrow {
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+  margin-left: var(--space-16);
+  flex-shrink: 0;
+}
+
+.song-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.song-detail-header {
+  text-align: center;
+  margin-bottom: var(--space-32);
+}
+
+.song-detail-header img {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-20);
+}
+
+.song-detail-header h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-12);
+}
+
+.song-detail-header .artist {
+  color: var(--color-text-secondary);
+  font-size: 1.2rem;
+}
+
+.lyrics {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  line-height: 2;
+  white-space: pre-line;
+  font-size: 1.1rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: var(--space-20);
+  padding: var(--space-12) var(--space-24);
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-base);
+  transition: background var(--duration-normal);
+}
+
+.back-btn:hover {
+  background: var(--color-primary-hover);
+}
+
+.big-post-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-normal);
+  box-shadow: var(--shadow-md);
+}
+
+.big-post-arrow:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.prev-post-arrow {
+  left: var(--space-20);
+}
+
+.next-post-arrow {
+  right: var(--space-20);
+}
+
+.big-arrow-shape {
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid var(--color-text);
+  border-right: 2px solid var(--color-text);
+}
+
+.big-post-arrow:hover .big-arrow-shape {
+  border-color: white;
+}
+
+.big-arrow-shape.left {
+  transform: rotate(-135deg);
+  margin-left: 4px;
+}
+
+.big-arrow-shape.right {
+  transform: rotate(45deg);
+  margin-right: 4px;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-20);
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+/* 上傳表單樣式 */
+.upload-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  padding: var(--space-32);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-md);
+}
+
+.upload-section h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-24);
+  color: var(--color-text);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: var(--space-20);
+}
+
+.form-group label {
+  display: block;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--space-12);
+  margin-top: var(--space-24);
+}
+
+.form-actions .btn {
+  flex: 1;
+  padding: var(--space-12) var(--space-24);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-base);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: none;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn--secondary {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn--secondary:hover {
+  background: rgba(var(--color-brown-600-rgb), 0.25);
+}
+
+.image-preview {
+  margin-top: var(--space-12);
+}
+
+.upload-status {
+  margin-top: var(--space-20);
+  padding: var(--space-16);
+  border-radius: var(--radius-base);
+  text-align: center;
+  display: none;
+}
+
+.upload-status.active {
+  display: block;
+}
+
+/* 首頁統計卡片 */
+.subtitle {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-32);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-20);
+  margin: var(--space-32) 0;
+}
+
+.stat-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-number {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-8);
+}
+
+.stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* 首頁區塊 */
+.home-section-block {
+  margin-top: var(--space-32);
+  padding-top: var(--space-32);
+  border-top: 1px solid var(--color-border);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-24);
+}
+
+.section-header h2 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-text);
+}
+
+.view-all {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--duration-fast);
+}
+
+.view-all:hover {
+  color: var(--color-primary-hover);
+}
+
+/* 首頁歌手卡片（迷你版） */
+.artist-grid-mini {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--space-16);
+}
+
+.artist-grid-mini .artist-card {
+  padding: var(--space-16);
+}
+
+.artist-grid-mini .artist-card-avatar {
+  width: 60px;
+  height: 60px;
+  font-size: var(--font-size-2xl);
+}
+
+/* 歌手清單樣式 */
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-20);
+  margin-top: var(--space-32);
+}
+
+.artist-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  cursor: pointer;
+  transition: transform var(--duration-normal),
+    box-shadow var(--duration-normal);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.artist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.artist-card-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-16);
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: white;
+}
+
+.artist-card-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-8);
+
+  /* 文字超過一行省略 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.artist-card-count {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-16);
+  margin-top: var(--space-20);
+}
+
+/* 收藏句子頁面 */
+.favorite-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-20);
+  margin-top: var(--space-32);
+}
+
+.favorite-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-normal),
+    box-shadow var(--duration-normal);
+  position: relative;
+}
+
+.favorite-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.favorite-lyrics {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  margin-bottom: var(--space-16);
+  white-space: pre-wrap;
+  font-style: italic;
+}
+
+.favorite-note {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-16);
+  padding-top: var(--space-16);
+  border-top: 1px solid var(--color-border);
+}
+
+.favorite-source {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.favorite-source strong {
+  color: var(--color-text);
+}
+
+.favorite-delete {
+  position: absolute;
+  top: var(--space-12);
+  right: var(--space-12);
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  padding: var(--space-4);
+  line-height: 1;
+  transition: color var(--duration-fast);
+}
+
+.favorite-delete:hover {
+  color: var(--color-error);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-32) var(--space-16);
+  color: var(--color-text-secondary);
+}
+
+.empty-state p {
+  margin-bottom: var(--space-8);
+}
+
+/* 浮動表單（Modal） */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-20) var(--space-24);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.modal-header h2 {
+  font-size: var(--font-size-xl);
+  margin: 0;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: var(--font-size-3xl);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.modal-close:hover {
+  color: var(--color-text);
+}
+
+.modal-body {
+  padding: var(--space-24);
+  overflow-y: auto;
+}
+
+.favorite-link {
+  display: inline-block;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  margin-top: var(--space-24);
+  margin-bottom: var(--space-24);
+  transition: color var(--duration-fast);
+}
+
+.favorite-link:hover {
+  color: var(--color-primary-hover);
+}
+
+/* 彈出視窗的連結樣式 */
+.modal-link {
+  display: inline-block;
+  padding: var(--space-8) var(--space-20);
+  border-radius: var(--radius-base);
+  background: var(--color-secondary);
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  transition: background var(--duration-fast), color var(--duration-fast);
+}
+
+.modal-link:hover {
+  background: var(--color-secondary-hover);
+}
+
+.modal-link--primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.modal-link--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+/* 調整 modal-footer 樣式 */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-12);
+  padding: var(--space-20) var(--space-24);
+  border-top: 1px solid var(--color-border);
+}
+
+.modal-footer--no-border {
+  border-top: none;
+}
+
+.modal-footer .modal-link {
+  /* 移除 flex: 1; 讓按鈕不佔滿整行 */
+  min-width: 80px;
+}
+
+/* 歌曲詳細資訊樣式 */
+.song-detail-meta {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin: var(--space-24) 0;
+}
+
+.meta-row {
+  display: flex;
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.meta-row:last-child {
+  border-bottom: none;
+}
+
+.meta-label {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  min-width: 80px;
+  margin-right: var(--space-16);
+}
+
+.meta-value {
+  color: var(--color-text);
+  flex: 1;
+}
+
+/* 標籤樣式 */
+.song-tags {
+  display: flex;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: var(--space-2) var(--space-8);
+  background: var(--color-secondary);
+  color: var(--color-text);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.tag--language {
+  background: rgba(var(--color-teal-500-rgb), 0.15);
+  color: var(--color-primary);
+}
+
+.tag--genre {
+  background: rgba(var(--color-brown-600-rgb), 0.15);
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .verse {
+    width: 100px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      135deg,
+      var(--color-primary),
+      var(--color-peach-700)
+    );
+    box-shadow: var(--shadow-md);
+    z-index: 99;
+  }
+
+  .upload-section {
+    padding: var(--space-20);
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: var(--space-16) 0;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: var(--space-16) var(--space-20);
+    border-radius: 0;
+  }
+
+  .song-card {
+    height: 70px;
+    padding: var(--space-8);
+  }
+
+  .song-card img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .song-card-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .song-card-content p {
+    font-size: 0.8rem;
+  }
+
+  .song-info {
+    flex: 1;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+
+  .song-detail-header img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .big-post-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prev-post-arrow {
+    left: var(--space-8);
+  }
+
+  .next-post-arrow {
+    right: var(--space-8);
+  }
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-12);
+  }
+
+  .stat-card {
+    padding: var(--space-16);
+  }
+
+  .stat-number {
+    font-size: var(--font-size-2xl);
+  }
+
+  .artist-grid-mini {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  .artist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--space-16);
+  }
+
+  .artist-card {
+    padding: var(--space-16);
+  }
+
+  .artist-card-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-2xl);
+  }
+
+  .favorite-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .song-detail-meta {
+    padding: var(--space-16);
+  }
+
+  .meta-row {
+    flex-direction: column;
+    padding: var(--space-12) 0;
+  }
+
+  .meta-label {
+    margin-bottom: var(--space-4);
+    margin-right: 0;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+}

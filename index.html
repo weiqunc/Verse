@@ -38,9 +38,9 @@
           <li>
             <a href="#artists" data-page="artists" class="nav-link">歌手</a>
           </li>
-          <li><a href="#poems" data-page="poems" class="nav-link">詩詞</a></li>
+          <li><a href="#poems" data-page="poems" class="nav-link">文字</a></li>
           <li>
-            <a href="#favorites" data-page="favorites" class="nav-link">句子</a>
+            <a href="#favorites" data-page="favorites" class="nav-link">剪影</a>
           </li>
           <li>
             <a href="#upload" data-page="upload" class="nav-link">新增</a>
@@ -133,6 +133,21 @@
         <h2 style="text-align: center; margin-bottom: 32px; font-size: 2rem">
           歌曲列表
         </h2>
+        <div
+          class="filter-controls"
+          style="margin-bottom: 24px; text-align: center"
+        >
+          <select
+            id="songSort"
+            class="form-control"
+            style="max-width: 200px; margin: 0 auto"
+          >
+            <option value="dateAdded">按加入日期排序</option>
+            <option value="releaseDate">按發行日期排序</option>
+            <option value="rating">按評分排序</option>
+            <option value="alphabet">按字母排序</option>
+          </select>
+        </div>
         <div class="song-grid" id="songGrid"></div>
       </div>
 
@@ -217,7 +232,7 @@
                 id="songAlbum"
                 name="albums"
                 class="form-control"
-                placeholder="例：後青春的詩"
+                placeholder="例：後青春期的詩"
               />
             </div>
 
@@ -251,6 +266,17 @@
             </div>
 
             <div class="form-group">
+              <label for="songOriginalArtist">原唱</label>
+              <input
+                type="text"
+                id="songOriginalArtist"
+                name="original_artist"
+                class="form-control"
+                placeholder="例如：鄧麗君, 張學友"
+              />
+            </div>
+
+            <div class="form-group">
               <label for="songReleaseDate">發行日期</label>
               <input
                 type="date"
@@ -268,6 +294,19 @@
                 class="form-control"
                 rows="10"
               ></textarea>
+            </div>
+
+            <!-- 評分欄位 -->
+            <div class="form-group">
+              <label for="songRating">排序</label>
+              <select id="songRating" name="rating" class="form-control">
+                <option value="">請選擇一個適合的位置</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
             </div>
 
             <div class="form-group">

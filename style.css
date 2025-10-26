@@ -974,6 +974,70 @@ textarea.form-control {
   color: var(--color-text);
 }
 
+/* 評分選單樣式 */
+#songRating option {
+  padding: 8px;
+  font-size: 14px;
+}
+
+#songRating option[value=""] {
+  color: #999;
+  font-style: italic;
+}
+
+/* 原唱欄位樣式 */
+#songOriginalArtist {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+/* 評分星星樣式 */
+.song-rating {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.rating-stars {
+  color: #ffd700;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.rating-empty {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* 歌曲卡片中的評分 */
+.song-card .song-rating {
+  margin-top: 8px;
+}
+
+/* 排序控件樣式 */
+.filter-controls {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.filter-controls select {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+/* 歌曲詳細頁面的評分 */
+.song-detail-meta .meta-row .meta-value .rating-stars {
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .menu {
     display: block;
@@ -1175,5 +1239,14 @@ textarea.form-control {
   /* 隱藏箭頭形狀 */
   .big-arrow-shape {
     display: none !important;
+  }
+
+  .song-rating {
+    margin-top: 4px;
+  }
+
+  .rating-stars {
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 }

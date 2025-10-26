@@ -888,6 +888,88 @@ kakae te yo
     image: "images/1761410948391-644646746.jpg",
     original_artist: [],
     rating: ""
+  },
+  {
+    id: "song1761495770027",
+    title: "突然好想你",
+    creators: ["五月天"],
+    lyricist: ["阿信"],
+    composer: ["阿信"],
+    albums: "後青春期的詩",
+    release_date: "2008-10-23",
+    language: "中文",
+    genre: "流行",
+    lyrics: `最怕空氣突然安靜 最怕朋友突然的關心
+最怕回憶 突然翻滾絞痛著不平息 最怕突然 聽到你的消息
+想念如果會有聲音 不願那是悲傷的哭泣
+事到如今 終於讓自己屬於我自己 只剩眼淚 還騙不過自己
+
+突然好想你 你會在哪裡 過得快樂或委屈
+突然好想你 突然鋒利的回憶 突然模糊的眼睛
+
+我們像一首最美麗的歌曲 變成兩部悲傷的電影
+為什麼你 帶我走過最難忘的旅行 然後留下 最痛的紀念品
+
+我們 那麼甜那麼美那麼相信 那麼瘋那麼熱烈的曾經
+為何我們還是要奔向各自的幸福和遺憾中老去
+
+突然好想你 你會在哪裡 過得快樂或委屈
+突然好想你 突然鋒利的回憶 突然模糊的眼睛
+
+最怕空氣突然安靜 最怕朋友突然的關心
+最怕回憶 突然翻滾絞痛著不平息 最怕突然 聽到你的消息
+
+最怕此生 已經決心自己過沒有你 卻又突然 聽到你的消息`,
+    image: "images/1761495769429-702589751.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1761497627494",
+    title: "太陽與地球",
+    creators: ["盧廣仲"],
+    lyricist: ["黄俊荣", "吳易緯"],
+    composer: ["黄俊荣", "林倛玉"],
+    albums: "HeartBreakFast 傷心早餐店",
+    release_date: "2025-09-17",
+    language: "中文",
+    genre: "流行",
+    lyrics: `想 守護你所有
+回應你 包容的溫柔
+想用盡一生 陪在你左右 是我
+曙光和暮暉的 夢
+短暫如煙火 在懷裡墜落
+奔向了星空 到不了心中
+有什麼理由 必須要我放手
+
+誰要 我們的心 遙遠得像 太陽與地球
+怎會 走到最後 你愛著我 卻不屬於我
+誰要 時間奔走 只能照耀 再不能觸碰
+最靠近的我們 怎麼 繞著 繞著 就錯過
+
+在 偌大銀河中
+沒想過 像流星交錯
+該怎麼原諒 讓你哭的人 是我
+抱歉沒有機會 說
+最渴望的夢 是你在等我
+轟烈在星空 消散在心中
+最難忘的人 是永恆地錯過
+
+誰要 我們的心 遙遠得像 太陽與地球
+怎麼 走到最後 你愛著我 卻不屬於我
+誰要 時間奔走 只能照耀 再不能觸碰
+最靠近的我們 怎麼 繞著 繞著 各自走
+
+人總要狠狠痛過 才懂我要什麼
+捨不得 你不再快樂
+如果悲傷 請你留給我
+原來 我們的心 頑固地像 太陽與地球
+以為 徹底分開 徹底放手 不曾離開過
+我們 只是錯過 誰都沒錯 都努力愛過
+最遙遠的我們 別回頭 往幸福 一直走`,
+    image: "images/1761497627493-592594290.jpg",
+    original_artist: ["盧廣仲"],
+    rating: ""
   }
 ];
 
@@ -958,6 +1040,42 @@ const favorites = [
 function renderSongs() {
   const songGrid = document.getElementById("songGrid");
   if (!songGrid) return;
+
+  let sortedSongs = [...songs];
+  const sortBy = document.getElementById("songSort")?.value || "dateAdded";
+
+  switch (sortBy) {
+    case "dateAdded":
+      // 按加入日期排序（ID中的時間戳）
+      sortedSongs.sort((a, b) => {
+        const timeA = parseInt(a.id.replace("song", "")) || 0;
+        const timeB = parseInt(b.id.replace("song", "")) || 0;
+        return timeB - timeA; // 新的在前
+      });
+      break;
+    case "releaseDate":
+      // 按發行日期排序
+      sortedSongs.sort((a, b) => {
+        const dateA = new Date(a.release_date || "1900-01-01");
+        const dateB = new Date(b.release_date || "1900-01-01");
+        return dateB - dateA; // 新的在前
+      });
+      break;
+    case "rating":
+      // 按評分排序
+      sortedSongs.sort((a, b) => {
+        const ratingA = parseInt(a.rating) || 0;
+        const ratingB = parseInt(b.rating) || 0;
+        return ratingB - ratingA; // 高分在前
+      });
+      break;
+    case "alphabet":
+      // 按字母排序
+      sortedSongs.sort((a, b) => {
+        return a.title.localeCompare(b.title, "zh-TW");
+      });
+      break;
+  }
 
   songGrid.innerHTML = songs
     .map((song) => {
@@ -1672,6 +1790,15 @@ function generateSongMeta(item) {
     });
   }
 
+  if (item.original_artist && item.original_artist.length > 0) {
+    metaItems.push({
+      label: "原唱",
+      value: Array.isArray(item.original_artist)
+        ? item.original_artist.join(", ")
+        : item.original_artist
+    });
+  }
+
   // 專輯
   if (item.albums) {
     metaItems.push({
@@ -1701,6 +1828,22 @@ function generateSongMeta(item) {
     metaItems.push({
       label: "風格",
       value: item.genre
+    });
+  }
+
+  if (item.rating) {
+    const ratingNum = parseInt(item.rating) || 0;
+    let stars = "";
+    for (let i = 1; i <= 5; i++) {
+      if (i <= ratingNum) {
+        stars += "⭐";
+      } else {
+        stars += "☆";
+      }
+    }
+    metaItems.push({
+      label: "評分",
+      value: `${stars} (${ratingNum}/5)`
     });
   }
 

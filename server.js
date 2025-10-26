@@ -64,7 +64,9 @@ app.post("/api/upload-song", upload.single("image"), async (req, res) => {
       release_date,
       lyrics,
       language,
-      genre
+      genre,
+      original_artist,
+      rating
     } = req.body;
 
     if (!title || !creators || !lyrics) {
@@ -85,8 +87,10 @@ app.post("/api/upload-song", upload.single("image"), async (req, res) => {
       image: req.file ? `images/${req.file.filename}` : "",
       language: language || "",
       genre: genre || "",
-      original_artist: [],
-      rating: ""
+      original_artist: original_artist
+        ? original_artist.split(",").map((oa) => oa.trim())
+        : [],
+      rating: rating || ""
     };
 
     console.log("📝 準備新增歌曲:", newSong.title);
@@ -170,8 +174,8 @@ app.post("/api/upload-song", upload.single("image"), async (req, res) => {
     genre: "${newSong.genre}",
     lyrics: \`${newSong.lyrics.replace(/`/g, "\\`").replace(/\$/g, "\\$")}\`,
     image: "${newSong.image}",
-    original_artist: [],
-    rating: ""
+    original_artist: ${JSON.stringify(newSong.original_artist)},
+    rating: "${newSong.rating}"
 }`;
 
     mainJsContent =
@@ -311,26 +315,57 @@ app.post("/api/delete-favorite", async (req, res) => {
     const mainJsPath = path.join(__dirname, "main.js");
     let mainJsContent = await fs.readFile(mainJsPath, "utf8");
 
-    const favoriteRegex = new RegExp(
-      `\\s*,?\\s*\\{[^}]*id:\\s*"${id}"[^}]*\\}\\s*,?`,
-      "g"
-    );
+    // ===== 改進的刪除邏輯 =====
 
-    const beforeDelete = mainJsContent;
-    mainJsContent = mainJsContent.replace(favoriteRegex, "");
-
-    if (mainJsContent === beforeDelete) {
-      return res.status(404).json({ error: "找不到要刪除的收藏" });
+    // 1. 找到 favorites 陣列的範圍
+    const favoritesStart = mainJsContent.indexOf("const favorites = [");
+    if (favoritesStart === -1) {
+      return res.status(404).json({ error: "找不到 favorites 陣列" });
     }
 
-    // 清理格式問題
-    mainJsContent = mainJsContent.replace(/,(\s*),+/g, ",");
-    mainJsContent = mainJsContent.replace(/\[\s*,/g, "[");
-    mainJsContent = mainJsContent.replace(/,(\s*)\]/g, "$1]");
+    const arrayContentStart = favoritesStart + "const favorites = [".length;
+    const arrayEnd = mainJsContent.indexOf("];", arrayContentStart);
 
-    await fs.writeFile(mainJsPath, mainJsContent, "utf8");
+    if (arrayEnd === -1) {
+      return res.status(404).json({ error: "找不到 favorites 陣列結束" });
+    }
 
-    console.log("✅ 收藏刪除成功");
+    // 2. 提取陣列內容
+    const arrayContent = mainJsContent.slice(arrayContentStart, arrayEnd);
+
+    // 3. 更精確的 ID 匹配模式
+    const favoritePattern = new RegExp(
+      `\\s*,?\\s*\\{[^}]*?id:\\s*["'\`]${id.replace(
+        /[.*+?^${}()|[\]\\]/g,
+        "\\$&"
+      )}["'\`][^}]*?\\}\\s*,?`,
+      "gs"
+    );
+
+    const beforeDelete = arrayContent;
+    let newArrayContent = arrayContent.replace(favoritePattern, "");
+
+    if (newArrayContent === beforeDelete) {
+      return res.status(404).json({ error: `找不到 ID 為 ${id} 的收藏項目` });
+    }
+
+    // 4. 清理格式問題
+    // 清理多餘的逗號
+    newArrayContent = newArrayContent
+      .replace(/,\s*,+/g, ",") // 多個連續逗號
+      .replace(/^\s*,+/g, "") // 開頭的逗號
+      .replace(/,+\s*$/g, "") // 結尾的逗號
+      .replace(/,(\s*,)+/g, ","); // 重複的逗號
+
+    // 5. 重建檔案內容
+    const newMainJsContent =
+      mainJsContent.slice(0, arrayContentStart) +
+      newArrayContent +
+      mainJsContent.slice(arrayEnd);
+
+    await fs.writeFile(mainJsPath, newMainJsContent, "utf8");
+
+    console.log("✅ 收藏刪除成功，ID:", id);
 
     res.json({
       success: true,

@@ -635,6 +635,8 @@ atarashi i dare ka ni ma ta namae tsu ke te
     composer: ["優里"],
     albums: "壱",
     release_date: "2020-10-25",
+    language: "日文",
+    genre: "流行",
     lyrics: `多分、私じゃなくていいね
 tabun, watashi jya na ku te i i ne
 我想、如果不是我的話就好了呢
@@ -846,6 +848,8 @@ kakae te yo
     composer: ["伍悅"],
     albums: "豚愛特攻隊",
     release_date: "2019-06-19",
+    language: "中文",
+    genre: "獨立",
     lyrics: `獻給整個悲天憫⼈的台北
 烏煙瘴氣的
 想⾒到的⼈都不在這裡
@@ -970,9 +974,8 @@ kakae te yo
     image: "images/1761497627493-592594290.jpg",
     original_artist: ["盧廣仲"],
     rating: ""
-  }
-,
-{
+  },
+  {
     id: "song1761498593836",
     title: "不要在一起",
     creators: ["盧廣仲"],
@@ -1025,7 +1028,8 @@ kakae te yo
     image: "images/1761498593833-307931368.jpg",
     original_artist: ["吳鎮安"],
     rating: ""
-}];
+  }
+];
 
 // 詩詞資料
 const poems = [

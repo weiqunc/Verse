@@ -1036,7 +1036,7 @@ textarea.form-control {
   nav ul li a {
     display: block;
     width: 100%;
-    padding: var(--space-16) var(--space-20);
+    padding: var(--space-16) var(--space-32);
     border-radius: 0;
   }
 
@@ -1150,5 +1150,21 @@ textarea.form-control {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
+  }
+  ㄨ
+  /* 隱藏大箭頭 */
+  .big-post-arrow {
+    display: none !important;
+  }
+
+  /* 確保小箭頭也隱藏 */
+  .prev-post-arrow,
+  .next-post-arrow {
+    display: none !important;
+  }
+
+  /* 隱藏箭頭形狀 */
+  .big-arrow-shape {
+    display: none !important;
   }
 }

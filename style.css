@@ -960,7 +960,7 @@ textarea.form-control {
   background: var(--color-secondary);
   color: var(--color-text);
   border-radius: var(--radius-full);
-  font-size: var(--font-size-xs);
+  font-size: 15px;
   font-weight: var(--font-weight-medium);
 }
 
@@ -1041,7 +1041,7 @@ textarea.form-control {
   }
 
   .song-card {
-    height: 70px;
+    height: 80px;
     padding: var(--space-8);
   }
 
@@ -1051,15 +1051,24 @@ textarea.form-control {
   }
 
   .song-card-content h3 {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+    margin: 0;
   }
 
-  .song-card-content p {
-    font-size: 0.8rem;
+  .song-card-content p.creator {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+  .song-card-content p.album {
+    font-size: 0.7rem;
   }
 
   .song-info {
     flex: 1;
+  }
+
+  .tag {
+    font-size: 0.8rem;
   }
 
   .desktop-only {
@@ -1151,7 +1160,7 @@ textarea.form-control {
     visibility: hidden !important;
     opacity: 0 !important;
   }
-  ㄨ
+
   /* 隱藏大箭頭 */
   .big-post-arrow {
     display: none !important;

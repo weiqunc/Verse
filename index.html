@@ -144,7 +144,6 @@
           >
             <option value="dateAdded">按加入日期排序</option>
             <option value="releaseDate">按發行日期排序</option>
-            <option value="rating">按評分排序</option>
             <option value="alphabet">按字母排序</option>
           </select>
         </div>
@@ -236,6 +235,17 @@
               />
             </div>
 
+            <div class="form-group">
+              <label for="songOriginalArtist">原唱</label>
+              <input
+                type="text"
+                id="songOriginalArtist"
+                name="original_artist"
+                class="form-control"
+                placeholder="例：蔡依林"
+              />
+            </div>
+
             <!-- 新增：語言選項 -->
             <div class="form-group">
               <label for="songLanguage">語言</label>
@@ -266,17 +276,6 @@
             </div>
 
             <div class="form-group">
-              <label for="songOriginalArtist">原唱</label>
-              <input
-                type="text"
-                id="songOriginalArtist"
-                name="original_artist"
-                class="form-control"
-                placeholder="例如：鄧麗君, 張學友"
-              />
-            </div>
-
-            <div class="form-group">
               <label for="songReleaseDate">發行日期</label>
               <input
                 type="date"
@@ -294,19 +293,6 @@
                 class="form-control"
                 rows="10"
               ></textarea>
-            </div>
-
-            <!-- 評分欄位 -->
-            <div class="form-group">
-              <label for="songRating">排序</label>
-              <select id="songRating" name="rating" class="form-control">
-                <option value="">請選擇一個適合的位置</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
             </div>
 
             <div class="form-group">

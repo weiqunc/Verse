@@ -1725,3 +1725,279 @@ function generateSongMeta(item) {
     </div>
   `;
 }
+
+// 全域變數
+let panelVisible = false;
+
+// 切換面板顯示/隱藏
+function togglePanel() {
+  const panel = document.getElementById("import-export-panel");
+  const toggleBtn = document.getElementById("toggle-panel-btn");
+
+  if (panelVisible) {
+    panel.style.display = "none";
+    toggleBtn.style.display = "block";
+    panelVisible = false;
+  } else {
+    panel.style.display = "block";
+    toggleBtn.style.display = "none";
+    panelVisible = true;
+  }
+}
+
+// 顯示狀態訊息
+function showStatus(message, type = "info") {
+  const statusDiv = document.getElementById("operation-status");
+  statusDiv.style.display = "block";
+  statusDiv.textContent = message;
+
+  // 設定顏色
+  switch (type) {
+    case "success":
+      statusDiv.style.background = "#d4edda";
+      statusDiv.style.color = "#155724";
+      statusDiv.style.border = "1px solid #c3e6cb";
+      break;
+    case "error":
+      statusDiv.style.background = "#f8d7da";
+      statusDiv.style.color = "#721c24";
+      statusDiv.style.border = "1px solid #f5c6cb";
+      break;
+    case "warning":
+      statusDiv.style.background = "#fff3cd";
+      statusDiv.style.color = "#856404";
+      statusDiv.style.border = "1px solid #ffeaa7";
+      break;
+    default:
+      statusDiv.style.background = "#d1ecf1";
+      statusDiv.style.color = "#0c5460";
+      statusDiv.style.border = "1px solid #bee5eb";
+  }
+
+  // 自動隱藏
+  setTimeout(() => {
+    statusDiv.style.display = "none";
+  }, 5000);
+}
+
+// 查看本地資料
+async function viewLocalData() {
+  showStatus("🔍 正在讀取本地資料...", "info");
+
+  try {
+    const response = await fetch("/api/debug/data");
+    const data = await response.json();
+
+    if (data.success) {
+      console.log("📊 本地資料詳情:", data);
+
+      const summaryText = `本地資料統計：
+📀 歌曲數量：${data.summary.totalSongs} 首
+⭐ 收藏數量：${data.summary.totalFavorites} 個
+🎵 最新歌曲：${data.summary.lastSong}
+💖 最新收藏：${data.summary.lastFavorite}
+
+詳細資料已輸出到瀏覽器控制台 (按F12查看)`;
+
+      alert(summaryText);
+      showStatus(
+        `✅ 資料讀取完成：${data.summary.totalSongs}首歌曲`,
+        "success"
+      );
+    } else {
+      throw new Error(data.error);
+    }
+  } catch (error) {
+    console.error("❌ 讀取本地資料失敗:", error);
+    alert("讀取資料失敗：" + error.message);
+    showStatus("❌ 讀取失敗", "error");
+  }
+}
+
+// 匯出本地資料
+function exportLocalData() {
+  showStatus("📥 正在準備匯出...", "info");
+
+  try {
+    // 建立下載連結
+    const link = document.createElement("a");
+    link.href = "/api/export/songs";
+    link.download = `songs-export-${new Date()
+      .toISOString()
+      .slice(0, 10)}.json`;
+
+    // 觸發下載
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    showStatus("✅ 匯出檔案已下載", "success");
+
+    console.log("📥 匯出操作已執行，檔案下載中...");
+  } catch (error) {
+    console.error("❌ 匯出失敗:", error);
+    alert("匯出失敗：" + error.message);
+    showStatus("❌ 匯出失敗", "error");
+  }
+}
+
+// 處理匯入檔案
+function handleImportFile() {
+  const fileInput = document.getElementById("importFileInput");
+  const file = fileInput.files[0];
+
+  if (!file) {
+    showStatus("⚠️ 請選擇檔案", "warning");
+    return;
+  }
+
+  // 檢查檔案類型
+  if (!file.name.toLowerCase().endsWith(".json")) {
+    alert("請選擇 JSON 格式的檔案");
+    showStatus("❌ 檔案格式錯誤", "error");
+    return;
+  }
+
+  // 檢查檔案大小 (限制 10MB)
+  if (file.size > 10 * 1024 * 1024) {
+    alert("檔案太大，請選擇小於 10MB 的檔案");
+    showStatus("❌ 檔案過大", "error");
+    return;
+  }
+
+  showStatus(`📤 正在讀取檔案：${file.name}`, "info");
+  console.log(
+    "📤 選擇的檔案:",
+    file.name,
+    `${(file.size / 1024).toFixed(2)} KB`
+  );
+
+  const reader = new FileReader();
+
+  reader.onload = async function (e) {
+    try {
+      showStatus("🔄 正在解析 JSON 資料...", "info");
+
+      // 解析 JSON
+      const importData = JSON.parse(e.target.result);
+      console.log("📊 解析的資料結構:", {
+        hasExportTime: !!importData.exportTime,
+        hasSongs: !!importData.songs,
+        hasFavorites: !!importData.favorites,
+        songsCount: importData.songs ? importData.songs.length : 0,
+        favoritesCount: importData.favorites ? importData.favorites.length : 0,
+        isArray: Array.isArray(importData)
+      });
+
+      // 驗證資料格式
+      let songsCount = 0;
+      let favoritesCount = 0;
+
+      if (importData.songs && Array.isArray(importData.songs)) {
+        songsCount = importData.songs.length;
+      } else if (Array.isArray(importData)) {
+        songsCount = importData.length;
+      }
+
+      if (importData.favorites && Array.isArray(importData.favorites)) {
+        favoritesCount = importData.favorites.length;
+      }
+
+      if (songsCount === 0 && favoritesCount === 0) {
+        throw new Error("檔案中沒有找到可匯入的歌曲或收藏資料");
+      }
+
+      // 確認匯入
+      const confirmMsg = `準備匯入：
+📀 歌曲：${songsCount} 首
+⭐ 收藏：${favoritesCount} 個
+
+是否確認匯入？重複的項目會自動跳過。`;
+
+      if (!confirm(confirmMsg)) {
+        showStatus("⚠️ 匯入已取消", "warning");
+        return;
+      }
+
+      showStatus("🚀 正在匯入資料，請稍候...", "info");
+
+      // 發送匯入請求
+      const response = await fetch("/api/import/songs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(importData)
+      });
+
+      const result = await response.json();
+      console.log("📥 匯入結果:", result);
+
+      if (result.success) {
+        let successMsg = result.message;
+
+        if (result.errors && result.errors.length > 0) {
+          successMsg += `\n\n⚠️ 部分項目有問題：\n${result.errors
+            .slice(0, 3)
+            .join("\n")}`;
+          if (result.errors.length > 3) {
+            successMsg += `\n... 還有 ${result.errors.length - 3} 個錯誤`;
+          }
+          console.warn("匯入時的錯誤:", result.errors);
+        }
+
+        alert(successMsg);
+        showStatus(`✅ 匯入成功：${result.imported.songs}首歌曲`, "success");
+
+        // 重新載入頁面以顯示新資料
+        setTimeout(() => {
+          location.reload();
+        }, 1500);
+      } else {
+        throw new Error(result.error);
+      }
+
+      // 清空檔案輸入
+      fileInput.value = "";
+    } catch (parseError) {
+      console.error("❌ 處理檔案失敗:", parseError);
+      let errorMsg = "檔案處理失敗：" + parseError.message;
+
+      if (parseError.name === "SyntaxError") {
+        errorMsg =
+          "檔案格式錯誤：這不是一個有效的 JSON 檔案。請檢查檔案內容是否正確。";
+      }
+
+      alert(errorMsg);
+      showStatus("❌ 檔案處理失敗", "error");
+
+      // 清空檔案輸入
+      fileInput.value = "";
+    }
+  };
+
+  reader.onerror = function (error) {
+    console.error("❌ 讀取檔案失敗:", error);
+    alert("讀取檔案失敗，請重試");
+    showStatus("❌ 讀取檔案失敗", "error");
+    fileInput.value = "";
+  };
+
+  // 開始讀取檔案
+  reader.readAsText(file, "UTF-8");
+}
+
+// 頁面載入完成後的初始化
+document.addEventListener("DOMContentLoaded", function () {
+  const panel = document.getElementById("import-export-panel");
+  const toggleBtn = document.getElementById("toggle-panel-btn");
+
+  if (panel && toggleBtn) {
+    // 強制設定初始狀態：面板隱藏，按鈕顯示
+    panel.style.display = "none";
+    toggleBtn.style.display = "block";
+    panelVisible = false; // 確保狀態變數正確
+
+    console.log("🎯 資料管理功能已載入 (面板預設隱藏)");
+  }
+});

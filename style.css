@@ -1145,4 +1145,10 @@ textarea.form-control {
   .subtitle {
     font-size: 0.85rem;
   }
+
+  .desktop-only {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
 }

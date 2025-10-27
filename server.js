@@ -422,9 +422,11 @@ app.get("/api/export/songs", async (req, res) => {
     const favoritesMatch = mainJsContent.match(
       /const favorites = (\[[\s\S]*?\]);/
     );
+    const poemsMatch = mainJsContent.match(/const poems = \[([\s\S]*?)\];/);
 
     let songsData = [];
     let favoritesData = [];
+    let poemsData = [];
 
     if (songsMatch) {
       try {
@@ -442,13 +444,24 @@ app.get("/api/export/songs", async (req, res) => {
       }
     }
 
+    if (poemsMatch) {
+      try {
+        poemsData = eval(`[${poemsMatch[1]}]`);
+        console.log("📝 找到詩詞資料:", poemsData.length, "首");
+      } catch (evalError) {
+        console.error("解析詩詞資料錯誤:", evalError);
+      }
+    }
+
     const exportData = {
       exportTime: new Date().toISOString(),
       source: "Song Collection System",
-      version: "1.0",
+      version: "2.0",
       totalSongs: songsData.length,
+      totalPoems: poemsData.length,
       totalFavorites: favoritesData.length,
       songs: songsData,
+      poems: poemsData,
       favorites: favoritesData
     };
 
@@ -558,11 +571,13 @@ app.post("/api/import/songs", async (req, res) => {
     let importData = req.body;
     let importSongs = [];
     let importFavorites = [];
+    let importPoems = [];
 
     // 處理不同的資料格式
     if (importData.songs && Array.isArray(importData.songs)) {
       importSongs = importData.songs;
       importFavorites = importData.favorites || [];
+      importPoems = importData.poems || [];
       console.log("📊 標準格式匯入");
     } else if (Array.isArray(importData)) {
       importSongs = importData;
@@ -570,6 +585,7 @@ app.post("/api/import/songs", async (req, res) => {
     } else if (importData.exportTime) {
       importSongs = importData.songs || [];
       importFavorites = importData.favorites || [];
+      importPoems = importData.poems || [];
       console.log("📊 匯出檔案格式匯入");
     } else {
       return res.status(400).json({
@@ -592,12 +608,93 @@ app.post("/api/import/songs", async (req, res) => {
     let mainJsContent = await fs.readFile(mainJsPath, "utf8");
 
     let importedSongsCount = 0;
+    let importedPoemsCount = 0;
     let importedFavoritesCount = 0;
     let duplicatesCount = 0;
+    let poemDuplicatesCount = 0;
     let favoritesDuplicatesCount = 0;
     let errors = [];
 
     // ===== 匯入歌曲 =====
+
+    if (importPoems.length > 0) {
+      console.log("📝 開始匯入詩詞...");
+
+      for (let i = 0; i < importPoems.length; i++) {
+        const poem = importPoems[i];
+
+        try {
+          if (!poem.title) {
+            errors.push(`詩詞 ${i + 1}: 缺少標題`);
+            continue;
+          }
+
+          if (!poem.lyrics) {
+            errors.push(`詩詞 ${i + 1}: 缺少內容`);
+            continue;
+          }
+
+          // 檢查重複
+          const titleCheck = mainJsContent.includes(`title: "${poem.title}"`);
+
+          if (!titleCheck) {
+            // 找到詩詞陣列位置
+            const poemsArrayStart = mainJsContent.indexOf("const poems = [");
+            const searchFrom = poemsArrayStart + "const poems = [".length;
+            const poemsArrayEnd = mainJsContent.indexOf("];", searchFrom);
+            const poemsContent = mainJsContent.slice(searchFrom, poemsArrayEnd);
+            const hasExistingPoems = poemsContent.trim().length > 0;
+
+            // 清理文字
+            const cleanTitle = poem.title.replace(/`/g, "\\`");
+            const cleanLyrics = poem.lyrics
+              .replace(/`/g, "\\`")
+              .replace(/\$/g, "\\$");
+            const cleanTranslation = (poem.translation || "")
+              .replace(/`/g, "\\`")
+              .replace(/\$/g, "\\$");
+
+            // 處理作者
+            let creators = [];
+            if (Array.isArray(poem.creators)) {
+              creators = poem.creators;
+            } else if (typeof poem.creators === "string") {
+              creators = poem.creators.split(",").map((c) => c.trim());
+            }
+
+            // 使用 JSON 格式插入
+            const poemObject = {
+              id:
+                poem.id ||
+                `poem${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+              title: poem.title,
+              creators: creators,
+              lyrics: poem.lyrics,
+              image: poem.image || "",
+              language: poem.language || "",
+              translation: poem.translation || ""
+            };
+
+            const newPoemCode = `${hasExistingPoems ? "," : ""}
+${JSON.stringify(poemObject, null, 4)}`;
+
+            mainJsContent =
+              mainJsContent.slice(0, poemsArrayEnd) +
+              newPoemCode +
+              mainJsContent.slice(poemsArrayEnd);
+            importedPoemsCount++;
+            console.log(`✅ 詩詞 ${i + 1}: ${poem.title}`);
+          } else {
+            poemDuplicatesCount++;
+            console.log(`⚠️ 詩詞 ${i + 1}: ${poem.title} (重複)`);
+          }
+        } catch (poemError) {
+          errors.push(`詩詞 ${i + 1} (${poem.title}): ${poemError.message}`);
+          console.error(`❌ 詩詞 ${i + 1}:`, poemError);
+        }
+      }
+    }
+
     if (importSongs.length > 0) {
       for (let i = 0; i < importSongs.length; i++) {
         const song = importSongs[i];
@@ -796,8 +893,10 @@ app.post("/api/import/songs", async (req, res) => {
       message: resultMessage,
       imported: {
         songs: importedSongsCount,
+        poems: importedPoemsCount,
         favorites: importedFavoritesCount,
         songDuplicates: duplicatesCount,
+        poemDuplicates: poemDuplicatesCount,
         favoriteDuplicates: favoritesDuplicatesCount,
         errors: errors.length
       },

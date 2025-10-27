@@ -969,14 +969,6 @@ textarea.form-control {
   font-style: italic;
 }
 
-/* 原唱欄位樣式 */
-#songOriginalArtist {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 16px;
-}
-
 /* 評分星星樣式 */
 .song-rating {
   margin-top: 8px;

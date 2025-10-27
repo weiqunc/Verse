@@ -2535,6 +2535,544 @@ Hoo hoo woo daladada`,
     image: "images/1761576678288-913854501.jpg",
     original_artist: [],
     rating: ""
+},
+{
+    id: "song1761577216456",
+    title: "你到底在選擇什麼",
+    creators: ["公館青少年 GGteens"],
+    lyricist: ["廖于任","盧彥恩"],
+    composer: ["廖于任","盧彥恩"],
+    albums: "你到底在選擇什麼",
+    release_date: "2025-07-21",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `在等著誰先開口
+言語間的玩笑和幽默
+有你 周圍都變得普通不過
+
+注意你的小動作
+你說命中缺個我
+但怎麼你朋友都不曾見過我
+
+明明就
+有些話都不必說
+心電感應還不夠用
+還是需要我再給你更多？
+
+你怎麼還沒把心交給我
+難道是早已經被誰偷走
+那就 不要
+給一堆機會讓我又深陷其中
+
+或許我只是裝作還不懂
+還不懂那些機會不是我
+總想不透 要怎麼做你才能看向我
+
+你到底在 選擇什麼
+想和你去走一走
+這次又搪塞什麼理由
+或許 我們真的有太多不同
+
+眼神裡的沒把握
+考慮該為誰停留
+為什麼只能等著機會轉向我
+
+明明就
+有些話都不必說
+心電感應也沒有用
+難道還要我再給你更多？
+
+你怎麼還沒把心交給我
+難道是早已經被誰偷走
+那就 不要
+給一堆機會讓我又深陷其中
+
+或許我只是裝作還不懂
+還不懂那些機會不是我
+總想不透 要怎麼做你才能看向我
+你到底在 選擇什麼
+
+你怎麼還沒把心交給我
+不想承認你從沒認真過
+總看 不透
+是因為真的心動 或只是寂寞
+
+也許你只是裝作還不懂
+不理會我們之間的所有
+時間倒流 或許我們就會擦肩而過
+你到底在 選擇什麼`,
+    image: "images/1761577216451-288772802.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1761577478386",
+    title: "才二十三",
+    creators: ["方大同"],
+    lyricist: ["方大同"],
+    composer: ["方大同"],
+    albums: "才二十三",
+    release_date: "2024-08-23",
+    language: "中文",
+    genre: "流行",
+    lyrics: `時間 等不了人
+生活中 一不留神
+轉個眼秒殺了
+隨秒針蒸發了
+
+昨天變成了今天
+過去變成了現在
+未來剛才來
+它從何而來
+
+歲月 眨眼就過了
+瞬間 就那樣默默的
+上一次看 才二十三
+現在的日子沒有那麼簡單
+
+樹葉 又要撒落了
+花兒 就快要復活了
+回想以前 沒那麼累
+現在的白髮 和皺紋匹配
+也是一種美
+
+青春 是一個夢
+人生 如一陣春風
+不經意的飄過
+境界驀然遼闊
+
+昨天變成了今天
+過去變成了現在
+未來剛才來
+它從何而來
+
+歲月 眨眼就過了
+瞬間 就那樣默默的
+上一次看 才二十三
+現在的日子沒有那麼簡單
+
+樹葉 又要撒落了
+花兒 就快要復活了
+回想以前 沒那麼累
+現在的白髮 和皺紋匹配
+也是一種美
+
+放下那 曾經 留下那 痕跡
+前方的你 別忘了自己
+成長是 永遠 離別是 空懸
+在千尋之外 我依然存在
+
+歲月 眨眼就過了
+瞬間 就那樣默默的
+上一次看 才二十三
+現在的日子...`,
+    image: "images/1761577478384-938799410.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1761577583216",
+    title: "停靠",
+    creators: ["胡凱兒"],
+    lyricist: ["謝浩澤"],
+    composer: ["謝浩澤"],
+    albums: "昨天",
+    release_date: "2018-12-05",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `記憶中的那條街 轉眼過了好多年
+在心底偶然浮現 那些
+試圖傾訴想念的字眼
+我在 每段沿途風景裡面
+期待哪天和匆忙的你遇見
+當再也停不下眼淚 終於忍不住思念
+當時間不再向前 停靠在那年秋天
+希望你依然聽得見 曾許下的每個心願
+擁抱每個明天 不管未來多遠
+輾轉著不知不覺 青春又更遠了些
+而少年始終 未曾如願
+直到一切都成了雲煙
+活在 往事裡看四季更迭
+相信那一天 你依然會為誰不顧一切
+
+當再也停不下眼淚 終於忍不住思念
+當時間不再向前
+當再也停不下眼淚 終於忍不住思念
+當時間不再向前 停靠在那年秋天
+希望你依然聽得見 曾許下的每個心願
+擁抱每個明天 不管未來多遠`,
+    image: "images/1761577583214-358197675.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1761577758265",
+    title: "晚餐歌",
+    creators: ["tuki."],
+    lyricist: ["tuki."],
+    composer: ["tuki."],
+    albums: "15",
+    release_date: "2023-09-29",
+    language: "日文",
+    genre: "流行",
+    lyrics: `君を泣かすから
+kimiwo nakasu kara
+因為會讓你哭泣
+
+だから一緒には居れないな
+dakara issho niwa irenai na
+所以沒辦法在一起呢
+
+君を泣かすから
+kimiwo nakasu kara
+因為會讓你哭泣
+
+早く忘れて欲しいんだ
+hayaku wasurete hoshinda
+希望你能快點忘掉我啊
+
+人間だからね
+ningen dakara ne
+正因為是人類啊
+
+たまには違うものも食べたいね
+tamaniwa chigau mono mo tabetai ne
+偶而會想吃點不一樣的食物
+
+君を泣かすから
+kimiwo nakasu kara
+因為會讓你哭泣
+
+そう君を泣かすから
+sou kimiwo nakasu kara
+是啊 因為會讓你哭啊
+
+
+でも味気ないんだよね
+demo ajikenain dayone
+但是有些無聊啊
+
+会いたくなんだよね
+aitaku nandayone
+還是會想要見你啊
+
+君以外会いたくないんだよね
+kimi igai aitakunain dayone
+不想見除了你之外的人啊
+
+なんて勝手だね
+nante katte dane
+什麼的真是擅自呢
+
+大体曖昧なんだよね
+daitai aimai nandayone
+大概都是曖昧的
+
+愛の存在証明なんて
+aino sonzai shoumei nante
+愛情的存在證明什麼的
+
+君が教えてくれないか
+kimi ga oshiete kurenai ka
+你能教會我嗎
+
+
+何十回の夜を過ごしたって得られぬような
+nanjukkai no yoru wo sugoshita tte erarenu youna
+即使過了好幾十個夜晚也得不出般的
+
+愛してるを並べてみて
+aishiteru wo narabete mite
+將「我愛你」試著列出來吧
+
+何十回の夜を過ごしたって得られぬような
+najukkai no yoru wo sugoshita tte erarenu youna
+即使過了好幾十個夜晚也得不出般的
+
+最高のフルコースを頂戴
+saikou no furukoーsu wo choudai
+請給我最棒的全餐吧
+
+
+君を泣かすから　
+kimiwo nakasu kara
+因為會讓你哭泣
+
+きっと一生は無理だよね
+kitto isshou wa muri dayone
+所以一定一輩子是不可能的啊
+
+君を泣かすから　
+kimiwo nakasu kara
+因為會讓你哭泣
+
+胸がとても痛くなんだ　
+munega totemo itaku nanda
+胸口真的很痛啊
+
+人間だからね　
+ningen dakara ne
+正因為是人類啊
+
+たまには分かり合えなくなって
+tamaniwa wakari aenaku natte
+偶爾會變得沒辦法理解對方
+
+君を泣かすから　
+kimiwo nakasu kara
+因為會讓你哭泣
+
+また君を泣かすから
+mata kimiwo nakasu kara
+又會讓你哭泣啊
+
+
+でも自信がないんだよね
+demo jishin ga nain dayone
+但是沒有自信啊
+
+変わりたくないんだよね
+kawari takunain dayone
+不想要改變啊
+
+君以外会いたくないんだよね
+kimi igai aitakunain dayone
+不想見除了你之外的人啊
+
+なんて勝手だね
+nante katte dane
+什麼的真是擅自呢
+
+大体曖昧だったよね
+daitai aimai datta yone
+大概都是曖昧的
+
+愛の存在証明なんて
+aino sonzai shoumei nante
+愛情的存在證明什麼的
+
+君がそこに居るのにね　　
+kimiga sokoni iru noni ne
+明明你就在那裡啊
+
+
+何百回の夜を過ごしたって得られぬような
+nabyakkai no yoru wo sugoshita tte erarenu youna
+即使過了好幾百個夜晚也得不出般的
+
+愛してるを並べてみて
+aishiteru wo narabete mite
+將「我愛你」試著列出來吧
+
+何百回の夜を過ごしたって得られぬような
+nanbyakkai no yoru wo sogoshita tte erarenu youna
+即使過了好幾百個夜晚也得不出般的
+
+最高のフルコースを頂戴
+saikou no furukoーsu wo choudai
+請給我最棒的全餐吧
+
+
+離れないで　傍に居てくれたのは
+hanarenai de soba ni itekureta nowa
+別離開我啊  會待在我身邊的
+
+結局君一人だったよね
+kekkyoku kimi hitori datta yone
+果然還是只有你一個人啊
+
+涙のスパイスは君の胸に
+namida no supaisu wa kimino mune ni
+眼淚的辛辣在你的胸口中
+
+残ってしまうだろうけど
+nokotte shimau darou kedo
+就會這麼留著的吧
+
+
+何千回の夜を過ごしたって得られぬような
+nanzenkai no yoru wo sugoshita tte erarenu youna
+即使過了好幾千個夜晚也得不出般的
+
+愛してるを並べるから
+aishiteru wo naraberu kara
+將「我愛你」試著列出來吧
+
+何千回の夜を過ごしたって得られぬような
+nanzenkai no yoru wo sugoshita tte erarenu youna
+即使過了好幾千個夜晚也得不出般的
+
+最高のフルコースを
+saikou no furukoーsu wo
+最棒的全餐啊
+
+
+何万回の夜を過ごしたって忘れぬような
+namankai no yoru wo sugoshita tte wasurenu youna
+即使過了好幾萬個夜晚也無法忘記的
+
+愛してるを並べるから
+aishiteru wo naraberu kara
+會將「我愛你」排列出來的
+
+何万回の夜を過ごしたって忘れぬような
+nanmankai no yoru wo sugoshita tte wasurenu youna
+即使過了好幾萬個夜晚也無法忘記的
+
+最高のフルコースを頂戴
+saikou no furukoーsu wo choudai
+請給我最棒的全餐吧
+
+
+翻譯：はる☘️`,
+    image: "images/1761577758259-232671209.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1761577977169",
+    title: "天空",
+    creators: ["蔡依林"],
+    lyricist: ["衛斯理","小米"],
+    composer: ["衛斯理"],
+    albums: "野蠻遊戲",
+    release_date: "2005-04-25",
+    language: "中文",
+    genre: "流行",
+    lyrics: `聽著自己的心跳 沒有規則地跳躍
+我安靜地在思考 並不想被誰打擾
+我們曾緊緊擁抱 卻又輕易地放掉
+那種感覺很微妙 該怎麼說才好
+
+時間分割成對角 停止你對我的好 瓦解我們的依靠
+
+在你離開之後的天空 我像風箏尋一個夢
+雨後的天空 是否有放晴後的面容
+我靜靜的望著天空 試著尋找失落的感動
+只能用笑容 期待著雨過天晴的彩虹
+
+聽著自己的心跳 沒有規則地跳躍
+我安靜地在思考 並不想被誰打擾
+我們曾緊緊擁抱 卻又輕易地放掉
+那種感覺很微妙 該怎麼說才好
+
+時間分割成對角 停止你對我的好 瓦解我們的依靠
+
+在你離開之後的天空 我像風箏尋一個夢
+雨後的天空 是否有放晴後的面容
+我靜靜的望著天空 試著尋找失落的感動
+只能用笑容 期待著雨過天晴的彩虹
+
+在你離開之後的天空 我像風箏尋一個夢
+雨後的天空 是否有放晴後的面容
+我靜靜的望著天空 試著尋找失落的感動
+只能用笑容 期待著雨過天晴的彩虹
+
+在你離開之後的天空 我像風箏尋一個夢
+我靜靜地望著天空 試著尋找失落的感動`,
+    image: "images/1761577977167-751466349.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1761578643746",
+    title: "當你在最需要的時候",
+    creators: ["怕胖團"],
+    lyricist: ["閃亮","大寶"],
+    composer: ["閃亮","weeman"],
+    albums: "2049",
+    release_date: "2019-10-18",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `沒想過 到底會走多久
+只聽說 上面的風景不錯
+好多次 被旁人的數落
+不成功 我可是絕不回頭
+我早就決定 要做個偉大的英雄
+讓這個世界都記得我
+遠方的你 請別想太多
+相信我 這條路不會太久
+風雨中 我們都看不透
+一眨眼 就過了春夏秋冬
+我早就決定 要做個偉大的英雄
+卻忘了 你一直在等我
+當你在最需要的時候
+錯過多少你的笑容
+當你在最需要的時候
+我只顧自己往前走
+當你在最需要的時候
+沒有陪著你難過
+當你在最需要的時候
+我讓你一個人承受
+當你在最需要的時候
+我只顧自己往前走
+當你在最需要的時候
+沒有陪著你難過
+當你在最需要的時候
+我讓你一個人承受
+你總是一個人等我
+卻還是給了我笑容`,
+    image: "images/1761578643742-838585755.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1761578888654",
+    title: "北上列車",
+    creators: ["三月三十不眠症"],
+    lyricist: ["凱拉","仲恩"],
+    composer: ["軒軒","陳卓"],
+    albums: "北上列車",
+    release_date: "2024-05-10",
+    language: "中文",
+    genre: "流行",
+    lyrics: `看著妳燦爛的側臉
+青春搖曳直接
+在晴朗中找尋自己
+風吹不走 我們的世界
+
+行囊滿載了誓言
+穿過人群之間
+你說會再見何必想念
+是我妄想能妥協
+落在月台上 最後一抹晚霞
+落下迴歸線 等不到明天
+
+一起說過的遠方 其實都還記得
+如今真的已經抵達 回頭你卻不見了
+匆匆忙忙過站的直達列車 回憶誤點
+我還緊握著票根
+
+行かないで
+
+重複著潮濕的季節 沒有你在身邊
+雲藏著我留下的淚
+我能懂你 離開的原因
+最後一次分離 什麼都沒說
+奔向各自 與眾不同的夢
+一起說過的遠方 其實都還記得
+如今真的已經抵達 回頭你卻不見了
+匆匆忙忙過站的直達列車 回憶誤點
+我依舊緊握著票根
+
+那炙熱的漂泊 你比我更愛我
+列車已經啟動 沒回過頭
+南方的太陽何時會停止轉動
+能追上你的不挽留
+一起說過的遠方 其實我還記得
+如今真的已經抵達 回頭你卻不見了
+匆匆忙忙過站的直達列車 乘到終點
+是否能往回飛奔
+
+一起說過的遠方 只剩我還記得
+哪怕路途已經分岔 回頭你卻還在那
+跌跌撞撞到站的直達列車
+一路到這 就為能堅定向前
+
+走了吧`,
+    image: "images/1761578888652-844477392.jpg",
+    original_artist: [],
+    rating: ""
 }];
 
 // 詩詞資料

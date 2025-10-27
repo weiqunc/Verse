@@ -811,3 +811,150 @@ app.post("/api/import/songs", async (req, res) => {
     });
   }
 });
+
+// ===== 刪除歌曲 API =====
+app.post("/api/delete-song", async (req, res) => {
+  try {
+    const { id } = req.body;
+
+    if (!id) {
+      return res.status(400).json({ error: "缺少歌曲 ID" });
+    }
+
+    console.log("準備刪除歌曲:", id);
+
+    const mainJsPath = path.join(__dirname, "main.js");
+    let mainJsContent = await fs.readFile(mainJsPath, "utf8");
+
+    // ===== 找到並刪除歌曲 =====
+
+    // 1. 找到 songs 陣列的範圍
+    const songsStart = mainJsContent.indexOf("const songs = [");
+    if (songsStart === -1) {
+      return res.status(404).json({ error: "找不到 songs 陣列" });
+    }
+
+    const arrayContentStart = songsStart + "const songs = [".length;
+    const arrayEnd = mainJsContent.indexOf("];", arrayContentStart);
+
+    if (arrayEnd === -1) {
+      return res.status(404).json({ error: "找不到 songs 陣列結束" });
+    }
+
+    // 2. 提取陣列內容
+    const arrayContent = mainJsContent.slice(arrayContentStart, arrayEnd);
+
+    // 3. 精確的 ID 匹配模式
+    const songPattern = new RegExp(
+      `\\s*,?\\s*\\{[^}]*?id:\\s*["'\`]${id.replace(
+        /[.*+?^${}()|[\]\\]/g,
+        "\\$&"
+      )}["'\`][^}]*?\\}\\s*,?`,
+      "gs"
+    );
+
+    const beforeDelete = arrayContent;
+    let newArrayContent = arrayContent.replace(songPattern, "");
+
+    if (newArrayContent === beforeDelete) {
+      return res.status(404).json({ error: `找不到 ID 為 ${id} 的歌曲` });
+    }
+
+    // 4. 清理格式問題
+    newArrayContent = newArrayContent
+      .replace(/,\s*,+/g, ",") // 多個連續逗號
+      .replace(/^\s*,+/g, "") // 開頭的逗號
+      .replace(/,+\s*$/g, "") // 結尾的逗號
+      .replace(/,(\s*,)+/g, ","); // 重複的逗號
+
+    // 5. 重建檔案內容
+    const newMainJsContent =
+      mainJsContent.slice(0, arrayContentStart) +
+      newArrayContent +
+      mainJsContent.slice(arrayEnd);
+
+    // ===== 同時刪除相關的圖片檔案 =====
+    try {
+      // 提取要刪除的歌曲資料以獲取圖片路徑
+      const songMatch = beforeDelete.match(songPattern);
+      if (songMatch) {
+        const songData = songMatch[0];
+        const imageMatch = songData.match(/image:\s*["']([^"']+)["']/);
+        if (
+          imageMatch &&
+          imageMatch[1] &&
+          imageMatch[1] !== "images/gray.jpg"
+        ) {
+          const imagePath = path.join(__dirname, imageMatch[1]);
+          await fs.unlink(imagePath);
+          console.log("🖼️ 已刪除相關圖片:", imageMatch[1]);
+        }
+      }
+    } catch (imageError) {
+      console.warn("⚠️ 刪除圖片時發生錯誤:", imageError.message);
+      // 圖片刪除失敗不影響歌曲刪除
+    }
+
+    // ===== 刪除相關的收藏 =====
+    try {
+      let updatedContent = newMainJsContent;
+
+      // 找到 favorites 陣列並刪除相關收藏
+      const favoritesStart = updatedContent.indexOf("const favorites = [");
+      if (favoritesStart !== -1) {
+        const favArrayContentStart =
+          favoritesStart + "const favorites = [".length;
+        const favArrayEnd = updatedContent.indexOf("];", favArrayContentStart);
+
+        if (favArrayEnd !== -1) {
+          const favArrayContent = updatedContent.slice(
+            favArrayContentStart,
+            favArrayEnd
+          );
+
+          // 刪除與此歌曲相關的收藏
+          const relatedFavoritePattern = new RegExp(
+            `\\s*,?\\s*\\{[^}]*?songId:\\s*["'\`]${id.replace(
+              /[.*+?^${}()|[\]\\]/g,
+              "\\$&"
+            )}["'\`][^}]*?\\}\\s*,?`,
+            "gs"
+          );
+
+          let newFavContent = favArrayContent.replace(
+            relatedFavoritePattern,
+            ""
+          );
+          newFavContent = newFavContent
+            .replace(/,\s*,+/g, ",")
+            .replace(/^\s*,+/g, "")
+            .replace(/,+\s*$/g, "")
+            .replace(/,(\s*,)+/g, ",");
+
+          updatedContent =
+            updatedContent.slice(0, favArrayContentStart) +
+            newFavContent +
+            updatedContent.slice(favArrayEnd);
+        }
+      }
+
+      newMainJsContent = updatedContent;
+    } catch (favError) {
+      console.warn("⚠️ 刪除相關收藏時發生錯誤:", favError.message);
+    }
+
+    await fs.writeFile(mainJsPath, newMainJsContent, "utf8");
+
+    console.log("✅ 歌曲刪除成功，ID:", id);
+
+    res.json({
+      success: true,
+      message: "歌曲及相關資料刪除成功！"
+    });
+  } catch (error) {
+    console.error("❌ 刪除歌曲錯誤:", error);
+    res.status(500).json({
+      error: "伺服器錯誤：" + error.message
+    });
+  }
+});

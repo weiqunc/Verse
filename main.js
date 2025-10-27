@@ -975,8 +975,8 @@ kakae te yo
     original_artist: ["盧廣仲"],
     rating: ""
   },
-  {
-    id: "song1761498593836",
+{
+    id: "song1761544590825",
     title: "不要在一起",
     creators: ["盧廣仲"],
     lyricist: ["吳鎮安"],
@@ -1025,11 +1025,10 @@ kakae te yo
 
 要不就跟我在一起 讓我繼續想著你
 維持這樣的關係 再等著 下一次天晴 一起看星星`,
-    image: "images/1761498593833-307931368.jpg",
+    image: "images/1761544590823-412649225.jpg",
     original_artist: ["吳鎮安"],
     rating: ""
-  }
-];
+}];
 
 // 詩詞資料
 const poems = [
@@ -1234,6 +1233,19 @@ function showSongDetail(id, type) {
 </a>
       ${generateSongMeta(item)} 
       <div class="lyrics">${item.lyrics}</div>
+
+       <!-- 🔴 新增刪除按鈕 (只在歌曲頁面顯示) -->
+      ${
+        type === "song"
+          ? `
+          <button class="delete-song-btn" onclick="deleteSong('${
+            item.id
+          }', '${item.title.replace(/'/g, "\\'")}'); return false;">
+              刪除歌曲
+          </button>
+      `
+          : ""
+      }
     </div>
   `;
   // 切換到詳情頁面
@@ -2202,3 +2214,53 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("🎯 資料管理功能已載入 (面板預設隱藏)");
   }
 });
+
+// ===== 刪除歌曲函數 =====
+async function deleteSong(id, title) {
+  // 雙重確認
+  const confirmDelete = confirm(
+    `⚠️ 確定要刪除歌曲「${title}」嗎？\n\n此操作將同時刪除：\n• 歌曲本身\n• 相關圖片檔案\n• 所有相關的收藏句子\n\n此操作無法復原！`
+  );
+
+  if (!confirmDelete) {
+    return;
+  }
+
+  // 第二次確認
+  const finalConfirm = confirm(`🚨 最後確認：真的要永久刪除「${title}」嗎？`);
+
+  if (!finalConfirm) {
+    return;
+  }
+
+  try {
+    console.log("🗑️ 準備刪除歌曲:", id);
+
+    const response = await fetch("/api/delete-song", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ id: id })
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert("✅ " + result.message);
+
+      // 返回歌曲列表
+      showPage("songs");
+
+      // 重新載入頁面以更新資料
+      setTimeout(() => {
+        window.location.reload();
+      }, 500);
+    } else {
+      alert("❌ 刪除失敗：" + result.error);
+    }
+  } catch (error) {
+    console.error("❌ 刪除歌曲失敗:", error);
+    alert("❌ 刪除失敗：" + error.message);
+  }
+}

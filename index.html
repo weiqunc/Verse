@@ -45,10 +45,6 @@
           <li>
             <a href="#upload" data-page="upload" class="nav-link">新增</a>
           </li>
-          <li>
-            <a href="#upload-poem" data-page="upload-poem" class="nav-link"
-              >新增</a
-            >
           </li>
         </ul>
       </nav>
@@ -190,150 +186,270 @@
       <!-- 上傳歌曲頁面 -->
       <div id="upload" class="page">
         <div class="upload-section">
-          <h2>新增歌曲</h2>
-          <form id="uploadForm" enctype="multipart/form-data">
-            <div class="form-group">
-              <label for="songTitle"
-                >歌曲名稱<span style="color: rgb(255, 68, 68)">*</span></label
-              >
-              <input
-                type="text"
-                id="songTitle"
-                name="title"
-                class="form-control"
-                required
-              />
+          <h1>新增內容</h1>
+          <div class="upload-block">
+            <div class="upload-block-header">
+              <h2>新增歌曲</h2>
+              <div class="upload-divider"></div>
             </div>
+            <form id="uploadForm" enctype="multipart/form-data">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="songTitle"
+                    >歌曲名稱<span style="color: rgb(255, 68, 68)">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="songTitle"
+                    name="title"
+                    class="form-control"
+                    required
+                  />
+                </div>
 
-            <div class="form-group">
-              <label for="songCreators"
-                >創作者<span style="color: rgb(255, 68, 68)">*</span
-                >（請以逗號分隔，中間不需空格。）</label
-              >
-              <input
-                type="text"
-                id="songCreators"
-                name="creators"
-                class="form-control"
-                placeholder="例：周杰倫 Jay Chou,林俊傑"
-                required
-              />
+                <div class="form-group">
+                  <label for="songCreators"
+                    >創作者<span style="color: rgb(255, 68, 68)">*</span
+                    >（請以逗號分隔，中間不需空格。）</label
+                  >
+                  <input
+                    type="text"
+                    id="songCreators"
+                    name="creators"
+                    class="form-control"
+                    placeholder="例：周杰倫 Jay Chou,林俊傑"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="songLyricist">作詞</label>
+                  <input
+                    type="text"
+                    id="songLyricist"
+                    name="lyricist"
+                    class="form-control"
+                    placeholder="例：林夕"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="songComposer">作曲</label>
+                  <input
+                    type="text"
+                    id="songComposer"
+                    name="composer"
+                    class="form-control"
+                    placeholder="例：方大同"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="songAlbum">專輯</label>
+                <input
+                  type="text"
+                  id="songAlbum"
+                  name="albums"
+                  class="form-control"
+                  placeholder="例：後青春期的詩"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="songOriginalArtist">原唱</label>
+                <input
+                  type="text"
+                  id="songOriginalArtist"
+                  name="original_artist"
+                  class="form-control"
+                  placeholder="例：蔡依林"
+                />
+              </div>
+
+              <!-- 新增：語言選項 -->
+              <div class="form-group">
+                <label for="songLanguage">語言</label>
+                <select id="songLanguage" name="language" class="form-control">
+                  <option value="">請選擇</option>
+                  <option value="中文">中文</option>
+                  <option value="英文">英文</option>
+                  <option value="日文">日文</option>
+                  <option value="韓文">韓文</option>
+                  <option value="其他">其他</option>
+                </select>
+              </div>
+
+              <!-- 新增：風格選項 -->
+              <div class="form-group">
+                <label for="songGenre">風格</label>
+                <select id="songGenre" name="genre" class="form-control">
+                  <option value="">請選擇</option>
+                  <option value="流行">流行</option>
+                  <option value="獨立音樂">獨立音樂</option>
+                  <option value="經典">經典</option>
+                  <option value="爵士">爵士</option>
+                  <option value="古典">古典</option>
+                  <option value="嘻哈">嘻哈</option>
+                  <option value="R&B">R&B</option>
+                  <option value="其他">其他</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="songReleaseDate">發行日期</label>
+                <input
+                  type="date"
+                  id="songReleaseDate"
+                  name="release_date"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="songLyrics">歌詞</label>
+                <textarea
+                  id="songLyrics"
+                  name="lyrics"
+                  class="form-control"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="songImage">封面圖片（支援 JPG, PNG）</label>
+                <input
+                  type="file"
+                  id="songImage"
+                  name="image"
+                  class="form-control"
+                  accept="image/*"
+                />
+                <div id="imagePreview" class="image-preview"></div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn--primary">上傳歌曲</button>
+                <button type="reset" class="btn btn--secondary">清除</button>
+              </div>
+
+              <div id="uploadStatus" class="upload-status"></div>
+            </form>
+          </div>
+
+
+        <!-- 🔄 分隔線 -->
+        <div class="section-separator">
+          <div class="separator-line"></div>
+          <div class="separator-text">或</div>
+          <div class="separator-line"></div>
+        </div>
+
+        <div class="upload-block">
+          <div class="upload-block-header">
+            <h2>新增文章</h2>
+            <div class="upload-divider"></div>
+          </div>
+
+          <form id="uploadPoemForm" enctype="multipart/form-data">
+            <!-- 基本資訊 -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="poemTitle"
+                  >名稱<span style="color: rgb(255, 68, 68)">*</span></label
+                >
+                <input
+                  type="text"
+                  id="poemTitle"
+                  name="title"
+                  class="form-control"
+                  required
+                  placeholder="例如：登鸛雀樓"
+                />
+              </div>
+              <div class="form-group">
+                <label for="poemCreators"
+                  >作者<span style="color: rgb(255, 68, 68)">*</span></label
+                >
+                <input
+                  type="text"
+                  id="poemCreators"
+                  name="creators"
+                  class="form-control"
+                  placeholder="例如：李白"
+                  required
+                />
+              </div>
             </div>
+            <!-- 詩詞內容 -->
+              <div class="form-group">
+                <label for="poemLyrics"
+                  >內容<span style="color: rgb(255, 68, 68)">*</span></label
+                >
+                <textarea
+                  id="poemLyrics"
+                  name="lyrics"
+                  class="form-control"
+                  rows="8"
+                  required
+                  placeholder="請輸入內容..."
+                ></textarea>
+              </div>
 
-            <div class="form-group">
-              <label for="songLyricist">作詞</label>
-              <input
-                type="text"
-                id="songLyricist"
-                name="lyricist"
-                class="form-control"
-                placeholder="例：林夕"
-              />
-            </div>
 
+            <!-- 附加資訊 -->
             <div class="form-group">
-              <label for="songComposer">作曲</label>
-              <input
-                type="text"
-                id="songComposer"
-                name="composer"
-                class="form-control"
-                placeholder="例：方大同"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="songAlbum">專輯</label>
-              <input
-                type="text"
-                id="songAlbum"
-                name="albums"
-                class="form-control"
-                placeholder="例：後青春期的詩"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="songOriginalArtist">原唱</label>
-              <input
-                type="text"
-                id="songOriginalArtist"
-                name="original_artist"
-                class="form-control"
-                placeholder="例：蔡依林"
-              />
-            </div>
-
-            <!-- 新增：語言選項 -->
-            <div class="form-group">
-              <label for="songLanguage">語言</label>
-              <select id="songLanguage" name="language" class="form-control">
-                <option value="">請選擇</option>
-                <option value="中文">中文</option>
-                <option value="英文">英文</option>
-                <option value="日文">日文</option>
-                <option value="韓文">韓文</option>
-                <option value="其他">其他</option>
-              </select>
-            </div>
-
-            <!-- 新增：風格選項 -->
-            <div class="form-group">
-              <label for="songGenre">風格</label>
-              <select id="songGenre" name="genre" class="form-control">
-                <option value="">請選擇</option>
-                <option value="流行">流行</option>
-                <option value="獨立音樂">獨立音樂</option>
-                <option value="經典">經典</option>
-                <option value="爵士">爵士</option>
-                <option value="古典">古典</option>
-                <option value="嘻哈">嘻哈</option>
-                <option value="R&B">R&B</option>
-                <option value="其他">其他</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="songReleaseDate">發行日期</label>
-              <input
-                type="date"
-                id="songReleaseDate"
-                name="release_date"
-                class="form-control"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="songLyrics">歌詞</label>
+              <label for="poemTranslation">翻譯</label>
               <textarea
-                id="songLyrics"
-                name="lyrics"
+                id="poemTranslation"
+                name="translation"
                 class="form-control"
-                rows="10"
+                rows="4"
+                placeholder="請輸入翻譯..."
               ></textarea>
             </div>
 
+            <!-- 語言和評分 -->
             <div class="form-group">
-              <label for="songImage">封面圖片（支援 JPG, PNG）</label>
+              <label for="poemLanguage">語言</label>
+              <select id="poemLanguage" name="language" class="form-control">
+                <option value="">請選擇語言</option>
+                <option value="詩">詩</option>
+                <option value="詞">詞</option>
+                <option value="賦">賦</option>
+                <option value="文言文">文言文</option>
+                <option value="白話文">白話文</option>
+                <option value="英文">英文</option>
+                <option value="英文">英文</option>
+              </select>
+            </div>
+
+            <!-- 圖片上傳 -->
+            <div class="form-group">
+              <label for="poemImage">封面圖片（JPG, PNG）</label>
               <input
                 type="file"
-                id="songImage"
+                id="poemImage"
                 name="image"
                 class="form-control"
                 accept="image/*"
               />
-              <div id="imagePreview" class="image-preview"></div>
+              <div id="poemImagePreview" class="image-preview"></div>
             </div>
 
+            <!-- 提交按鈕 -->
             <div class="form-actions">
-              <button type="submit" class="btn btn--primary">上傳歌曲</button>
+              <button type="submit" class="btn btn--primary">上傳文章</button>
               <button type="reset" class="btn btn--secondary">清除</button>
             </div>
 
-            <div id="uploadStatus" class="upload-status"></div>
+            <div id="uploadPoemStatus" class="upload-status"></div>
           </form>
         </div>
       </div>
+      </div>
+
       <!-- 歌手清單頁面 -->
       <div id="artists" class="page">
         <div class="home-section">
@@ -437,107 +553,9 @@
           </div>
         </div>
       </div>
+      </div>
 
       <!-- 在現有的 upload 頁面後面加入詩詞上傳頁面 -->
-
-      <!-- 詩詞上傳頁面 -->
-      <div id="upload-poem" class="page">
-        <div class="upload-section">
-          <h2>新增文章</h2>
-          <form id="uploadPoemForm" enctype="multipart/form-data">
-            <!-- 基本資訊 -->
-            <div class="form-group">
-              <label for="poemTitle"
-                >名稱<span style="color: rgb(255, 68, 68)">*</span></label
-              >
-              <input
-                type="text"
-                id="poemTitle"
-                name="title"
-                class="form-control"
-                required
-                placeholder="例如：登鸛雀樓"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="poemCreators"
-                >作者<span style="color: rgb(255, 68, 68)">*</span></label
-              >
-              <input
-                type="text"
-                id="poemCreators"
-                name="creators"
-                class="form-control"
-                placeholder="例如：李白"
-                required
-              />
-            </div>
-            <!-- 詩詞內容 -->
-            <div class="form-group">
-              <label for="poemLyrics"
-                >內容<span style="color: rgb(255, 68, 68)">*</span></label
-              >
-              <textarea
-                id="poemLyrics"
-                name="lyrics"
-                class="form-control"
-                rows="8"
-                required
-                placeholder="請輸入內容..."
-              ></textarea>
-            </div>
-
-            <!-- 附加資訊 -->
-            <div class="form-group">
-              <label for="poemTranslation">翻譯</label>
-              <textarea
-                id="poemTranslation"
-                name="translation"
-                class="form-control"
-                rows="4"
-                placeholder="請輸入翻譯..."
-              ></textarea>
-            </div>
-
-            <!-- 語言和評分 -->
-            <div class="form-group">
-              <label for="poemLanguage">語言</label>
-              <select id="poemLanguage" name="language" class="form-control">
-                <option value="">請選擇語言</option>
-                <option value="詩">詩</option>
-                <option value="詞">詞</option>
-                <option value="賦">賦</option>
-                <option value="文言文">文言文</option>
-                <option value="白話文">白話文</option>
-                <option value="英文">英文</option>
-                <option value="英文">英文</option>
-              </select>
-            </div>
-
-            <!-- 圖片上傳 -->
-            <div class="form-group">
-              <label for="poemImage">封面圖片（JPG, PNG）</label>
-              <input
-                type="file"
-                id="poemImage"
-                name="image"
-                class="form-control"
-                accept="image/*"
-              />
-              <div id="poemImagePreview" class="image-preview"></div>
-            </div>
-
-            <!-- 提交按鈕 -->
-            <div class="form-actions">
-              <button type="submit" class="btn btn--primary">上傳文章</button>
-              <button type="reset" class="btn btn--secondary">清除</button>
-            </div>
-
-            <div id="uploadPoemStatus" class="upload-status"></div>
-          </form>
-        </div>
-      </div>
 
       <!-- 匯入匯出控制面板 -->
       <div

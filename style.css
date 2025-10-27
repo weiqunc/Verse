@@ -119,7 +119,7 @@ header h3 {
   padding: var(--space-8);
   border-radius: var(--radius-base);
   position: absolute;
-  top: var(--space-16);
+  top: 30px;
   right: var(--space-16);
 }
 

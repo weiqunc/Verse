@@ -975,7 +975,7 @@ kakae te yo
     original_artist: ["盧廣仲"],
     rating: ""
   },
-{
+  {
     id: "song1761544590825",
     title: "不要在一起",
     creators: ["盧廣仲"],
@@ -1028,31 +1028,32 @@ kakae te yo
     image: "images/1761544590823-412649225.jpg",
     original_artist: ["吳鎮安"],
     rating: ""
-}];
+  }
+];
 
 // 詩詞資料
 const poems = [
   {
-    id: "poem1",
+    id: "poem1761548459234",
     title: "靜夜思",
     creators: ["李白"],
+    lyrics: "床前明月光，\r\n疑是地上霜。\r\n舉頭望明月，\r\n低頭思故鄉。",
     image: "",
-    lyrics: `床前明月光，
-疑是地上霜。
-舉頭望明月，
-低頭思故鄉。`
-  },
-  {
-    id: "poem2",
-    title: "登鸛雀樓",
-    creators: ["王之渙"],
-    image: "",
-    lyrics: `白日依山盡，
-黃河入海流。
-欲窮千里目，
-更上一層樓。`
+    language: "詩",
+    translation: ""
   }
-];
+,
+{
+    "id": "poem1761548546487",
+    "title": "登鸛雀樓",
+    "creators": [
+        "王之渙"
+    ],
+    "lyrics": "白日依山盡，\r\n黃河入海流。\r\n欲窮千里目，\r\n更上一層樓。",
+    "image": "",
+    "language": "詩",
+    "translation": ""
+}];
 
 const favorites = [
   {
@@ -1542,6 +1543,7 @@ function renderHomePoems() {
 // 渲染整個首頁
 function renderHomePage() {
   renderHomeStats();
+  renderHomeRecentFavorites(); // 🔴 新增這行
   renderHomeArtists();
   renderHomeSongs();
   renderHomePoems();
@@ -1562,6 +1564,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 渲染收藏句子列表
   renderFavorites();
+
+  renderHomeRecentFavorites(); // 🔴 新增這行
 });
 
 // ===== 歌手清單功能 =====
@@ -1901,22 +1905,6 @@ function generateSongMeta(item) {
     });
   }
 
-  if (item.rating) {
-    const ratingNum = parseInt(item.rating) || 0;
-    let stars = "";
-    for (let i = 1; i <= 5; i++) {
-      if (i <= ratingNum) {
-        stars += "⭐";
-      } else {
-        stars += "☆";
-      }
-    }
-    metaItems.push({
-      label: "評分",
-      value: `${stars} (${ratingNum}/5)`
-    });
-  }
-
   // 如果沒有任何資訊，回傳空字串
   if (metaItems.length === 0) {
     return "";
@@ -1937,6 +1925,111 @@ function generateSongMeta(item) {
         .join("")}
     </div>
   `;
+
+  // 🔴 詩詞相關欄位
+  if (item.dynasty) {
+    metaItems.push({
+      label: "朝代",
+      value: item.dynasty
+    });
+  }
+
+  if (item.poem_type) {
+    metaItems.push({
+      label: "類型",
+      value: item.poem_type
+    });
+  }
+
+  if (item.author_info) {
+    metaItems.push({
+      label: "作者簡介",
+      value: item.author_info
+    });
+  }
+
+  if (item.background) {
+    metaItems.push({
+      label: "創作背景",
+      value: item.background
+    });
+  }
+
+  if (item.translation) {
+    metaItems.push({
+      label: "翻譯",
+      value: item.translation
+    });
+  }
+
+  if (item.annotation) {
+    metaItems.push({
+      label: "註釋",
+      value: item.annotation
+    });
+  }
+
+  // 通用欄位
+  if (item.albums) {
+    metaItems.push({
+      label: "專輯",
+      value: item.albums
+    });
+  }
+
+  if (item.release_date) {
+    metaItems.push({
+      label: "發行日期",
+      value: item.release_date
+    });
+  }
+
+  if (item.language) {
+    metaItems.push({
+      label: "語言",
+      value: item.language
+    });
+  }
+
+  if (item.genre) {
+    metaItems.push({
+      label: "風格",
+      value: item.genre
+    });
+  }
+
+  if (item.rating) {
+    const ratingNum = parseInt(item.rating) || 0;
+    let stars = "";
+    for (let i = 1; i <= 5; i++) {
+      if (i <= ratingNum) {
+        stars += "⭐";
+      } else {
+        stars += "☆";
+      }
+    }
+    metaItems.push({
+      label: "評分",
+      value: `${stars} (${ratingNum}/5)`
+    });
+  }
+
+  if (metaItems.length === 0) return "";
+
+  return `
+        <div class="song-detail-meta">
+            ${metaItems
+              .map(
+                (meta) => `
+                <div class="meta-row">
+                    <span class="meta-label">${meta.label}：</span>
+                    <span class="meta-value">${meta.value}</span>
+                </div>
+            `
+              )
+              .join("")}
+        </div>
+    `;
 }
 
 // 全域變數
@@ -2264,3 +2357,159 @@ async function deleteSong(id, title) {
     alert("❌ 刪除失敗：" + error.message);
   }
 }
+
+// ===== 渲染首頁最新收藏 =====
+function renderHomeRecentFavorites() {
+  const homeRecentFavorites = document.getElementById("homeRecentFavorites");
+  if (!homeRecentFavorites) return;
+
+  // 獲取最新的 4 個收藏，按時間倒序
+  const recentFavorites = [...favorites]
+    .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+    .slice(0, 3);
+
+  if (recentFavorites.length === 0) {
+    homeRecentFavorites.innerHTML = `
+            <div class="empty-favorites-home">
+                <p>還沒有收藏任何句子</p>
+                <a href="#songs" onclick="showPage('songs'); return false;" class="browse-songs-btn">
+                    瀏覽歌曲並收藏句子 →
+                </a>
+            </div>
+        `;
+    return;
+  }
+
+  homeRecentFavorites.innerHTML = recentFavorites
+    .map((fav) => {
+      // 截取歌詞，最多顯示 80 字符
+      const truncatedLyrics =
+        fav.lyrics.length > 80
+          ? fav.lyrics.substring(0, 80) + "..."
+          : fav.lyrics;
+
+      // 格式化時間為相對時間
+      const timeAgo = getTimeAgo(fav.createdAt);
+
+      return `
+                <div class="favorite-card-mini" onclick="showFavoriteDetail('${
+                  fav.id
+                }')">
+                    <div class="favorite-lyrics-mini">
+                        "${truncatedLyrics}"
+                    </div>
+                    <div class="favorite-meta-mini">
+                        <div class="favorite-song-info">
+                            <strong>${fav.songTitle}</strong>
+                            ${fav.songCreators ? ` - ${fav.songCreators}` : ""}
+                        </div>
+                        <div class="favorite-time">
+                            ${timeAgo}
+                        </div>
+                    </div>
+                    ${
+                      fav.note
+                        ? `<div class="favorite-note-mini">💭 ${fav.note}</div>`
+                        : ""
+                    }
+                </div>
+            `;
+    })
+    .join("");
+}
+
+// ===== 時間轉換輔助函數 =====
+function getTimeAgo(dateString) {
+  const now = new Date();
+  const past = new Date(dateString);
+  const diffMs = now - past;
+  const diffMins = Math.floor(diffMs / (1000 * 60));
+  const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+  if (diffMins < 1) return "剛剛";
+  if (diffMins < 60) return `${diffMins} 分鐘前`;
+  if (diffHours < 24) return `${diffHours} 小時前`;
+  if (diffDays < 30) return `${diffDays} 天前`;
+
+  return past.toLocaleDateString("zh-TW", {
+    month: "long",
+    day: "numeric"
+  });
+}
+
+// ===== 顯示收藏詳細資訊 =====
+function showFavoriteDetail(favoriteId) {
+  const favorite = favorites.find((f) => f.id === favoriteId);
+  if (!favorite) return;
+
+  // 找到相關的歌曲
+  const relatedSong = songs.find((s) => s.id === favorite.songId);
+
+  if (relatedSong) {
+    // 如果找到相關歌曲，跳轉到歌曲詳細頁面
+    showSongDetail(relatedSong.id, "song");
+  } else {
+    // 如果沒找到相關歌曲，跳轉到收藏頁面
+    showPage("favorites");
+  }
+}
+
+// ===== 詩詞圖片預覽 =====
+document.getElementById("poemImage")?.addEventListener("change", function (e) {
+  const file = e.target.files[0];
+  const preview = document.getElementById("poemImagePreview");
+
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      preview.innerHTML = `<img src="${e.target.result}" alt="預覽圖片" style="max-width: 200px; border-radius: 8px; margin-top: 10px;">`;
+    };
+    reader.readAsDataURL(file);
+  } else {
+    preview.innerHTML = "";
+  }
+});
+
+// ===== 詩詞上傳表單處理 =====
+document
+  .getElementById("uploadPoemForm")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const statusDiv = document.getElementById("uploadPoemStatus");
+    const formData = new FormData(this);
+
+    // 確保所有欄位都有被添加到 FormData
+    console.log("📊 詩詞表單資料:");
+    for (let [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+
+    statusDiv.innerHTML = `<p style="color: var(--color-primary);">⏳ 正在上傳文章...</p>`;
+    statusDiv.className = "upload-status active";
+
+    try {
+      const response = await fetch("/api/upload-poem", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        statusDiv.innerHTML = `<p style="color: var(--color-success);">${result.message}</p>`;
+        this.reset();
+        document.getElementById("poemImagePreview").innerHTML = "";
+
+        // 重新整理頁面以顯示新詩詞
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      } else {
+        statusDiv.innerHTML = `<p style="color: var(--color-error);">${result.error}</p>`;
+      }
+    } catch (error) {
+      statusDiv.innerHTML = `<p style="color: var(--color-error);">網路錯誤：${error.message}</p>`;
+    }
+  });

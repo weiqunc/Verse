@@ -1079,6 +1079,106 @@ textarea.form-control {
   transform: translateY(-1px);
 }
 
+/* 最新收藏網格 */
+.recent-favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* 收藏卡片迷你版 */
+.favorite-card-mini {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  padding: 16px;
+  cursor: pointer;
+  transition: all var(--duration-normal);
+  position: relative; /* 🔴 為了絕對定位時間 */
+}
+
+.favorite-card-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+/* 收藏歌詞迷你版 */
+.favorite-lyrics-mini {
+  font-style: italic;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transform: translateY(2px);
+}
+
+/* 收藏元資訊 */
+.favorite-meta-mini {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.favorite-song-info {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  flex: 1;
+}
+
+.favorite-song-info strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.favorite-time {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+/* 收藏筆記迷你版 */
+.favorite-note-mini {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  background: var(--color-background);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border-left: 2px solid var(--color-primary);
+  margin-top: 8px;
+}
+
+/* 空狀態 */
+.empty-favorites-home {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-text-secondary);
+}
+
+.browse-songs-btn {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--duration-normal);
+}
+
+.browse-songs-btn:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .menu {
     display: block;
@@ -1301,5 +1401,56 @@ textarea.form-control {
     text-align: center;
     padding: 12px 16px;
     margin-bottom: 30px;
+  }
+
+  .recent-favorites-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .favorite-card-mini {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    position: relative;
+  }
+
+  .favorite-lyrics-mini {
+    font-size: 14px;
+    margin-bottom: auto; /* 🔴 推到上方 */
+    text-align: center;
+    flex: 1; /* 🔴 佔用剩餘空間 */
+    transform: translateY(2px);
+  }
+
+  .favorite-meta-mini {
+    margin-top: auto; /* 🔴 推到底部 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .favorite-song-info {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .favorite-time {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 10px;
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+  }
+
+  .favorite-note-mini {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 10px;
+    width: calc(100% - 40px); /* 🔴 為右下角時間留空間 */
   }
 }

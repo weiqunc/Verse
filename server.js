@@ -958,3 +958,130 @@ app.post("/api/delete-song", async (req, res) => {
     });
   }
 });
+
+// ===== 完整版詩詞上傳 API =====
+app.post("/api/upload-poem", upload.single("image"), async (req, res) => {
+  try {
+    console.log("📝 收到詩詞上傳請求");
+    console.log("請求資料:", req.body);
+
+    const { title, creators, lyrics, language, translation } = req.body;
+
+    // 驗證必填欄位
+    if (!title || !creators || !lyrics) {
+      return res.status(400).json({
+        error: "請填寫所有必填欄位（詩詞名稱、作者、內容）"
+      });
+    }
+
+    const newPoem = {
+      id: `poem${Date.now()}`,
+      title: title.trim(),
+      creators: creators.split(",").map((c) => c.trim()),
+      lyrics: lyrics.trim(),
+      image: req.file ? `images/${req.file.filename}` : "",
+      language: language ? language.trim() : "",
+      translation: translation ? translation.trim() : ""
+    };
+
+    console.log("📝 準備新增詩詞:", newPoem.title);
+
+    const mainJsPath = path.join(__dirname, "main.js");
+    let mainJsContent = await fs.readFile(mainJsPath, "utf8");
+
+    // 檢查重複詩詞
+    const poemsArrayMatch = mainJsContent.match(
+      /const poems = \[([\s\S]*?)\];/
+    );
+    if (poemsArrayMatch) {
+      const poemsArrayContent = poemsArrayMatch[1];
+      const duplicatePattern = new RegExp(
+        `title:\\s*["']${newPoem.title.replace(
+          /[.*+?^${}()|[\]\\]/g,
+          "\\$&"
+        )}["']`,
+        "i"
+      );
+
+      if (duplicatePattern.test(poemsArrayContent)) {
+        if (req.file) {
+          try {
+            await fs.unlink(req.file.path);
+          } catch (unlinkError) {
+            console.error("刪除圖片失敗:", unlinkError);
+          }
+        }
+
+        return res.status(400).json({
+          error: `詩詞「${newPoem.title}」已經存在，無法重複新增。`
+        });
+      }
+    }
+
+    // 找到 poems 陣列位置
+    const poemsArrayStart = mainJsContent.indexOf("const poems = [");
+    if (poemsArrayStart === -1) {
+      throw new Error("找不到 poems 陣列");
+    }
+
+    const searchFrom = poemsArrayStart + "const poems = [".length;
+    let poemsArrayEnd = mainJsContent.indexOf("];", searchFrom);
+    if (poemsArrayEnd === -1) {
+      throw new Error("找不到 poems 陣列結束位置");
+    }
+
+    const poemsContent = mainJsContent.slice(searchFrom, poemsArrayEnd);
+    const hasExistingPoems = poemsContent.trim().length > 0;
+
+    // 🔴 使用 JSON 格式，避免字符轉義問題
+    const poemData = {
+      id: newPoem.id,
+      title: newPoem.title,
+      creators: newPoem.creators,
+      lyrics: newPoem.lyrics,
+      image: newPoem.image,
+      language: newPoem.language,
+      translation: newPoem.translation
+    };
+
+    const newPoemCode = `${hasExistingPoems ? "," : ""}
+${JSON.stringify(poemData, null, 4)}`;
+
+    console.log(
+      "🔍 生成的詩詞代碼預覽:",
+      newPoemCode.substring(0, 200) + "..."
+    );
+
+    // 插入新詩詞
+    mainJsContent =
+      mainJsContent.slice(0, poemsArrayEnd) +
+      newPoemCode +
+      mainJsContent.slice(poemsArrayEnd);
+
+    await fs.writeFile(mainJsPath, mainJsContent, "utf8");
+
+    console.log("✅ 詩詞新增成功:", newPoem.title);
+
+    res.json({
+      success: true,
+      message: "詩詞上傳成功！頁面將自動重新整理。",
+      poem: newPoem
+    });
+  } catch (error) {
+    console.error("❌ 詩詞上傳錯誤:", error);
+
+    // 清理上傳的圖片
+    if (req.file) {
+      try {
+        await fs.unlink(req.file.path);
+        console.log("已清理上傳的圖片");
+      } catch (unlinkError) {
+        console.error("刪除圖片失敗:", unlinkError);
+      }
+    }
+
+    res.status(500).json({
+      error: "伺服器錯誤：" + error.message
+    });
+  }
+});

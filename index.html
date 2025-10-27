@@ -38,12 +38,17 @@
           <li>
             <a href="#artists" data-page="artists" class="nav-link">歌手</a>
           </li>
-          <li><a href="#poems" data-page="poems" class="nav-link">段落</a></li>
+          <li><a href="#poems" data-page="poems" class="nav-link">文章</a></li>
           <li>
             <a href="#favorites" data-page="favorites" class="nav-link">剪影</a>
           </li>
           <li>
             <a href="#upload" data-page="upload" class="nav-link">新增</a>
+          </li>
+          <li>
+            <a href="#upload-poem" data-page="upload-poem" class="nav-link"
+              >新增</a
+            >
           </li>
         </ul>
       </nav>
@@ -80,8 +85,21 @@
             </div>
             <div class="stat-card">
               <div class="stat-number" id="statPoems">0</div>
-              <div class="stat-label">個段落</div>
+              <div class="stat-label">段文章</div>
             </div>
+          </div>
+
+          <div class="home-section-block">
+            <div class="section-header">
+              <h2>最新收藏</h2>
+              <a
+                href="#favorites"
+                class="view-all"
+                onclick="showPage('favorites'); return false;"
+                >查看全部</a
+              >
+            </div>
+            <div id="homeRecentFavorites" class="recent-favorites-grid"></div>
           </div>
 
           <!-- 熱門歌手 -->
@@ -115,7 +133,7 @@
           <!-- 最新詩詞 -->
           <div class="home-section-block">
             <div class="section-header">
-              <h2>最新段落</h2>
+              <h2>最新文章</h2>
               <a
                 href="#poems"
                 class="view-all"
@@ -153,7 +171,7 @@
       <!-- 詩詞頁面 -->
       <div id="poems" class="page">
         <h2 style="text-align: center; margin-bottom: 32px; font-size: 2rem">
-          段落
+          文章列表
         </h2>
         <div class="song-grid" id="poemGrid"></div>
       </div>
@@ -417,6 +435,107 @@
               >
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- 在現有的 upload 頁面後面加入詩詞上傳頁面 -->
+
+      <!-- 詩詞上傳頁面 -->
+      <div id="upload-poem" class="page">
+        <div class="upload-section">
+          <h2>新增文章</h2>
+          <form id="uploadPoemForm" enctype="multipart/form-data">
+            <!-- 基本資訊 -->
+            <div class="form-group">
+              <label for="poemTitle"
+                >名稱<span style="color: rgb(255, 68, 68)">*</span></label
+              >
+              <input
+                type="text"
+                id="poemTitle"
+                name="title"
+                class="form-control"
+                required
+                placeholder="例如：登鸛雀樓"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="poemCreators"
+                >作者<span style="color: rgb(255, 68, 68)">*</span></label
+              >
+              <input
+                type="text"
+                id="poemCreators"
+                name="creators"
+                class="form-control"
+                placeholder="例如：李白"
+                required
+              />
+            </div>
+            <!-- 詩詞內容 -->
+            <div class="form-group">
+              <label for="poemLyrics"
+                >內容<span style="color: rgb(255, 68, 68)">*</span></label
+              >
+              <textarea
+                id="poemLyrics"
+                name="lyrics"
+                class="form-control"
+                rows="8"
+                required
+                placeholder="請輸入內容..."
+              ></textarea>
+            </div>
+
+            <!-- 附加資訊 -->
+            <div class="form-group">
+              <label for="poemTranslation">翻譯</label>
+              <textarea
+                id="poemTranslation"
+                name="translation"
+                class="form-control"
+                rows="4"
+                placeholder="請輸入翻譯..."
+              ></textarea>
+            </div>
+
+            <!-- 語言和評分 -->
+            <div class="form-group">
+              <label for="poemLanguage">語言</label>
+              <select id="poemLanguage" name="language" class="form-control">
+                <option value="">請選擇語言</option>
+                <option value="詩">詩</option>
+                <option value="詞">詞</option>
+                <option value="賦">賦</option>
+                <option value="文言文">文言文</option>
+                <option value="白話文">白話文</option>
+                <option value="英文">英文</option>
+                <option value="英文">英文</option>
+              </select>
+            </div>
+
+            <!-- 圖片上傳 -->
+            <div class="form-group">
+              <label for="poemImage">封面圖片（JPG, PNG）</label>
+              <input
+                type="file"
+                id="poemImage"
+                name="image"
+                class="form-control"
+                accept="image/*"
+              />
+              <div id="poemImagePreview" class="image-preview"></div>
+            </div>
+
+            <!-- 提交按鈕 -->
+            <div class="form-actions">
+              <button type="submit" class="btn btn--primary">上傳文章</button>
+              <button type="reset" class="btn btn--secondary">清除</button>
+            </div>
+
+            <div id="uploadPoemStatus" class="upload-status"></div>
+          </form>
         </div>
       </div>
 

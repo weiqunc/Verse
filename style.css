@@ -1234,6 +1234,22 @@ textarea.form-control {
   transform: translateY(-20px);
 }
 
+.sort-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sort-controls select {
+  padding: 8px 12px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 14px;
+}
 @media (max-width: 768px) {
   .menu {
     display: block;
@@ -1590,5 +1606,15 @@ textarea.form-control {
 
   .section-separator {
     margin: 32px 0;
+  }
+
+  .sort-controls {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sort-controls select {
+    width: 180px;
+    max-width: none;
   }
 }

@@ -47,7 +47,7 @@ const songs = [
 不要哭讓螢火蟲帶著你逃跑
 鄉間的歌謠永遠的依靠
 回家吧 回到最初的美好`,
-    release_date: "2008/10/15",
+    release_date: "2008-10-15",
     albums: "摩羯座",
     image: "images/Capricorn_(album)_cover2.jpg",
     lyricist: ["周杰倫 Jay Chou"],
@@ -2048,9 +2048,8 @@ Love 你就像那夏天的涼風
     image: "images/1761574179185-980205482.jpg",
     original_artist: [],
     rating: ""
-  }
-,
-{
+  },
+  {
     id: "song1761575321719",
     title: "她說",
     creators: ["林俊傑"],
@@ -2108,8 +2107,8 @@ Love 你就像那夏天的涼風
     image: "images/1761575321715-583468607.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761575536931",
     title: "小紫aka給我錢",
     creators: ["芒果醬"],
@@ -2189,8 +2188,8 @@ She calls me money money
     image: "images/1761575536928-306260670.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761575714112",
     title: "聽不到",
     creators: ["五月天"],
@@ -2268,8 +2267,8 @@ She calls me money money
     image: "images/1761575714109-832438595.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761575963607",
     title: "萬千花蕊慈母悲哀",
     creators: ["珂拉琪"],
@@ -2347,13 +2346,13 @@ She calls me money money
     image: "images/1761575963603-826952981.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761576346396",
     title: "T.B.H",
     creators: ["QWER"],
-    lyricist: ["이동혁","GESTURE","김혜정","Elum","Magenta"],
-    composer: ["이동혁","홍훈기","Elum","GESTURE","한아영"],
+    lyricist: ["이동혁", "GESTURE", "김혜정", "Elum", "Magenta"],
+    composer: ["이동혁", "홍훈기", "Elum", "GESTURE", "한아영"],
     albums: "MANITO",
     release_date: "2024-04-01",
     language: "韓文",
@@ -2450,8 +2449,8 @@ One! Two! Q! W! E! R!
     image: "images/1761576346393-629474637.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761576538306",
     title: "大海",
     creators: ["南西肯恩"],
@@ -2490,13 +2489,13 @@ One! Two! Q! W! E! R!
     image: "images/1761576538304-396815668.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761576678292",
     title: "留給你的我從未",
     creators: ["甜約翰"],
     lyricist: ["吳倬安"],
-    composer: ["吳浚瑋","梁丹郡","陳冠宇"],
+    composer: ["吳浚瑋", "梁丹郡", "陳冠宇"],
     albums: "Dear",
     release_date: "2017-12-15",
     language: "中文",
@@ -2535,13 +2534,13 @@ Hoo hoo woo daladada`,
     image: "images/1761576678288-913854501.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761577216456",
     title: "你到底在選擇什麼",
     creators: ["公館青少年 GGteens"],
-    lyricist: ["廖于任","盧彥恩"],
-    composer: ["廖于任","盧彥恩"],
+    lyricist: ["廖于任", "盧彥恩"],
+    composer: ["廖于任", "盧彥恩"],
     albums: "你到底在選擇什麼",
     release_date: "2025-07-21",
     language: "中文",
@@ -2604,8 +2603,8 @@ Hoo hoo woo daladada`,
     image: "images/1761577216451-288772802.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761577478386",
     title: "才二十三",
     creators: ["方大同"],
@@ -2669,8 +2668,8 @@ Hoo hoo woo daladada`,
     image: "images/1761577478384-938799410.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761577583216",
     title: "停靠",
     creators: ["胡凱兒"],
@@ -2704,8 +2703,8 @@ Hoo hoo woo daladada`,
     image: "images/1761577583214-358197675.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761577758265",
     title: "晚餐歌",
     creators: ["tuki."],
@@ -2928,12 +2927,12 @@ saikou no furukoーsu wo choudai
     image: "images/1761577758259-232671209.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761577977169",
     title: "天空",
     creators: ["蔡依林"],
-    lyricist: ["衛斯理","小米"],
+    lyricist: ["衛斯理", "小米"],
     composer: ["衛斯理"],
     albums: "野蠻遊戲",
     release_date: "2005-04-25",
@@ -2973,13 +2972,13 @@ saikou no furukoーsu wo choudai
     image: "images/1761577977167-751466349.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761578643746",
     title: "當你在最需要的時候",
     creators: ["怕胖團"],
-    lyricist: ["閃亮","大寶"],
-    composer: ["閃亮","weeman"],
+    lyricist: ["閃亮", "大寶"],
+    composer: ["閃亮", "weeman"],
     albums: "2049",
     release_date: "2019-10-18",
     language: "中文",
@@ -3015,13 +3014,13 @@ saikou no furukoーsu wo choudai
     image: "images/1761578643742-838585755.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1761578888654",
     title: "北上列車",
     creators: ["三月三十不眠症"],
-    lyricist: ["凱拉","仲恩"],
-    composer: ["軒軒","陳卓"],
+    lyricist: ["凱拉", "仲恩"],
+    composer: ["軒軒", "陳卓"],
     albums: "北上列車",
     release_date: "2024-05-10",
     language: "中文",
@@ -3071,6 +3070,400 @@ saikou no furukoーsu wo choudai
 
 走了吧`,
     image: "images/1761578888652-844477392.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1761622045679",
+    title: "星空",
+    creators: ["五月天"],
+    lyricist: ["阿信"],
+    composer: ["石頭"],
+    albums: "第二人生 Now Here 明日版",
+    release_date: "2011-09-28",
+    language: "中文",
+    genre: "流行",
+    lyrics: `摸不到的顏色 是否叫彩虹
+看不到的擁抱 是否叫做微風
+一個人 想著一個人 是否就叫寂寞
+
+命運偷走如果 只留下結果
+時間偷走初衷 只留下了苦衷
+你來過 然後你走後 只留下星空
+
+那一年我們望著星空 有那麼多的 燦爛的夢
+以為快樂會永久 像不變星空 陪著我
+
+
+獵戶 天狼 織女 光年外沉默
+回憶 青春 夢想 何時偷偷隕落
+我愛過 然後我沉默 人海裡漂流
+
+那一年我們望著星空 未來的未來 從沒想過
+當故事失去美夢 美夢失去線索 而我們失去聯絡
+
+這一片無言無語星空 為什麼靜靜 看我淚流
+如果你在的時候 會不會伸手 擁抱我
+
+細數繁星閃爍 細數此生奔波
+原來 所有 所得 所獲 不如一夜的星空
+
+空氣中的溫柔 回憶你的笑容
+彷彿只要伸手 就能觸摸
+
+摸不到的顏色 是否叫彩虹
+看不到的擁抱 是否叫做微風
+一個人 習慣一個人
+
+這一刻獨自望著星空 從前的從前 從沒變過
+寂寞可以是忍受 也可以是享受 享受僅有的擁有
+
+那一年我們望著星空 有那麼多的 燦爛的夢
+至少回憶會永久 像不變星空 陪著我
+
+最後只剩下星空 像不變回憶
+陪著我`,
+    image: "images/1761622045504-80349972.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1761622625031",
+    title: "我們背對著青春",
+    creators: ["輕晨電"],
+    lyricist: ["隋玲", "小英"],
+    composer: ["小英"],
+    albums: "",
+    release_date: "2015-07-31",
+    language: "中文",
+    genre: "",
+    lyrics: `如果說這世界已沒有悲傷
+如果說這世界已不需要逃亡
+如果說這世界已莫以名狀
+我想我終將無法歌唱
+如果你離開只因看不清前方
+如果你留下只因理不清立場
+如果你拋下那些堆疊的景象
+我想我們也因此成長
+
+da~la~la~
+人們不厭的沉溺世界的瘋狂
+da~la~la~
+共同成就著彼此善變的堅強
+
+如果說這世界仍善於遺忘
+如果說這世界還拘泥著夢想
+如果說這世界仍吹捧著信仰
+我想我終將放棄希望
+
+da~la~la~
+人們不厭的沉溺世界的瘋狂
+da~la~la~
+共同成就著彼此善變的堅強
+da~la~la~
+人們不厭的迷戀膚淺的嚮往
+da~la~la~
+共同成就著彼此脆弱的猖狂
+
+da~la~la~
+
+我們持續聽著
+屬於這時代的搖滾樂
+直到彼此青春
+Ah~
+
+我們持續聽著
+屬於這時代的搖滾樂
+直到彼此青春
+Ah~
+
+我們持續聽著
+屬於這時代的搖滾樂
+直到彼此青春
+Ah~
+
+我們持續聽著`,
+    image: "images/1761622625030-228330015.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1761623043835",
+    title: "Fine",
+    creators: ["輕晨電"],
+    lyricist: ["隋玲", "小英"],
+    composer: ["隋玲", "小英"],
+    albums: "StreetVoice 冬季選集",
+    release_date: "2011-11-14",
+    language: "中文",
+    genre: "",
+    lyrics: `It's fine
+Breathing by myself
+It's fine
+Waving by myself...
+It's fine
+Breathing by myself
+It's fine
+Waving by myself...
+It's fine
+Breathing by myself
+It's fine
+Waving by myself...
+It's fine
+Breathing by myself
+It's fine
+Waving by myself...
+It's fine
+It's fine
+It's fine
+It's fine
+It's fine
+Breathing by myself
+It's fine
+Waving by myself...
+It's fine
+Breathing by myself
+It's fine
+Waving by myself...`,
+    image: "images/1761623043750-987530925.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1761628950605",
+    title: "愛情轉移",
+    creators: ["陳奕迅"],
+    lyricist: ["林夕"],
+    composer: ["Christopher Chak"],
+    albums: "認了吧",
+    release_date: "2007-04-24",
+    language: "中文",
+    genre: "流行",
+    lyrics: `徘徊過多少櫥窗 住過多少旅館 才會覺得分離也並不冤枉
+感情是用來瀏覽 還是用來珍藏 好讓日子天天都過得難忘
+
+熬過了多久患難 濕了多長眼眶 才能知道傷感是愛的遺產
+流浪幾張雙人床 換過幾次信仰 才讓戒指義無反顧的交換
+
+把一個人的溫暖 轉移到另一個的胸膛 讓上次犯的錯反省出夢想
+每個人都是這樣 享受過提心吊膽 才拒絕做愛情待罪的羔羊
+
+回憶是抓不到的月光握緊就變黑暗 等虛假的背影消失於晴朗
+陽光在身上流轉 等所有業障被原諒
+愛情不停站 想開往地老天荒 需要多勇敢
+
+燭光照亮了晚餐 照不出個答案 戀愛不是溫馨的請客吃飯
+床單上鋪滿花瓣 擁抱讓它成長 太擁擠就開到了別的土壤
+
+感情需要人接班 接近換來期望 期望帶來失望的惡性循環
+短暫的總是浪漫 漫長總會不滿 燒完美好青春換一個老伴
+
+把一個人的溫暖 轉移到另一個的胸膛 讓上次犯的錯反省出夢想
+每個人都是這樣 享受過提心吊膽 才拒絕做愛情待罪的羔羊
+
+回憶是抓不到的月光握緊就變黑暗 等虛假的背影消失於晴朗
+陽光在身上流轉 等所有業障被原諒
+愛情不停站 想開往地老天荒 需要多勇敢
+
+把一個人的溫暖 轉移到另一個的胸膛 讓上次犯的錯反省出夢想
+每個人都是這樣 享受過提心吊膽 才拒絕做愛情待罪的羔羊
+
+回憶是抓不到的月光握緊就變黑暗 等虛假的背影消失於晴朗
+陽光在身上流轉 等所有業障被原諒
+愛情不停站 想開往地老天荒 需要多勇敢
+你不要失望 蕩氣迴腸是為了 最美的平凡`,
+    image: "images/1761628950599-410778311.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1761629134824",
+    title: "等一個人",
+    creators: ["林芯儀"],
+    lyricist: ["徐世珍", "吳輝福"],
+    composer: ["許勇"],
+    albums: "等一個人咖啡",
+    release_date: "2014-08-25",
+    language: "中文",
+    genre: "",
+    lyrics: `天空中是否有顆星星守護我
+只是我沒有發覺
+人群中是否有個肩膀願為我
+擋住最寒冷的冬天
+誰會溫柔而堅決
+帶著未來和我遇見
+每個人心裏都有一個 保留著的空位
+等一個人出現
+擁抱著我的世界
+站在愛的面前 所有寂寞防備 一瞬間崩潰
+等一個人深陷
+在我胸口左邊
+一夜之間讓心慌 讓心痛 讓心碎
+都成為紀念
+
+誰會溫柔而堅決
+帶著未來和我遇見
+每個人心裏都有一個 保留著的空位
+等一個人出現
+擁抱著我的世界
+站在愛的面前 所有寂寞防備 一瞬間崩潰
+等一個人深陷
+在我胸口左邊
+一夜之間讓心慌 讓心痛 讓心碎
+成為紀念
+
+讓風吹乾我臉上的雨點
+就算跌跌撞撞不懂愛的深淺
+也要繼續尋找那一份絕對
+
+等一個人成為
+我生命中的永遠
+幸福多麼迂迴 為何沒有發現 愛就在身邊
+等一個人帶回
+大雨後的藍天
+從今之後每一天 每一月 每一年 都心甘情願
+
+幸福多麼迂迴 為何沒有發現 愛就在身邊
+等一個人帶回
+大雨後的藍天
+從今之後每一天 每一月 每一年 都心甘情願`,
+    image: "images/1761629134822-440244393.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1761629289987",
+    title: "人間螢火",
+    creators: ["夏日入侵企画"],
+    lyricist: ["夏日入侵企画"],
+    composer: ["灰鴻啊"],
+    albums: "人间萤火",
+    release_date: "2022-06-08",
+    language: "中文",
+    genre: "",
+    lyrics: `還沒想好這封信該如何開始
+就讓它順其自然吧
+沒人能停止
+出發時或許還有點幼稚
+來不及回憶
+又去了這麼多的城市
+就像二零一三年夏天的風
+不切實際的夢
+追不回的箏
+也許還有一點感動
+然後又半夢半醒過了好幾年
+也没完全和一切和解
+又想到一些盲目脆弱和虛偽
+醒來之後還要去面對
+隨它下墜
+或如何入睡
+卻被黑暗莫名的安全和溫柔包圍
+還有許多種思緒遊蕩
+在倒影間的城市中漂浮流淌
+昏暗的視線裡
+自由生長
+就讓所有此刻孤獨微小溫柔的光
+陪伴著漫漫長夜被照亮的路
+也許會穿越過山谷或是海洋
+還是其他有你的地方
+或許我只能向前走
+把所有遺憾眼淚都留在身後
+朋友
+明知答案的問題真的不必問出口
+不如 就這麼算了
+希望這段無從談起的想念
+在記憶裡躲過時間
+最熟悉的臉
+哭還是笑都隨你便
+往事不斷浮現
+像盆栽需要陽光灰雁需要風浪
+像鯨魚需要海洋
+像今晚需要月亮
+想感謝所有的屬於這一刻
+把我們的心連接在一起的此刻
+被偷走的這幾年
+一切都改變又沒有改變
+向飛馳而過的自己拜託
+請永遠記得那場雪
+就讓所有此刻孤獨微小溫柔的光
+陪伴著漫漫長夜被照亮的路
+也許會穿越過山谷或是海洋
+還是其他有你的地方
+上次分別後的一段時間
+偶爾也會在凌晨路過那條街
+還是沒能早睡的每一天
+依然拖延
+又重演著日常的一切
+那場從未曾出發的旅程
+那些最終留在了風中的可能
+說起來之前荒唐的人生
+遇見你後才終於完整
+每當深夜來臨
+每當又難過
+還有許多焦慮情緒和犯過的錯
+你說這段時間多虧有我陪伴
+我才要感謝你的拯救和給我力量
+瘋狂的渺小的卑微的恐懼的
+用力伸手想抓住
+卻來不及的
+不要為付出真心感到羞愧
+就算錯過也別後悔
+就讓所有此刻孤獨微小溫柔的光
+陪伴著漫漫長夜被照亮的路
+也許會穿越過山谷或是海洋
+還是其他有你的地方
+就讓所有此刻孤獨微小溫柔的光
+陪伴著漫漫長夜被照亮的路
+也許會穿越過山谷或是海洋
+還是其他有你的地方`,
+    image: "images/1761629289985-135113624.jpg",
+    original_artist: [],
+    rating: ""
+  }
+,
+{
+    id: "song1761632721143",
+    title: "是什麼讓我遇見這樣的你",
+    creators: ["白安"],
+    lyricist: ["白安"],
+    composer: ["白安"],
+    albums: "麥田捕手",
+    release_date: "2012-12-21",
+    language: "中文",
+    genre: "流行",
+    lyrics: `我是宇宙間的塵埃
+漂泊在這茫茫人海
+偶然掉入誰的胸懷
+多想從此不再離開
+
+我是宇宙間的塵埃
+微不足道的一種狀態
+偶然成了誰的最愛
+多想相信永恆存在
+
+是什麼 讓我遇見這樣的你
+是什麼 讓我不再懷疑自己
+是什麼 讓我不再害怕失去
+在這茫茫人海裡 我不要變得透明
+
+我是宇宙間的塵埃
+漂泊在這茫茫人海
+若你是我必然的存在
+多想從此不再離開
+
+是什麼 讓我遇見這樣的你
+是什麼 讓我不再懷疑自己
+是什麼 讓我不再害怕失去
+在這茫茫人海裡 我不要變得透明
+
+若時間注定要讓你離開
+我又該怎麼學會不依賴
+
+是什麼 讓我遇見這樣的你
+是什麼 讓我不再懷疑自己
+是什麼 讓我不再害怕失去
+在這茫茫人海裡 我不要變得透明`,
+    image: "images/1761632721139-277432981.jpg",
     original_artist: [],
     rating: ""
 }];
@@ -3161,9 +3554,8 @@ const favorites = [
     songTitle: "偷偷愛",
     songCreators: "美秀集團",
     createdAt: "2025-10-27T14:10:10.310Z"
-  }
-,
-{
+  },
+  {
     id: "fav1761575584701",
     lyrics: `把 愛 勇氣 希望 都賣了
 能換來多少錢`,
@@ -3172,8 +3564,8 @@ const favorites = [
     songTitle: "小紫aka給我錢",
     songCreators: "芒果醬",
     createdAt: "2025-10-27T14:33:04.701Z"
-},
-{
+  },
+  {
     id: "fav1761576697340",
     lyrics: `daladada`,
     note: "",
@@ -3181,15 +3573,59 @@ const favorites = [
     songTitle: "留給你的我從未",
     songCreators: "甜約翰",
     createdAt: "2025-10-27T14:51:37.340Z"
-}];
+  },
+  {
+    id: "fav1761579383807",
+    lyrics: `歲月 眨眼就過了 
+瞬間 就那樣默默的`,
+    note: "",
+    songId: "song1761577478386",
+    songTitle: "才二十三",
+    songCreators: "方大同",
+    createdAt: "2025-10-27T15:36:23.807Z"
+  },
+  {
+    id: "fav1761623937284",
+    lyrics: `你說 哭吧 想哭啊
+就讓眼淚變成大海啊`,
+    note: "",
+    songId: "song1761576538306",
+    songTitle: "大海",
+    songCreators: "南西肯恩",
+    createdAt: "2025-10-28T03:58:57.284Z"
+  },
+  {
+    id: "fav1761629161090",
+    lyrics: `帶著未來和我遇見`,
+    note: "",
+    songId: "song1761629134824",
+    songTitle: "等一個人",
+    songCreators: "林芯儀",
+    createdAt: "2025-10-28T05:26:01.090Z"
+  },
+  {
+    id: "fav1761629412992",
+    lyrics: `向飛馳而過的自己拜託
+請永遠記得那場雪`,
+    note: "",
+    songId: "song1761629289987",
+    songTitle: "人間螢火",
+    songCreators: "夏日入侵企画",
+    createdAt: "2025-10-28T05:30:12.992Z"
+  }
+];
 
 // 渲染歌曲列表
 function renderSongs() {
   const songGrid = document.getElementById("songGrid");
   if (!songGrid) return;
 
+  const sortByElement = document.getElementById("songSort");
+  const sortOrderElement = document.getElementById("sortOrder");
+  const sortBy = sortByElement ? sortByElement.value : "dateAdded";
+  const sortOrder = sortOrderElement ? sortOrderElement.value : "desc"; // desc=遞減, asc=遞增
+
   let sortedSongs = [...songs];
-  const sortBy = document.getElementById("songSort")?.value || "dateAdded";
 
   switch (sortBy) {
     case "dateAdded":
@@ -3197,34 +3633,58 @@ function renderSongs() {
       sortedSongs.sort((a, b) => {
         const timeA = parseInt(a.id.replace("song", "")) || 0;
         const timeB = parseInt(b.id.replace("song", "")) || 0;
-        return timeB - timeA; // 新的在前
+        return sortOrder === "desc" ? timeB - timeA : timeA - timeB;
       });
+      console.log(
+        `✅ 按加入日期${sortOrder === "desc" ? "遞減" : "遞增"}排序完成`
+      );
       break;
     case "releaseDate":
-      // 按發行日期排序
+      // 按發行日期排序 - 統一使用 release_date 欄位
       sortedSongs.sort((a, b) => {
+        // 🔴 只使用 release_date 欄位，格式為 YYYY-MM-DD
         const dateA = new Date(a.release_date || "1900-01-01");
         const dateB = new Date(b.release_date || "1900-01-01");
-        return dateB - dateA; // 新的在前
+
+        // 檢查日期是否有效
+        if (isNaN(dateA.getTime())) {
+          console.warn(
+            `無效的發行日期 A: ${a.release_date} (歌曲: ${a.title})`
+          );
+          dateA.setFullYear(1900, 0, 1);
+        }
+        if (isNaN(dateB.getTime())) {
+          console.warn(
+            `無效的發行日期 B: ${b.release_date} (歌曲: ${b.title})`
+          );
+          dateB.setFullYear(1900, 0, 1);
+        }
+
+        // 根據排序方向返回結果
+        return sortOrder === "desc"
+          ? dateB.getTime() - dateA.getTime()
+          : dateA.getTime() - dateB.getTime();
       });
+
+      console.log(
+        `✅ 按發行日期${sortOrder === "desc" ? "遞減" : "遞增"}排序完成`
+      );
       break;
-    case "rating":
-      // 按評分排序
-      sortedSongs.sort((a, b) => {
-        const ratingA = parseInt(a.rating) || 0;
-        const ratingB = parseInt(b.rating) || 0;
-        return ratingB - ratingA; // 高分在前
-      });
-      break;
+
     case "alphabet":
       // 按字母排序
       sortedSongs.sort((a, b) => {
-        return a.title.localeCompare(b.title, "zh-TW");
+        const result = a.title.localeCompare(b.title, "zh-TW");
+        return sortOrder === "desc" ? -result : result;
       });
+      console.log(`✅ 按字母${sortOrder === "desc" ? "遞減" : "遞增"}排序完成`);
       break;
+
+    default:
+      console.log("✅ 使用預設排序");
   }
 
-  songGrid.innerHTML = songs
+  songGrid.innerHTML = sortedSongs
     .map((song) => {
       const creators = song.creators ? song.creators.join(", ") : "";
       const lyricist = song.lyricist ? song.lyricist.join(", ") : "";
@@ -3235,46 +3695,63 @@ function renderSongs() {
       const albums = song.albums || "";
 
       return `
-        <div class="song-card" onclick="showSongDetail('${song.id}', 'song')">
-          <img src="${song.image || "images/gray.jpg"}" alt="${song.title}">
-          <div class="song-card-content">
-            <div class="song-info">
-              <h3>${song.title}</h3>
-              <p class="creator">${creators}</p>
-              ${albums ? `<p class="album mobile-show">${albums}</p>` : ""}
-            </div>
-            <div class="song-meta desktop-only">
-              ${
-                lyricist
-                  ? `<div class="meta-item"><span class="meta-label">作詞:</span> ${lyricist}</div>`
-                  : ""
-              }
-              ${
-                composer
-                  ? `<div class="meta-item"><span class="meta-label">作曲:</span> ${composer}</div>`
-                  : ""
-              }
-              ${
-                albums
-                  ? `<div class="meta-item"><span class="meta-label">專輯:</span> ${albums}</div>`
-                  : ""
-              }
-            </div>
-
-  <div class="song-tags">
-    ${
-      song.language
-        ? `<span class="tag tag--language"> #${song.language} </span>`
-        : ""
-    } 
-    ${song.genre ? `<span class="tag tag--genre"> #${song.genre} </span>` : ""}
-  </div>
-            <div class="song-card-arrow">→</div>
-          </div>
-        </div>
-      `;
+                <div class="song-card" onclick="showSongDetail('${
+                  song.id
+                }', 'song')">
+                    <img src="${song.image || "images/gray.jpg"}" alt="${
+        song.title
+      }" />
+                    <div class="song-card-content">
+                        <div class="song-info">
+                            <h3>${song.title}</h3>
+                            <p class="creator">${creators}</p>
+                            ${
+                              albums
+                                ? `<p class="album mobile-show">${albums}</p>`
+                                : ""
+                            }
+                        </div>
+                        
+                        <div class="song-meta desktop-only">
+                            ${
+                              lyricist
+                                ? `<div class="meta-item"><span class="meta-label">作詞：</span>${lyricist}</div>`
+                                : ""
+                            }
+                            ${
+                              composer
+                                ? `<div class="meta-item"><span class="meta-label">作曲：</span>${composer}</div>`
+                                : ""
+                            }
+                            ${
+                              albums
+                                ? `<div class="meta-item"><span class="meta-label">專輯：</span>${albums}</div>`
+                                : ""
+                            }
+                        </div>
+                        
+                        <div class="song-tags">
+                            ${
+                              song.language
+                                ? `<span class="tag tag--language">${song.language}</span>`
+                                : ""
+                            }
+                            ${
+                              song.genre
+                                ? `<span class="tag tag--genre">${song.genre}</span>`
+                                : ""
+                            }
+                        </div>
+                    </div>
+                    <div class="song-card-arrow">→</div>
+                </div>
+            `;
     })
     .join("");
+
+  console.log(
+    `✅ 已渲染 ${sortedSongs.length} 首歌曲，排序: ${sortBy} ${sortOrder}`
+  );
 }
 
 // 渲染詩詞列表
@@ -3655,6 +4132,26 @@ document.addEventListener("DOMContentLoaded", function () {
   renderFavorites();
 
   renderHomeRecentFavorites(); // 🔴 新增這行
+
+  const songSortSelect = document.getElementById("songSort");
+  const sortOrderSelect = document.getElementById("sortOrder");
+
+  if (songSortSelect) {
+    songSortSelect.addEventListener("change", function () {
+      console.log("🔄 排序方式變更為:", this.value);
+      renderSongs();
+    });
+  }
+
+  // 🔴 新增：排序順序監聽器
+  if (sortOrderSelect) {
+    sortOrderSelect.addEventListener("change", function () {
+      console.log("🔄 排序順序變更為:", this.value);
+      renderSongs();
+    });
+  }
+  // 初始渲染歌曲
+  renderSongs();
 });
 
 // ===== 歌手清單功能 =====

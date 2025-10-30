@@ -19,6 +19,8 @@ async function ensureDirectories() {
 
 // ===== 中介軟體設定 =====
 app.use(cors());
+app.use(express.json({ limit: "100mb" })); // 🔴 增加到 100MB
+app.use(express.urlencoded({ limit: "100mb", extended: true }));
 app.use(express.json());
 app.use(express.static("."));
 
@@ -36,7 +38,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({
   storage: storage,
-  limits: { fileSize: 5 * 1024 * 1024 },
+  // limits: { fileSize: 5 * 1024 * 1024 },
   fileFilter: (req, file, cb) => {
     const allowedTypes = /jpeg|jpg|png|gif|webp/;
     const extname = allowedTypes.test(

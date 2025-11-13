@@ -6555,7 +6555,7 @@ ima harujimai
 每個他方
 心卻永遠留在
 故鄉的土跤`,
-    image: "images/1763045851197-587538535.jpeg",
+    image: "images/1763045851197-587538535.jpg",
     original_artist: [],
     rating: ""
   }
@@ -6563,24 +6563,6 @@ ima harujimai
 
 // 詩詞資料
 const poems = [
-  {
-    id: "poem1761548459234",
-    title: "靜夜思",
-    creators: ["李白"],
-    lyrics: "床前明月光，\r\n疑是地上霜。\r\n舉頭望明月，\r\n低頭思故鄉。",
-    image: "",
-    language: "詩",
-    translation: ""
-  },
-  {
-    id: "poem1761548546487",
-    title: "登鸛雀樓",
-    creators: ["王之渙"],
-    lyrics: "白日依山盡，\r\n黃河入海流。\r\n欲窮千里目，\r\n更上一層樓。",
-    image: "",
-    language: "詩",
-    translation: ""
-  },
   {
     id: "poem1761567655144",
     title: "Interstellar",
@@ -6752,7 +6734,7 @@ const favorites = [
     songCreators: "薛之謙",
     createdAt: "2025-11-09T16:54:23.597Z"
   },
-{
+  {
     id: "fav1762707900330",
     lyrics: `另一個我們還深愛著 代替我們永恒著
 如果能這麼想 就夠了`,
@@ -6761,8 +6743,8 @@ const favorites = [
     songTitle: "後來的我們",
     songCreators: "五月天",
     createdAt: "2025-11-09T17:05:00.330Z"
-},
-{
+  },
+  {
     id: "fav1763012515463",
     lyrics: `人類用沙 想捏出夢里通天塔
 為貪念不惜代價`,
@@ -6771,7 +6753,8 @@ const favorites = [
     songTitle: "動物世界",
     songCreators: "薛之謙",
     createdAt: "2025-11-13T05:41:55.463Z"
-}];
+  }
+];
 
 // 渲染歌曲列表
 function renderSongs() {

@@ -778,6 +778,7 @@ ${JSON.stringify(poemObject, null, 4)}`;
     }
 
     // ===== 匯入收藏 (防重複版本) =====
+    // ===== 匯入收藏 (修正版本) =====
     if (importFavorites.length > 0) {
       console.log(`🔍 開始匯入收藏，檢查重複`);
 
@@ -811,9 +812,29 @@ ${JSON.stringify(poemObject, null, 4)}`;
             continue;
           }
 
-          // 2. 檢查在現有檔案中是否已存在（簡單字串搜尋）
-          const lyricsSearchPattern = favorite.lyrics.substring(0, 20); // 取前20字符搜尋
-          if (mainJsContent.includes(lyricsSearchPattern)) {
+          // 2. 🔴 修正：只在 favorites 陣列中檢查重複
+          const favoritesArrayStart = mainJsContent.indexOf(
+            "const favorites = ["
+          );
+          let isDuplicate = false;
+
+          if (favoritesArrayStart !== -1) {
+            const searchFrom =
+              favoritesArrayStart + "const favorites = [".length;
+            const favoritesArrayEnd = mainJsContent.indexOf("];", searchFrom);
+            const favoritesContent = mainJsContent.slice(
+              searchFrom,
+              favoritesArrayEnd
+            );
+
+            // 🔴 只在 favorites 陣列中搜尋
+            const lyricsSearchPattern = favorite.lyrics.substring(0, 50); // 增加到50字符更準確
+            if (favoritesContent.includes(lyricsSearchPattern)) {
+              isDuplicate = true;
+            }
+          }
+
+          if (isDuplicate) {
             favoritesDuplicatesCount++;
             console.log(
               `⚠️ 跳過檔案中重複收藏 ${i + 1}: ${favorite.lyrics.substring(
@@ -825,9 +846,6 @@ ${JSON.stringify(poemObject, null, 4)}`;
           }
 
           // ===== 新增收藏 =====
-          const favoritesArrayStart = mainJsContent.indexOf(
-            "const favorites = ["
-          );
           if (favoritesArrayStart !== -1) {
             const searchFrom =
               favoritesArrayStart + "const favorites = [".length;
@@ -840,9 +858,9 @@ ${JSON.stringify(poemObject, null, 4)}`;
             const hasExistingFavorites = favoritesContent.trim().length > 0;
 
             const cleanFavLyrics = (favorite.lyrics || "")
+              .replace(/\\/g, "\\\\") // 🔴 注意順序：反斜線要先處理
               .replace(/`/g, "\\`")
-              .replace(/\$/g, "\\$")
-              .replace(/\\/g, "\\\\");
+              .replace(/\$/g, "\\$");
 
             const newFavoriteCode = `${hasExistingFavorites ? "," : ""}
 {

@@ -6559,7 +6559,1438 @@ ima harujimai
     original_artist: [],
     rating: ""
   }
-];
+,
+{
+    id: "song1764123371598",
+    title: "小步舞曲",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "吉他手",
+    release_date: "2002-07-31",
+    language: "中文",
+    genre: "",
+    lyrics: `天空突然下起傾盆大雨 戀人在屋簷下相偎相依
+移動我的腳步輕鬆躲雨 人潮擁擠握住濕熱的手心
+再也不願想起不快樂的旋律 呼吸這一秒的空氣
+還有多少回憶 藏著多少秘密
+在我心裡翻來覆去 什麼叫做愛情
+還有多少回憶 藏著多少秘密
+在你心裡我也許只是你欣賞的風景
+
+
+夜晚靜靜等著電話響起 時間躺在他去年寄來的信
+空蕩的房間我播放著舞曲 旋轉這一秒的孤寂
+還有多少回憶 藏著多少秘密
+在你心裡我也許是你輕快的遊戲
+還有多少回憶 藏著多少秘密
+在你心裡我也許只是你緩慢的練習
+
+音樂響起我一個人演出重複的舞曲`,
+    image: "images/1764123371597-624828335.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123451983",
+    title: "80%完美的日子",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "華麗的冒險",
+    release_date: "2005-09-25",
+    language: "中文",
+    genre: "",
+    lyrics: `我捕捉 精彩的畫面
+可是一閉上眼 顏色就褪掉了
+我穿上 最舒適的T恤
+可是一脫下來 身體都僵硬了
+
+我選擇 我最想要的
+可是一個人了 反而笑開了
+我丟棄 對我最好的
+可是一關上燈 全部都回來了
+
+直到有一天 我徹底昏睡了
+我太累了 我放開了
+直到有一天 我失去了
+太矛盾了 眼淚掉下來了
+
+我捕捉 精彩的畫面
+可是一閉上眼 顏色就褪掉了
+我穿上 最舒適的T恤
+可是一脫下來 身體都僵硬了
+
+我選擇 我最想要的
+可是一個人了 反而笑開了
+我丟棄 對我最好的
+可是一關上燈 全部都回來了
+
+直到有一天 我徹底昏睡了
+我太累了 我放開了
+直到有一天 我失去了
+太狼狽了 眼淚掉下來了
+
+直到有一天 我徹底昏睡了
+我太累了 我放開了
+直到有一天 我失去了
+太矛盾了眼淚掉下來了`,
+    image: "images/1764123451981-462094065.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123537714",
+    title: "我喜歡上你時的内心活動",
+    creators: ["陳綺貞"],
+    lyricist: ["韓寒"],
+    composer: ["陳光榮"],
+    albums: "喜歡你",
+    release_date: "2017-05-16",
+    language: "中文",
+    genre: "",
+    lyrics: `在九月 潮溼的車廂 你看著車窗 窗外它 水管在開花
+椅子在異鄉 樹葉有翅膀 上海的街道 雪山在邊上
+你靠著車窗 我心臟一旁 我們去哪
+
+你看那 九點鐘方向 日內瓦湖的房子 貴嗎
+世界上 七千個地方 我們定居哪
+
+告訴我 答案是什麼 你喜歡去哪 青海或三亞
+冰島或希臘 南美不去嗎 沙漠你愛嗎 我問太多了
+
+知道嗎 這裡的雨季只有一兩天
+白晝很長 也很短 夜晚有三年
+
+知道嗎今天的消息 說一號公路上 那座橋斷了
+我們還去嗎 要不再說呢 會修一年吧 一年能等嗎
+
+你還去嗎
+你喜歡嗎 你喜歡嗎`,
+    image: "images/1764123537712-141043163.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123653684",
+    title: "煙火",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "太陽",
+    release_date: "2009-01-22",
+    language: "中文",
+    genre: "",
+    lyrics: `快告訴我，你還愛我，
+用我最後溫柔的請求，
+給你我的墮落，給你我隱藏的脆弱，
+告訴我你還愛我...
+
+躲在黑暗的角落，讓我徹底的放鬆，
+陪我看一場華麗的煙火，
+我的愛如此短暫自由，除了你，沒有人真正了解我。
+
+站在城市的頂峰，灰色的雲朵飄過，
+我的心隨著你垂直的降落。
+做過的夢是一陣漩渦，
+淹沒你，淹沒了我。
+
+快告訴我，你還愛我，
+用我最後溫柔的請求。
+給你我的墮落，給你我隱藏的脆弱，
+告訴我，你還愛我...
+
+快告訴我，你還愛我，用我最後溫柔的請求，
+對你毫不保留，
+等到我的青春剝落的時候，
+你還愛我…
+
+快告訴我，你還愛我，
+用我最後溫柔的請求。
+給你我的墮落，給你我隱藏的脆弱，
+告訴我，你還愛我...
+
+快告訴我，你還愛我，
+用我最後溫柔的請求。
+對你毫不保留，
+等到我的青春剝落的時候，
+你還愛我…還愛我… 還愛我…
+
+對你毫不保留，
+等到我的青春剝落的時候，
+你還愛我…
+還愛我…
+還愛我…
+
+躲在黑暗的角落，讓我徹底的放鬆，
+陪我看一場華麗的煙火，
+我的愛如此短暫自由，
+除了你，
+沒有人真正了解我。`,
+    image: "images/1764123653682-440040605.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123715093",
+    title: "殘缺的彩虹",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "沙發海",
+    release_date: "2018-12-24",
+    language: "中文",
+    genre: "",
+    lyrics: `這一次 我不想要 一個人走
+回去的路 總是背對彩虹
+沒有你 我是殘缺的彩虹
+失去一個最重要的顏色
+
+想要聽你說 你都怎麼過
+你現在好嗎 你微笑點頭
+想要聽你說 快樂多過憂愁
+想要聽你說
+卻發現你在騙我
+
+這一次 你陪著我 兩個人走
+回去的路 回頭就有彩虹
+沒有你 我是殘缺的彩虹
+哪裡去找 最重要的顏色
+
+想要聽你說 你都怎麼過
+你現在好嗎 你微笑點頭
+想要聽你說 快樂多過憂愁
+想要聽你說
+卻發現你在騙我
+
+想要聽你說 你都怎麼過
+你現在好嗎 你微笑點頭
+想要聽你說 快樂多過憂愁
+想要聽你說
+想要聽你說
+想要聽你說
+你看見的光
+是我`,
+    image: "images/1764123715091-221047929.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123776247",
+    title: "沙發海",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "沙發海",
+    release_date: "2018-12-24",
+    language: "中文",
+    genre: "",
+    lyrics: `深夜獨自坐在沙發上
+讓遙控器親吻電視螢幕
+世界盃足球即將開打
+我一個人享用舒服的禁區
+
+清晨獨自坐在沙發上
+一杯咖啡加上一顆蛋
+時間退回到了航海時代
+一路向前就能回到出發的地方
+在沙發海 沙發海
+在沙發海
+漂流
+
+到了下午我還坐在這裡
+不如把沙發睡成一片汪洋
+醒來看見月亮依舊追問太陽
+吉普賽人擁有不追問的靈魂
+只能在沙發海 沙發海
+我們的海
+漂流
+
+還好你 留下了
+使用孤獨的說明書
+可是你 帶走了
+躲開寂寞的指南針
+
+在沙發海 沙發海
+在沙發海
+等你來救我
+等你來救我
+等你來
+救我`,
+    image: "images/1764123776245-853132078.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123836592",
+    title: "偶然與巧合",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "偶然與巧合",
+    release_date: "2014-12-15",
+    language: "中文",
+    genre: "",
+    lyrics: `偶然與巧合之間
+我們的選擇會不會
+改變了世界 改變某一個人
+讓歷史重演 眼看忘了告別的蝴蝶
+正努力在飛 當作不知道
+星星和燭火 誰會先熄滅
+若美麗的一切 總是看起來遙遠
+親愛的 別悲傷 幸福不在他方
+
+寂靜與喧嘩之間
+發出的聲音會不會
+改變了世界 改變某一個人
+來不及察覺 海浪已離開了海岸線
+離開千萬遍 當作不知道
+貝殼和沙灘 總緊緊擁抱
+若我們的告別 總是在挑戰時間
+親愛的 別悲傷 怪我的愛漫長
+
+努力在飛 當作不知道
+星星和燭火 誰會先熄滅
+若美麗的一切 總是看起來遙遠
+親愛的 別悲傷 幸福不在他方`,
+    image: "images/1764123836590-324687445.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123901459",
+    title: "長夜",
+    creators: ["芒果醬"],
+    lyricist: ["郭佐治"],
+    composer: ["郭佐治"],
+    albums: "心跳保衛戰",
+    release_date: "2023-12-21",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `白色的你 一身防護衣
+隔絕了病菌也隔絕了你和白雲
+多想給你 鮮花與草原
+多想帶你離開深不見底的長夜
+
+啦啦啦 啦啦啦 啦啦啦
+
+當黑夜又來襲 你勇敢的揚起 紅白色的大旗
+讓我們用全力 用並肩的呼喊 給你鼓勵
+３２１
+
+ＧＯ！
+失去星空的夜裡 你閃亮的勇氣
+讓人願意繼續相信
+漫漫的長夜裡 你就是陽明山上的星星
+看著你 就能繼續前進
+3 2 1
+ＧＯ！
+失去星空的夜裡 你忍住不哭泣
+孤單讓人感到窒息
+我深愛的島嶼 因為你才能自由的呼吸
+有了你 希望才能延續
+
+失去星空的夜裡 你善良的勇氣
+讓人願意繼續相信
+漫漫的長夜裡
+你就是陽明山上的星星
+看著你 就能繼續前進
+3 2 1
+G O !
+失去星空的夜裡 你忍住不哭泣
+孤單讓人感到窒息
+我深愛的島嶼 因為你才能自由的呼吸
+有了你 希望才能延續
+長夜會過去`,
+    image: "images/1764123901457-264932727.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764123973009",
+    title: "夏夜晚風",
+    creators: ["芒果醬"],
+    lyricist: ["郭佐治"],
+    composer: ["郭佐治"],
+    albums: "新・寶島少年？",
+    release_date: "2022-06-30",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `夏夜晚風輕輕吹 又到了離別的季節
+織女星上的喜鵲 都叫我別再留戀
+妳是山裡的百合花 那香味讓我好暈眩
+夏夜的晚風輕輕吹 我也該向過去道別
+
+但怎麼看到月亮 我終究還是想到妳
+突如其來的心悸 打亂了我的夏季
+然而這驚慌的瞬間 風輕輕吹動了湖面
+而我在回憶裡面 失去了知覺
+
+夏夜晚風 吹得我心好痛
+怎麼我的溫柔 錯過了妳的寂寞
+夏夜晚風 吹的我心好痛
+痛的我不知所措 而我也無處可躲
+
+如果回到那年 我和妳還能夠見面
+我們都拿出勇氣 能不能改變一切
+然而這巨大的幻覺 將我拽回到從前
+而我在回憶裡面 失去了知覺
+
+夏夜晚風 吹得我心好痛
+怎麼我的溫柔 錯過了妳的寂寞
+夏夜晚風 吹的我心好痛
+痛的我不知所措 而我也無處可躲
+
+夏夜晚風 吹得我心好痛
+怎麼我的溫柔 變成了我犯的錯
+夏夜晚風 吹得我心好痛
+痛的墜入了湖泊 而我也不再迷惑
+
+啦啦~啦~啦~
+啦啦~啦~啦~
+啦啦~啦~啦~
+啦啦~啦~啦~
+啦啦~啦~啦~
+啦啦~啦~啦~
+啦啦~啦~啦~
+啦啦~啦~啦~
+啦啦啦啦~啦啦啦啦啦~
+啦啦啦啦啦啦~~啦啦啦啦啦啦~~
+啦啦啦啦~啦啦啦啦啦啦~~
+啦啦啦啦啦啦啦~啦啦啦啦啦啦啦~~啦啦~~~~~`,
+    image: "images/1764123973007-72126747.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124132825",
+    title: "だから僕は音楽を辞めた",
+    creators: ["ヨルシカ"],
+    lyricist: ["n-buna"],
+    composer: ["n-buna"],
+    albums: "だから僕は音楽を辞めた",
+    release_date: "2019-04-10",
+    language: "日文",
+    genre: "",
+    lyrics: `考えたってわからないし
+kangae tatte wa ka ra na i shi
+即使思考過後我也不明白
+
+青空の下、君を待った
+ao zora no shita, kimi wo matta
+我在青空之下、等待著你
+
+風が吹いた正午、昼下がりを抜け出す想像
+kaze ga fuita syougo, hiru sagari wo nuke dasu souzou
+微風吹拂的正午、擺脫過午的想像
+
+ねぇ、これからどうなるんだろうね
+nee, ko re ka ra do u na ru n da ro u ne
+吶、從今以後會變得怎麼樣呢
+
+進め方教わらないんだよ
+susume kata osowarana i n da yo
+我不會教你前進的方法
+
+君の目を見た　何も言えず僕は歩いた
+kimi no me wo mita     nani mo ie zu boku wa aruita
+看著你的眼睛　沉默不語的我邁出了步伐
+
+
+考えたってわからないし
+kangae tatte wa ka ra na i shi
+即使思考過後也不明白
+
+青春なんてつまらないし
+seisyun na n te tsu ma ra na i shi
+青春什麼的十分無趣
+
+辞めた筈のピアノ、机を弾く癖が抜けない
+yame ta hazu no piano, tsukue wo hiku kuse ga nuke na i
+本來應該放棄的鋼琴、我無法改正彈桌子的習慣
+
+ねぇ、将来何してるだろうね
+nee, syourai nani shi te ru da ro u ne
+吶、你在未來做什麼呢
+
+音楽はしてないといいね
+ongaku wa shi te na i to i i ne
+如果沒有做音樂的話就好了
+
+困らないでよ
+komarana i de yo
+不要感到困惑啊
+
+
+心の中に一つ線を引いても
+kokoro no naka ni hitotsu sen wo hiite mo
+即使在心裡拉著一條線
+
+どうしても消えなかった　今更なんだから
+do u shi te mo kie na katta     ima sara na n da ka ra
+事到如今　無論怎麼做都不會消失了啊
+
+なぁ、もう思い出すな
+naa, mo u omoi dasu na
+喂、不要再想起了啊
+
+
+間違ってるんだよ
+machigatte ru n da yo
+我搞錯了啊
+
+わかってないよ、あんたら人間も
+wa katte na i yo, a n ta ra ningen mo
+我也沒有明白啊、你們也是人類啊
+
+本当も愛も世界も苦しさも人生もどうでもいいよ
+hontou mo ai mo sekai mo kurushi sa mo jinsei mo do u de mo i i yo
+真相、愛情、世界、痛苦、人生都無所謂了
+
+正しいかどうか知りたいのだって防衛本能だ
+tadashi i ka do u ka shiri ta i no datte bouei honnou da
+想要知道正確之類的事物不過只是防衛本能啊
+
+考えたんだ　あんたのせいだ
+kangae ta n da     a n ta no se i da
+在我思考過後　發現這是你的錯啊
+
+
+考えたってわからないが、本当に年老いたくないんだ
+kangae tatte wa ka ra na i ga, hontou ni toshi oi ta ku na i n da
+雖然思考過後我也不明白、但我其實不想老去啊
+
+いつか死んだらって思うだけで胸が空っぽになるんだ
+i tsu ka shinda ratte omou da ke de mune ga karappo ni na ru n da
+光是只要想著總有一天將會死去後　我的內心就會變得空虛
+
+将来何してるだろうって
+syourai nani shi te ru da ro utte
+「你在未來做什麼呢」
+
+大人になったらわかったよ
+otona ni natta ra wa katta yo
+只要長大成人之後就會明白啊
+
+何もしてないさ
+nani mo shi te na i sa
+我根本一事無成啊
+
+
+幸せな顔した人が憎いのはどう割り切ったらいいんだ
+shiawase na kao shi ta hito ga nikui no wa do u wari kitta ra i i n da
+一臉幸福的人十分可憎　我該怎麼理解這些情感才好呢
+
+満たされない頭の奥の化け物みたいな劣等感
+mitasare na i atama no oku no bake mono mi ta i na rettou kan
+不被滿足的腦袋深處存在著像怪物一樣的自卑感
+
+
+間違ってないよ
+machigatte na i yo
+我並沒有搞錯啊
+
+なぁ、何だかんだあんたら人間だ
+naa, nan da ka n da a n ta ra ningen da
+喂、無論怎麼說你們都是人類啊
+
+愛も救いも優しさも根拠がないなんて気味が悪いよ
+ai mo sukui mo yasashi sa mo konkyo ga na i na n te kimi ga warui yo
+愛情、救贖、溫柔都沒有證據什麼的真是可怕啊
+
+ラブソングなんかが痛いのだって防衛本能だ
+rabu songu na n ka ga itai no datte bouei honnou da
+情歌會令人難受也是防衛本能
+
+どうでもいいか　あんたのせいだ
+do u de mo i i ka     a na ta no se i da
+怎麼樣都行嗎　這是你的錯啊
+
+
+考えたってわからないし
+kangae tatte wa ka ra na i shi
+即使思考過後我也不明白
+
+生きてるだけでも苦しいし
+iki te ru da ke de mo kurushi i shi
+光是活著就很痛苦啊
+
+音楽とか儲からないし
+ongaku to ka moukarana i shi
+音樂並沒有什麼賺頭
+
+歌詞とか適当でもいいよ
+kashi to ka tekitou de mo i i yo
+歌詞隨便寫寫就好
+
+どうでもいいんだ
+do u de mo i i n da
+無所謂了啊
+
+
+間違ってないだろ
+machigatte na i da ro
+我並沒有搞錯吧
+
+間違ってないよな
+machigatte na i yo na
+我並沒有搞錯對吧
+
+
+間違ってるんだよ　わかってるんだ
+machigatte ru n da yo     wa katte ru n da
+我搞錯了啊　我明白啊
+
+あんたら人間も
+a n ta ra ningen mo
+你們也是人類啊
+
+本当も愛も救いも優しさも人生もどうでもいいんだ
+hontou mo ai mo sukui mo yasashi sa mo jinsei mo do u de mo i i n da
+真相、愛情、世界、痛苦、人生都無所謂了
+
+正しい答えが言えないのだって防衛本能だ
+tadashi i kotae ga ie na i no datte bouei honnou da
+說不出正確答案是防衛本能啊
+
+どうでもいいや　あんたのせいだ
+do u de mo i i ya     a n ta no se i da
+在我思考過後　發現這是你的錯啊
+
+
+僕だって信念があった
+boku datte shinnen ga atta
+即使是我也有信念
+
+今じゃ塵みたいな想いだ
+ima jya gomi mi ta i na omoi da
+現在是如塵一般的想法
+
+何度でも君を書いた
+nando de mo kimi wo kaita
+無論幾次我都會寫下你
+
+売れることこそがどうでもよかったんだ
+ure ru ko to ko so ga do u de mo yo katta n da
+正是因為暢銷所以才覺得無所謂
+
+本当だ　本当なんだ　昔はそうだった
+hontou da     hontou na n da     mukashi wa so u datta
+真的啊　這是真的啊　以前就是這樣
+
+
+だから僕は音楽を辞めた
+da ka ra boku wa ongaku wo yame ta
+所以我放棄了音樂
+
+
+中文翻譯：月勳`,
+    image: "images/1764124132823-734639517.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124202584",
+    title: "Angelina",
+    creators: ["甜約翰"],
+    lyricist: ["吳浚瑋"],
+    composer: ["石裕獎"],
+    albums: "Dear",
+    release_date: "2017-12-15",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `空盪的街道 不存在的喧鬧
+杳無人煙 剩下寧靜環繞
+Around me, you could be, you could be.
+理智線勾勒 出日常的軌道
+抹去煩惱 也不會有低潮
+Around me, you could be, you could be.
+
+曾經有個誰 打破這道牆
+隱隱約約 很模糊的印象
+Around me, you could be, you could be.
+無意識之間 才存在的想望
+胸口壓著 又是誰的重量
+Around me, you could be, you could be.
+
+Angelina
+Angelina
+Angelina
+
+Angelina
+Angelina
+Angelina
+
+也許我根本不在意 也許偶爾會想起你
+也許宇宙裡 某一顆星星誕生 然後死去
+
+Angelina
+Angelina
+Angelina
+
+Angelina
+Angelina
+Angelina`,
+    image: "images/1764124202574-765151790.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124293882",
+    title: "刻在我心底的名字",
+    creators: ["盧廣仲"],
+    lyricist: ["許媛婷","佳旺","陳文華"],
+    composer: ["許媛婷","佳旺","陳文華"],
+    albums: "刻在我心底的名字",
+    release_date: "2020-08-25",
+    language: "中文",
+    genre: "",
+    lyrics: `Oublie-le（忘記你）
+好幾次我告訴我自己
+越想努力趕上光的影
+越無法抽離 而已
+
+Je t'aimais（我愛你）
+刻骨銘心只有我自己
+好不容易交出真心的勇氣
+你沉默的回應 是善意
+
+刻在我心底的名字
+忘記了時間這回事
+於是謊言說了一次就一輩子
+曾頑固跟世界對峙
+覺得連呼吸都是奢侈
+如果有下次 我會再愛一次
+
+刻在我心底的名字
+你藏在塵封的位置
+要不是這樣我怎麼過一輩子
+我住在霓虹的城市
+握著飛向天堂的地址
+你可以翱翔 可是我只能停滯
+
+尋找你 茫茫人海卻又想起你
+好不容易離開思念的軌跡
+回憶將我聯繫 到過去
+
+刻在我心底的名字
+忘記了時間這回事
+既然決定愛上一次就一輩子
+希望讓這世界靜止
+想念才不會變得奢侈
+如果有下次 我會再愛一次
+
+刻在我心底的名字
+你藏在塵封的位置
+要不是這樣我怎麼過一輩子
+我住在想你的城市
+握著飛向天空的鑰匙
+你繼續翱翔 還有我為你堅持
+
+刻在我心底的名字
+忘記了時間這回事
+既然決定愛上一次就一輩子
+希望讓這世界靜止
+想念才不會變得奢侈
+如果有下次 我會再愛一次`,
+    image: "images/1764124293880-619302378.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124390215",
+    title: "一個人默默的酷",
+    creators: ["公館青少年 GGteens","就以斯"],
+    lyricist: ["盧彥恩","廖于任","詹佳穎"],
+    composer: ["盧彥恩","廖于任","詹佳穎"],
+    albums: "我其實一點都不酷",
+    release_date: "2024-06-17",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `大家都說 覺得我不錯
+成熟又帶 有一點幽默
+唯一缺點 是沒牽過你的手
+
+打扮潮流 從來沒落後
+目光焦點 全都停在我
+要攻佔你 我想不需要多久
+
+但我 不是你的菜
+希望你能明白
+還很多人在排
+Baby, do you wanna be mine?
+
+怎麼辦 我想破腦袋
+耍酷 帶點浪漫 忍受你的派
+怎麼辦 I’ll think about why
+每則限時動態 只為了讓你看
+想到呼吸都很困難
+要有多酷 才能讓你喜歡
+
+把 你 寫 進 我的歌裡
+這要求 是否太俗氣 是否不講理
+但我就任性
+
+想寫出一首 完美的情歌
+那 一首能夠 打動你的情歌
+不知道是我們的緣分不夠
+或我太無能 想到就頭疼
+
+在 腦海裡 打轉
+希望你能明白
+還很多人在排
+Baby, do you wanna be mine?
+
+怎 麼 辦 我想破腦袋
+耍酷 帶點浪漫 忍受你的派
+怎 麼 辦 I’ll think about why
+每則 限時動態 只為了讓你看
+想到呼吸都很困難
+要有多酷 才能讓你喜歡
+
+怎麼辦 我想破腦袋
+耍酷 帶點浪漫 忍受你的派
+怎麼辦 I’ll think about why
+每則限時動態 只為了讓你看
+想到呼吸都很困難
+要有多酷 才能讓你喜歡
+
+我壓抑不住 對你的依賴
+還需要多酷才能讓你喜歡`,
+    image: "images/1764124390212-885504574.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124459585",
+    title: "原來你跟每個人都說著一樣的話",
+    creators: ["怕胖團"],
+    lyricist: ["閃亮"],
+    composer: ["閃亮"],
+    albums: "原來你跟每個人都說著一樣的話",
+    release_date: "2023-04-18",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `原來你跟每個人都說著一樣的話
+我不過是每天被你複製貼上的對象
+不難想像你最變態的表情
+也一定都一樣 也一定都一樣
+你約我 又不來 喔沒有關係
+再約我 又不來 你回家小心
+你太忙 你好累 我全都相信
+因為他也一樣收到一樣的訊息
+我實在搞不清楚我們什麼關係
+雖然當初說你要怎樣我不介意
+曾經的我們飛向宇宙浩瀚無垠
+如今我卻變成了你丟掉的玩具
+原來你對每個人都說著一樣的話
+我不過是每天被你複製貼上的對象
+不難想像你最變態的表情
+也一定都一樣 也一定都一樣
+原來你跟每個人都說著一樣的謊
+不想拆穿你的話就陪著你繼續裝
+無法想像我現在仍然會對你癡狂
+沒有關係 我今天剛好也不行
+請回家小心 三寶很多多多注意
+我全都相信 下次你一定不會忘記
+但為什麼我兄弟收到一樣的訊息
+我實在搞不清楚我們什麼關係
+雖然當初說你要怎樣我不介意
+曾經的我們飛向宇宙浩瀚無垠
+如今我卻變成了你丟掉的玩具
+原來你跟每個人都說著一樣的話
+我不過是每天被你複製貼上的對象
+不難想像你最變態的表情
+也一定都一樣
+我後悔當初沒說出我的真心
+跟你發生的一切都放在心裡
+曾經的我們都受到太多委屈
+如今的我們都變成一灘爛泥
+原來你跟每個人都說著一樣的話
+我不過是每天被你複製貼上的對象
+不難想像你最變態的表情
+也一定都一樣 也一定都一樣
+原來你跟每個人都說著一樣的謊
+不想拆穿你的話就陪著你繼續裝
+無法想像我現在仍然會對你癡狂`,
+    image: "images/1764124459583-38353498.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124519585",
+    title: "很幼稚嗎？",
+    creators: ["那我懂你意思了"],
+    lyricist: ["陳修澤"],
+    composer: ["陳修澤"],
+    albums: "原諒我不明白你的悲傷",
+    release_date: "2012-12-20",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `那些我曾經明白的夢想
+那些我還不能了解的話
+你知道嗎
+你知道嗎
+
+說你說的話
+模仿你的憂傷
+想著這時候你又會怎麼做 怎麼想
+
+讀你讀的書
+夢想你的夢想
+還不懂昨天有什麼好牽掛
+
+我知道 我是我你終究是你
+我知道 只是還沒那麼堅強
+
+那些我曾經明白的夢想
+那些我還不能了解的話
+你知道嗎
+你知道嗎
+
+而我還在你離開的地方
+唱著我還不能了解的話
+你知道吧
+你知道吧
+
+而我也只能這麼做了
+走吧
+
+嘿 太奸詐了吧
+這就叫做成熟嗎
+烙印在心裡的又該怎麼承受它
+
+我知道 我是我你終究是你
+我知道 只是還沒那麼堅強
+
+那些我曾經明白的夢想
+那些我還不能了解的話
+你知道嗎
+你知道嗎
+
+而我還在你離開的地方
+唱著我還不能了解的話
+你知道吧
+你知道吧
+
+痛苦總會過去的吧？
+美好真的會留下嗎？
+我不知道 我不知道
+是不是總有一天
+
+那些我曾經明白的夢想
+那些我還不能了解的話
+你知道嗎
+你知道嗎
+
+而我還在你離開的地方
+唱著我還不能了解的話
+你知道吧
+你知道吧
+
+那些我曾經明白的夢想
+那些我還不能了解的話
+你知道嗎
+你知道嗎
+
+而我還在你離開的地方
+唱著我還不能了解的話
+你知道吧
+你知道吧
+
+而我也只能這麼做了
+走吧`,
+    image: "images/1764124519583-932369950.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124586215",
+    title: "原諒我不明白你的悲傷",
+    creators: ["那我懂你意思了"],
+    lyricist: ["陳修澤"],
+    composer: ["陳修澤"],
+    albums: "原諒我不明白你的悲傷",
+    release_date: "2012-12-20",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `你還記得嗎
+你還記得嗎
+而我也不想再多說那美麗的瘋狂
+
+你還記得嗎
+你還記得嗎
+其實我也有些害怕知道你的近況
+
+怎麼這世界好像越來越陌生了
+我知道我不該停下腳步
+對你 記得我承諾過
+
+又過了多少不起眼的日子
+又吃了多少食之無味的晚餐
+而寂寞的冬天仍下著雨
+夜晚的城市也依舊孤單
+
+也不是非要懷念什麼吧
+只是遺失的歲月有一些感傷
+那些還來不及說再見的
+會再見吧
+
+怎麼這世界好像越來越陌生了
+我知道我不該停下腳步
+對你 記得我承諾過
+
+又過了多少不起眼的日子
+又吃了多少食之無味的晚餐
+而寂寞的冬天仍下著雨
+夜晚的城市也依舊孤單
+
+也不是非要懷念什麼吧
+只是遺失的歲月有一些感傷
+那些還來不及說再見的
+原諒我不明白你的悲傷
+
+我知道感傷這樣就夠了
+還需要一些面對明天的力量
+那些還來不及說再見的
+會再見吧
+
+我知道我不該停下腳步
+對你 記得我承諾過`,
+    image: "images/1764124586214-148354144.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124654763",
+    title: "再見電影院",
+    creators: ["芒果醬"],
+    lyricist: ["郭佐治"],
+    composer: ["郭佐治"],
+    albums: "心跳保衛戰",
+    release_date: "2023-12-21",
+    language: "中文",
+    genre: "",
+    lyrics: `十二月那天 我跟妳作伙看電影
+飲料 爆米花 四樓十四廳
+看到 眼淚流 才知影我們都是演員
+我們來 做一齣 好戲予他們看
+電影 看完了 我們欲行
+我牽妳的手 妳沓沓仔講 妳無法度行
+電影 還要繼續演 妳說妳留在那
+我欲繼續行 我欲繼續行去哪裡啊
+要怎麼走
+怎會沒人來救我 怎會沒人來喊卡
+電影 還要繼續演 妳永遠留在那
+我現在在這 伴著月娘的思念
+思念妳啊
+最美麗的電影 跟我最愛的人
+さようなら
+
+暫停的形狀 是相愛過的兩個人
+也是 一座橋 分開妳和我
+電影 播完了 我們就要回家啦
+妳牽我的手 啊原來是夢 攏是一場空
+電影 還要繼續演 妳說妳留在那
+我欲繼續行 我欲繼續行去哪裡啊
+要怎麼走
+怎會沒人來救我 怎會沒人來喊卡
+電影 還要繼續演 妳永遠留在那
+我現在在這 伴著月娘的思念
+思念妳啊
+最美麗的電影 跟我最愛的人
+さようなら
+さようなら
+さようなら
+さようなら
+
+是為什麼我現在在這
+我沒想過妳會離開我
+離開我
+我還沒準備好 要怎樣對妳說
+さようなら
+さようなら
+さようなら
+さようなら
+さようなら`,
+    image: "images/1764124654760-549050841.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124722344",
+    title: "孤單滷三塊",
+    creators: ["芒果醬"],
+    lyricist: ["郭佐治"],
+    composer: ["郭佐治"],
+    albums: "心跳保衛戰",
+    release_date: "2023-12-21",
+    language: "中文",
+    genre: "",
+    lyrics: `是冬天的味道
+我們一起笑著
+該說聲晚安了
+但明天的味道
+被粗心打翻了
+怎麼就這樣了
+一個人吃著 最愛的滷三塊
+而你呢 怎麼丟下我了
+給你的愛 你的心 和你的靈魂
+都在這裡 被孤單攪拌著
+是冬天的味道
+我們一起笑著
+該說聲晚安了
+但明天的味道
+被粗心打翻了
+怎麼就這樣了
+都是我都是我
+一個人吃著 最愛的滷三塊
+而你呢 怎麼丟下我了
+給你的愛 你的心 和你的靈魂
+都在這裡 被孤單攪拌著
+一個人吃著 最愛的滷三塊
+而你呢 怎麼丟下我了
+給你的愛 你的心 和你的靈魂
+都在這裡 被孤單攪拌著`,
+    image: "images/1764124722328-742728483.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124851263",
+    title: "打上花火",
+    creators: ["DAOKO","米津玄師"],
+    lyricist: ["米津玄師"],
+    composer: ["米津玄師"],
+    albums: "打上花火",
+    release_date: "2017-08-16",
+    language: "日文",
+    genre: "",
+    lyrics: `あの日見渡した渚を　今も思い出すんだ
+ano hi miwatashita nagisa wo　ima mo omoidasun da
+那日眺望過的海岸　如今仍能憶起
+
+砂の上に刻んだ言葉　君の後ろ姿
+suna no ue ni kizanda kotoba　kimi no ushiro sugata
+沙灘上刻劃下的文字　你的背影
+
+
+寄り返す波が　足元をよぎり何かを攫う
+yori kaesu nami ga　ashimoto wo yogiri nanikawo sarau
+浪花往返　沖過腳邊帶走了些什麼
+
+夕凪の中　日暮れだけが通り過ぎて行く
+yuunagi no naka　higure dake ga toori sugite yuku
+風平浪靜之中　日暮獨自溜走
+
+
+パッと光って咲いた　花火を見ていた
+patto hikatte saita　hanabi wo miteita
+啪一聲綻放光芒　我們看著煙花
+
+きっとまだ　終わらない夏が
+kitto mada　owaranai natsu ga
+還未結束的夏天　一定會將
+
+曖昧な心を　解かして繋いだ
+aimai na kokoro wo　tokashite tsunaida
+曖昧的心　融化後相繫一起
+
+この夜が　続いて欲しかった
+kono yoru ga　tsuzuite hoshikatta
+多希望　這個夜晚繼續下去
+
+
+
+「あと何度君と同じ花火を見られるかな」って
+ato nando kimi to onaji hanabi wo mirareru kanatte
+「還能再與你共賞幾次同樣的煙花呢」
+
+笑う顔に何ができるだろうか
+warau kao ni nani ga dekiru darouka
+為那笑臉我又能做些什麼
+
+
+傷つくこと　喜ぶこと　繰り返す波と情動
+kizutsuku koto　yorokobu koto　kurikaesu nami to joudou
+受傷 喜悅 浪來浪去與情動
+
+焦燥　最終列車の音
+shousou　saishuu ressha no oto
+焦躁 末班列車的聲音
+
+
+何度でも　言葉にして君を呼ぶよ
+nando demo　kotoba ni shite kimi wo yobuyo
+無論幾次 我都會化作話語呼喚你
+
+波間を選び　もう一度
+namima wo erabi　mou ichido
+待浪退時 再一次
+
+もう二度と悲しまずに済むように
+mou nidoto  kanashi mazu ni  sumuyou ni
+是為了讓悲傷不再繼續就此而終
+
+
+はっと息を飲めば　消えちゃいそうな光が
+hatto iki wo nomeba　kiechai souna hikari ga
+深深倒吸一口氣 那即將消失的光芒
+
+きっとまだ　胸に住んでいた
+kitto mada　mune ni sundeita
+一定仍會 久留在胸中
+
+手を伸ばせば触れた　あったかい未来は
+te wo nobaseba fureta　attakai mirai wa
+只要伸出手便能觸碰 那溫暖的未來
+
+ひそかに二人を見ていた
+hisoka ni futari wo miteita
+正暗中窺伺著我倆
+
+
+
+パッと花火が
+patto hanabi ga
+啪一聲煙花
+
+夜に咲いた
+yoru ni saita
+於夜裡綻放
+
+夜に咲いて
+yoru ni saite
+夜裡綻放後
+
+静かに消えた
+shizuka ni kieta
+悄悄消失無蹤
+
+離さないで
+hanasa naide
+別讓我走
+
+もう少しだけ
+mou sukoshi dake
+再一下下就好
+
+もう少しだけ
+mou sukoshi dake
+再一下下就好
+
+このままで
+kono mama de
+維持現在這樣
+
+
+
+あの日見渡した渚を　今も思い出すんだ
+ano hi miwatashita nagisa wo　ima mo omoidasun da
+那日眺望過的海岸　如今仍能憶起
+
+砂の上に刻んだ言葉　君の後ろ姿
+suna no ue ni kizanda kotoba　kimi no ushiro sugata
+沙灘上刻劃下的文字　你的背影
+
+
+パッと光って咲いた　花火を見ていた
+patto hikatte saita　hanabi wo miteita
+啪一聲綻放光芒　我們看著煙花
+
+きっとまだ　終わらない夏が
+kitto mada　owaranai natsu ga
+還未結束的夏天　一定會將
+
+曖昧な心を　解かして繋いだ
+aimai na kokoro wo　tokashite tsunaida
+曖昧的心　融化後相繫一起
+
+この夜が　続いて欲しかった
+kono yoru ga　tsuzuite hoshikatta
+多希望　這個夜晚繼續下去
+
+
+中文翻譯：Alice／箱庭博物館
+
+羅馬翻譯：理璃(ルリ)`,
+    image: "images/1764124851260-120977661.jpg",
+    original_artist: [],
+    rating: ""
+},
+{
+    id: "song1764124962271",
+    title: "ピースサイン - Peace Sign",
+    creators: ["米津玄師"],
+    lyricist: ["米津玄師"],
+    composer: ["米津玄師"],
+    albums: "ピースサイン - Peace Sign",
+    release_date: "2017-06-21",
+    language: "日文",
+    genre: "",
+    lyrics: `いつか僕らの上をスレスレに　通り過ぎていったあの飛行機を
+i tsu ka boku ra no ue wo sure sure ni     toori sugi te itta a no hikouki wo
+某日低空飛過　我們頭頂的那架飛機
+
+不思議なくらいに憶えてる　意味もないのに　なぜか
+fushigi na ku ra i ni oboe te ru     imi mo na i no ni     na ze ka
+我們竟奇妙地一直記在心底　明明毫無意義　為什麼呢
+
+不甲斐なくて泣いた日の夜に　ただ強くなりたいと願ってた
+fugainaku te naita hi no yoru ni     ta da tsuyoku na ri ta i to negatte ta
+窩囊哭泣的夜裡　一心祈禱能變得更堅強
+
+そのために必要な勇気を　探し求めていた
+so no ta me ni hitsuyou na yuuki wo     sagashi motome te i ta
+為此我們追尋著　不可或缺的勇氣
+
+
+残酷な運命が定まってるとして
+zankoku na unmei ga sadamatte ru to shi te
+即使殘酷的命運已注定無法改變
+
+それがいつの日か僕の前に現れるとして
+so re ga i tsu no hi ka boku no mae ni araware ru to shi te
+即使那總有一天會降臨在我的面前
+
+ただ一瞬　この一瞬　息ができるなら
+ta da issyun     ko no issyun     iki ga de ki ru na ra
+但只要一瞬　就這一瞬　還能呼吸
+
+どうでもいいと思えた　その心を
+do u de mo i i to omoe ta     so no kokoro wo
+這顆心　便覺得怎樣都無所謂
+
+
+もう一度　遠くへ行け遠くへ行けと　僕の中で誰かが歌う
+mo u ichido     tooku he ike tooku he ike to     boku no naka de dare ka ga utau
+再一次　往遠方前進往遠方前進　在我之中的某個誰如此高歌
+
+どうしようもないほど熱烈に
+do u shi yo u mo na i ho do netsuretsu ni
+熱烈地無法自拔
+
+いつだって目を腫らした君が二度と　悲しまないように笑える
+i tsu datte me wo harashi ta kimi ga nido to     kanashi ma na i yo u ni warae ru
+無論何時　只為讓哭腫雙眼的你　不再悲傷　我會展露笑容
+
+そんなヒーローになるための歌
+so n na hi-ro- ni na ru ta me no uta
+這是為了成為那樣的英雄而生的歌
+
+
+さらば掲げろピースサイン
+sa ra ba kakage ro pi-su sain
+再會了　高舉勝利手勢
+
+転がっていくストーリーを
+korogatte i ku suto-ri- wo
+讓我們的故事繼續轉動
+
+
+守りたいだなんて言えるほど　君が弱くはないのわかってた
+mamori ta i da na n te ie ru ho do     kimi ga yowaku wa na i no wa katte ta
+我不會說我想要保護你　因為我知道你並沒有那麼脆弱
+
+それ以上に僕は弱くてさ　君が大事だったんだ
+so re ijyou ni boku wa yowaku te sa     kimi ga daiji datta n da
+而比起你我更加軟弱　是因為你對我來說很重要啊
+
+「独りで生きていくんだ」なんてさ　口をついて叫んだあの日から
+"hitori de iki te i ku n da" na n te sa     kuchi wo tsu i te sakenda a no hi ka ra
+「要一個人活下去」　曾經將這句話掛在嘴邊的我
+
+変わっていく僕を笑えばいい　独りが怖い僕を
+kawatte i ku boku wo warae ba i i     hitori ga kowai boku wo
+如今正逐漸改變　就笑吧　嘲笑變得害怕一個人的我
+
+
+蹴飛ばして噛み付いて息もできなくて
+ketobashi te kami tsuite iki mo de ki na ku te
+用力踢遠用力咬緊　就快要不能呼吸
+
+騒ぐ頭と腹の奥がくしゃくしゃになったって
+sawagu atama to hara no oku ga ku sya ku sya ni nattatte
+哪怕吵雜的腦袋和體內深處　亂成一團
+
+衒いも外連も消えてしまうくらいに
+terai mo keren mo kie te shi ma u ku ra i ni
+連裝模作樣和騙人花招都要消失般
+
+今は触っていたいんだ　君の心に
+ima wa sawatte i ta i n da     kimi no kokoro ni
+我現在就想碰到　你的心
+
+
+僕たちは　きっといつか遠く離れた太陽にすら手が届いて
+boku ta chi wa     kitto i tsu ka tooku hanare ta taiyou ni su ra te ga todoite
+我們　一定總有一天連遠在天邊的太陽　都能伸手觸及
+
+夜明け前を手に入れて笑おう
+yoake mae wo te ni ire te waraou
+讓我們抓緊破曉並相視而笑吧
+
+そうやって青く燃える色に染まり　おぼろげな街の向こうへ
+so u yatte aoku moe ru iro ni somari     o bo ro ge na machi no mukou he
+就這樣染上燒得青藍的顏色　往朦朧的城鎮出發
+
+手をつないで走っていけるはずだ
+te wo tsu na i de hashitte i ke ru ha zu da
+我相信我們能牽著手向那奔去
+
+
+君と未来を盗み描く　捻りのないストーリーを
+kimi to mirai wo nusumi egaku     hineri no na i suto-ri- wo
+與你一起去偷偷描繪未來　描繪那平凡無奇的故事
+
+
+かさぶただれけ荒くれた日々が　削り削られ擦り切れた今が
+ka sa bu ta da re ke araku re ta hibi ga     kezuri kezurare suri kire ta ima ga
+遍體鱗傷粗暴胡來的那些日子　削減被削減而殘破不堪的現在
+
+君の言葉でよみがえる　鮮やかにも現れていく
+kimi no kotoba de yo mi ga e ru     azayaka ni mo araware te i ku
+都因你說的話再次甦醒　逐漸鮮明地　浮現眼前
+
+さなぎのままで眠る魂を　食べかけのまま捨てたあの夢を
+sa na gi no ma ma de nemuru tamashii wo     tabe ka ke no ma ma sute ta a no yume wo
+作繭自縛沉睡的靈魂　淺嚐幾口便捨棄的那個夢想
+
+もう一度取り戻せ
+mo u ichido tori modose
+讓我們再次去搶奪回來吧
+
+
+もう一度　遠くへ行け遠くへ行けと　僕の中で誰かが歌う
+mo u ichido     tooku he ike tooku he ike to     boku no naka de dare ka ga utau
+再一次　往遠方前進往遠方前進　在我之中的某個誰如此高歌
+
+どうしようもないほど熱烈に
+do u shi yo u mo na i ho do netsuretsu ni
+熱烈地無法自拔
+
+いつだって目を腫らした君が二度と　悲しまないように笑える
+i tsu datte me wo harashi ta kimi ga nido to     kanashi ma na i yo u ni warae ru
+無論何時　只為讓哭腫雙眼的你　不再悲傷　我會展露笑容
+
+そんなヒーローになるための歌
+so n na hi-ro- ni na ru ta me no uta
+這是為了成為那樣的英雄而生的歌
+
+
+さらば掲げろピースサイン　転がってくストーリーを
+sa ra ba kakage ro pi-su sain     korogatte ku suto-ri- wo
+再會了　高舉勝利手勢　讓我們的故事繼續轉動
+
+君と未来を盗み描く　捻りのないストーリーを
+kimi to mirai wo nusumi egaku     hineri no na i suto-ri- wo
+與你一起去偷偷描繪未來　描繪那平凡無奇的故事
+
+中文翻譯：Alice／箱庭博物館`,
+    image: "images/1764124962269-464327554.jpg",
+    original_artist: [],
+    rating: ""
+}];
 
 // 詩詞資料
 const poems = [
@@ -6573,7 +8004,18 @@ const poems = [
     language: "英文",
     translation: ""
   }
-];
+,
+{
+    "id": "poem1764125023278",
+    "title": "月亮",
+    "creators": [
+        "陳綺貞"
+    ],
+    "lyrics": "作品是指向月亮的手指\r\n希望大家能夠好好地感受月亮\r\n無需過多在意這根手指",
+    "image": "",
+    "language": "白話文",
+    "translation": ""
+}];
 
 const favorites = [
   {
@@ -6754,7 +8196,27 @@ const favorites = [
     songCreators: "薛之謙",
     createdAt: "2025-11-13T05:41:55.463Z"
   }
-];
+,
+{
+    id: "fav1764125053575",
+    lyrics: `帶不走的 丟不掉的 
+讓大雨侵蝕吧`,
+    note: "",
+    songId: "song1763045203185",
+    songTitle: "魚",
+    songCreators: "陳綺貞",
+    createdAt: "2025-11-26T02:44:13.575Z"
+},
+{
+    id: "fav1764125078638",
+    lyrics: `也不是非要懷念什麼吧
+只是遺失的歲月有一些感傷`,
+    note: "",
+    songId: "song1764124586215",
+    songTitle: "原諒我不明白你的悲傷",
+    songCreators: "那我懂你意思了",
+    createdAt: "2025-11-26T02:44:38.638Z"
+}];
 
 // 渲染歌曲列表
 function renderSongs() {

@@ -6558,9 +6558,8 @@ ima harujimai
     image: "images/1763045851197-587538535.jpg",
     original_artist: [],
     rating: ""
-  }
-,
-{
+  },
+  {
     id: "song1764123371598",
     title: "小步舞曲",
     creators: ["陳綺貞"],
@@ -6590,8 +6589,8 @@ ima harujimai
     image: "images/1764123371597-624828335.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123451983",
     title: "80%完美的日子",
     creators: ["陳綺貞"],
@@ -6638,8 +6637,8 @@ ima harujimai
     image: "images/1764123451981-462094065.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123537714",
     title: "我喜歡上你時的内心活動",
     creators: ["陳綺貞"],
@@ -6670,8 +6669,8 @@ ima harujimai
     image: "images/1764123537712-141043163.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123653684",
     title: "煙火",
     creators: ["陳綺貞"],
@@ -6730,8 +6729,8 @@ ima harujimai
     image: "images/1764123653682-440040605.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123715093",
     title: "殘缺的彩虹",
     creators: ["陳綺貞"],
@@ -6774,8 +6773,8 @@ ima harujimai
     image: "images/1764123715091-221047929.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123776247",
     title: "沙發海",
     creators: ["陳綺貞"],
@@ -6820,8 +6819,8 @@ ima harujimai
     image: "images/1764123776245-853132078.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123836592",
     title: "偶然與巧合",
     creators: ["陳綺貞"],
@@ -6856,8 +6855,8 @@ ima harujimai
     image: "images/1764123836590-324687445.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123901459",
     title: "長夜",
     creators: ["芒果醬"],
@@ -6905,8 +6904,8 @@ G O !
     image: "images/1764123901457-264932727.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764123973009",
     title: "夏夜晚風",
     creators: ["芒果醬"],
@@ -6961,8 +6960,8 @@ G O !
     image: "images/1764123973007-72126747.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124132825",
     title: "だから僕は音楽を辞めた",
     creators: ["ヨルシカ"],
@@ -7188,8 +7187,8 @@ da ka ra boku wa ongaku wo yame ta
     image: "images/1764124132823-734639517.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124202584",
     title: "Angelina",
     creators: ["甜約翰"],
@@ -7234,13 +7233,13 @@ Angelina`,
     image: "images/1764124202574-765151790.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124293882",
     title: "刻在我心底的名字",
     creators: ["盧廣仲"],
-    lyricist: ["許媛婷","佳旺","陳文華"],
-    composer: ["許媛婷","佳旺","陳文華"],
+    lyricist: ["許媛婷", "佳旺", "陳文華"],
+    composer: ["許媛婷", "佳旺", "陳文華"],
     albums: "刻在我心底的名字",
     release_date: "2020-08-25",
     language: "中文",
@@ -7296,13 +7295,13 @@ Je t'aimais（我愛你）
     image: "images/1764124293880-619302378.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124390215",
     title: "一個人默默的酷",
-    creators: ["公館青少年 GGteens","就以斯"],
-    lyricist: ["盧彥恩","廖于任","詹佳穎"],
-    composer: ["盧彥恩","廖于任","詹佳穎"],
+    creators: ["公館青少年 GGteens", "就以斯"],
+    lyricist: ["盧彥恩", "廖于任", "詹佳穎"],
+    composer: ["盧彥恩", "廖于任", "詹佳穎"],
     albums: "我其實一點都不酷",
     release_date: "2024-06-17",
     language: "中文",
@@ -7360,8 +7359,8 @@ Baby, do you wanna be mine?
     image: "images/1764124390212-885504574.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124459585",
     title: "原來你跟每個人都說著一樣的話",
     creators: ["怕胖團"],
@@ -7416,8 +7415,8 @@ Baby, do you wanna be mine?
     image: "images/1764124459583-38353498.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124519585",
     title: "很幼稚嗎？",
     creators: ["那我懂你意思了"],
@@ -7503,8 +7502,8 @@ Baby, do you wanna be mine?
     image: "images/1764124519583-932369950.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124586215",
     title: "原諒我不明白你的悲傷",
     creators: ["那我懂你意思了"],
@@ -7560,8 +7559,8 @@ Baby, do you wanna be mine?
     image: "images/1764124586214-148354144.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124654763",
     title: "再見電影院",
     creators: ["芒果醬"],
@@ -7616,8 +7615,8 @@ Baby, do you wanna be mine?
     image: "images/1764124654760-549050841.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124722344",
     title: "孤單滷三塊",
     creators: ["芒果醬"],
@@ -7655,11 +7654,11 @@ Baby, do you wanna be mine?
     image: "images/1764124722328-742728483.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124851263",
     title: "打上花火",
-    creators: ["DAOKO","米津玄師"],
+    creators: ["DAOKO", "米津玄師"],
     lyricist: ["米津玄師"],
     composer: ["米津玄師"],
     albums: "打上花火",
@@ -7817,8 +7816,8 @@ kono yoru ga　tsuzuite hoshikatta
     image: "images/1764124851260-120977661.jpg",
     original_artist: [],
     rating: ""
-},
-{
+  },
+  {
     id: "song1764124962271",
     title: "ピースサイン - Peace Sign",
     creators: ["米津玄師"],
@@ -7990,7 +7989,209 @@ kimi to mirai wo nusumi egaku     hineri no na i suto-ri- wo
     image: "images/1764124962269-464327554.jpg",
     original_artist: [],
     rating: ""
-}];
+  },
+  {
+    id: "song1764156495968",
+    title: "Viva La Vida",
+    creators: ["Coldplay"],
+    lyricist: ["Berryman", "Buckland", "Champion", "Martin"],
+    composer: ["Berryman", "Buckland", "Champion", "Martin"],
+    albums: "Viva La Vida Or Death And All His Friends",
+    release_date: "2008-06-12",
+    language: "英文",
+    genre: "",
+    lyrics: `I used to rule the world
+Seas would rise when I gave the word
+Now in the morning, I sleep alone
+Sweep the streets I used to own
+I used to roll the dice
+Feel the fear in my enemy's eyes
+Listen as the crowd would sing
+Now the old king is dead, long live the king
+One minute, I held the key
+Next the walls were closed on me
+And I discovered that my castles stand
+Upon pillars of salt and pillars of sand
+I hear Jerusalem bells a-ringin'
+Roman Cavalry choirs are singin'
+Be my mirror, my sword and shield
+My missionaries in a foreign field
+For some reason, I can't explain
+Once you'd gone, there was never, never an honest word
+And that was when I ruled the world
+It was a wicked and wild wind
+Blew down the doors to let me in
+Shattered windows and the sound of drums
+People couldn't believe what I'd become
+Revolutionaries wait
+For my head on a silver plate
+Just a puppet on a lonely string
+Aw, who would ever wanna be king?
+I hear Jerusalem bells a-ringin'
+Roman Cavalry choirs are singing
+Be my mirror, my sword and shield
+My missionaries in a foreign field
+For some reason, I can't explain
+I know Saint Peter won't call my name
+Never an honest word
+But that was when I ruled the world
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+I hear Jerusalem bells a-ringin'
+Roman Cavalry choirs are singin'
+Be my mirror, my sword and shield
+My missionaries in a foreign field
+For some reason I can't explain
+I know Saint Peter won't call my name
+Never an honest word
+But that was when I ruled the world`,
+    image: "images/1764156495487-167623963.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1764176205400",
+    title: "沙漏",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "時間的歌",
+    release_date: "2013-12-06",
+    language: "中文",
+    genre: "",
+    lyrics: `我用沙子蓋一座城堡 為什麼浪一來就不見了
+我用沙子畫一幅畫 為什麼風一吹就不見了
+
+我把沙子全都關起來 為什麼時間不為我留下
+昨天的沙灘還在那 昨天的腳印去哪裡了
+
+他們說 生命像一粒沙
+如果生命她會說話
+她會說 謝謝你愛她
+像大海愛著浪花
+
+
+我讓沙子全都睡著了 數著他們我也睡著了
+在夢裡我看見他們 一閃一閃還為我亮著
+
+他們說 生命像一粒沙
+如果生命她會說話
+她會說謝謝你愛她
+像大海愛著浪花
+
+他們說 生命像一粒沙
+如果生命她會說話
+她會說 謝謝你愛她
+像大海愛著浪花
+
+他們說 生命像一粒沙 如果生命她會說話
+她會說 謝謝你愛我
+像大海愛著浪花 像大海愛著浪花
+
+我用沙子蓋一座城堡 為什麼浪一來就不見了
+昨天的沙灘還在那 昨天的腳印去哪裡了`,
+    image: "images/1764176205074-777963343.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1764176379417",
+    title: "揹上悲傷北上",
+    creators: ["Crispy脆樂團"],
+    lyricist: ["盧羿安"],
+    composer: ["盧羿安"],
+    albums: "愛是我們必經的辛苦",
+    release_date: "2022-09-19",
+    language: "中文",
+    genre: "獨立音樂",
+    lyrics: `時間在身上的壓痕
+讓我們成了有皺摺的大人
+期待終究還是擦身
+日子卻自顧自地在發生
+
+涼掉的 飯菜 配著涼掉的心
+倒掉 青春 也倒掉了你
+潮濕的 空氣 一樣潮濕的身體
+
+你揹上悲傷北上 在該受傷的時候 受傷
+不管靈魂變成什麼形狀 你還是你啊
+你揹上悲傷北上 在該愛上的時候 愛上
+不管笑容變成什麼模樣 你還是你啊
+
+告訴自己這樣也好
+偶爾吃頓飯人擠人拍照
+你愛的人一切都好
+那就好 那就好
+
+你還在用力 對抗這個世界
+不問對錯 或公不公平
+你還在那裡 你一直都在那裡
+
+你揹上悲傷北上 在該堅強的時候 堅強
+不管靈魂變成什麼形狀 你還是你啊
+你揹上悲傷北上 在該遺忘的時候 遺忘
+不管笑容變成什麼模樣 你還是你啊
+
+你揹上悲傷北上
+你揹上悲傷北上
+你揹上悲傷北上
+你揹上悲傷北上
+最後剩下幾個傻的願望
+都留給你啊`,
+    image: "images/1764176379091-772496982.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1764176591656",
+    title: "被動",
+    creators: ["伍佰"],
+    lyricist: ["潘麗玉"],
+    composer: ["吳俊霖"],
+    albums: "愛你伍佰年",
+    release_date: "2004-05-27",
+    language: "中文",
+    genre: "",
+    lyrics: `我可以很久不和你聯絡 任日子一天天這麼過
+讓自己忙碌可以當作藉口 逃避想念你的種種軟弱
+
+我可以學會對你很冷漠 為何學不會將愛沒收
+面對你是對我最大的折磨 這些年始終沒有對你說
+
+愛你越久我越被動 只因你的愛居無定所
+是你讓我的心慢慢退縮 退到你看不見的角落
+
+愛你越久我越被動 只因我的愛不再為你揮霍
+是我讓我的心失去自由 卻再也沒有勇氣放縱
+
+李韋
+
+我可以很久不和你聯絡 任日子一天天這麼過
+讓自己忙碌可以當作藉口 逃避想念你的種種軟弱
+
+我可以學會對你很冷漠 為何學不會將愛沒收
+面對你是對我最大的折磨 這些年始終沒有對你說
+
+愛你越久我越被動 只因你的愛居無定所
+是你讓我的心慢慢退縮 退到你看不見的角落
+
+愛你越久我越被動 只因我的愛不再為你揮霍
+是我讓我的心失去自由 卻再也沒有勇氣放縱
+
+愛你越久我越被動 只因你的愛居無定所
+是你讓我的心慢慢退縮 退到你看不見的角落
+
+愛你越久我越被動 只因我的愛不再為你揮霍
+是我讓我的心失去自由 卻再也沒有勇氣放縱
+沒有勇氣放縱`,
+    image: "images/1764176591328-105700147.jpg",
+    original_artist: [],
+    rating: ""
+  }
+];
 
 // 詩詞資料
 const poems = [
@@ -8003,19 +8204,39 @@ const poems = [
     image: "",
     language: "英文",
     translation: ""
+  },
+  {
+    id: "poem1764125023278",
+    title: "月亮",
+    creators: ["陳綺貞"],
+    lyrics:
+      "作品是指向月亮的手指\r\n希望大家能夠好好地感受月亮\r\n無需過多在意這根手指",
+    image: "",
+    language: "白話文",
+    translation: ""
+  },
+  {
+    id: "poem1764145161407",
+    title: "斐德若篇",
+    creators: ["蘇格拉底", "柏拉圖"],
+    lyrics:
+      "可是也並非沒有在長羽翼上努力過，他們的靈魂也離開了肉體。這對於他們的愛情的迷狂不算是一個小報酬，因為按照規律，凡是提過腳預備走登天大路的人們，就不至於要走陰間黑路，他們就要手牽著手前行，過著光明而愉快的生活，到了應長羽翼的時候，他們還是長羽翼，為了他們的愛情的緣故。",
+    image: "",
+    language: "白話文",
+    translation: ""
+  },
+  {
+    id: "poem1764153480003",
+    title: "La La Land",
+    creators: ["Mia"],
+    lyrics:
+      "My aunt used to live in Paris \r\nI remember, she used to come home and she would tell us\r\nThese stories about being abroad And I remember, she told us that she jumped\r\ninto the river once. Barefoot\r\n\r\nShe smiled...\r\n\r\nLeapt without looking \r\nAnd tumbled into the Seine \r\nThe water was freezing \r\nShe spent a month the sneezing \r\nBut said she would do it again\r\n\r\nHere's to the ones who dream\r\nFoolish as they may seem \r\nHere's to the hearts that ache \r\nHere's to the mess we make\r\n\r\nShe captured a feeling \r\nSky with no ceiling \r\nThe sunset inside a frame\r\n\r\nShe lived in her liquor \r\nAnd died with a flicker \r\nI'll always remember the flame\r\n\r\nHere's to the ones who dream \r\nFoolish as they may seem \r\nHere's to the hearts that ache \r\nHere's to the mess we make\r\n\r\nShe told me:\r\n\"A bit of madness is key\r\nTo give us new colors to see\r\nWho knows where it will lead us? \r\nAnd that's why they need us\"\r\n\r\nSo bring on the rebels \r\nThe ripples from pebbles \r\nThe painters, and poets, and plays\r\n\r\nAnd here's to the fools who dream \r\nCrazy as they may seem \r\nHere's to the hearts that break \r\nHere's to the mess we make\r\n\r\nI trace it all back to then \r\nHer, and the snow, and the Seine \r\nSmiling through it \r\nShe said she'd do it again",
+    image: "",
+    language: "英文",
+    translation:
+      "我姑姑以前住過巴黎\r\n我記得她會回家告訴我們\r\n身在國外的各種事情\r\n\r\n我記得\r\n她說她有次跳進塞納河\r\n光著腳\r\n微笑著\r\n看也沒看就往下一跳\r\n落入了………塞納河中\r\n河水寒微骨，她傷風感冒整個月\r\n卻說她會再一次躍身其中\r\n敬那些做夢的人，哪怕他們有點傻\r\n敬那些痛著的心，敬我們製造的混亂\r\n\r\n她捕捉到一種感覺\r\n高不見頂的蒼穹\r\n畫框中的夕陽\r\n她泡在酒精裡\r\n一點一滴死去\r\n我將永遠記得那份熱情\r\n敬那些做夢的人\r\n哪怕他們有點傻\r\n敬那些痛著的心\r\n敬我們製造的混亂\r\n\r\n她告訴我\r\n正是那一絲絲瘋狂\r\n讓我們看見新的色彩\r\n誰知道它將帶我們前往何方\r\n因此世界才需要我們\r\n所以讓叛逆者上場吧\r\n那些石頭激起的漣漪\r\n畫家、詩人和劇作\r\n敬那些做夢的傻瓜\r\n哪怕他們顯得瘋狂\r\n敬那些破碎的心\r\n敬那些我們製造的混亂\r\n\r\n我的初衷全都來自於\r\n她、雪與塞納河\r\n始終帶著微笑\r\n她說她會再一次\r\n躍身其中"
   }
-,
-{
-    "id": "poem1764125023278",
-    "title": "月亮",
-    "creators": [
-        "陳綺貞"
-    ],
-    "lyrics": "作品是指向月亮的手指\r\n希望大家能夠好好地感受月亮\r\n無需過多在意這根手指",
-    "image": "",
-    "language": "白話文",
-    "translation": ""
-}];
+];
 
 const favorites = [
   {
@@ -8195,9 +8416,8 @@ const favorites = [
     songTitle: "動物世界",
     songCreators: "薛之謙",
     createdAt: "2025-11-13T05:41:55.463Z"
-  }
-,
-{
+  },
+  {
     id: "fav1764125053575",
     lyrics: `帶不走的 丟不掉的 
 讓大雨侵蝕吧`,
@@ -8206,8 +8426,8 @@ const favorites = [
     songTitle: "魚",
     songCreators: "陳綺貞",
     createdAt: "2025-11-26T02:44:13.575Z"
-},
-{
+  },
+  {
     id: "fav1764125078638",
     lyrics: `也不是非要懷念什麼吧
 只是遺失的歲月有一些感傷`,
@@ -8216,7 +8436,18 @@ const favorites = [
     songTitle: "原諒我不明白你的悲傷",
     songCreators: "那我懂你意思了",
     createdAt: "2025-11-26T02:44:38.638Z"
-}];
+  },
+  {
+    id: "fav1764145221423",
+    lyrics: `凡是提過腳預備走登天大路的人們
+就不至於要走陰間黑路`,
+    note: "",
+    songId: "poem1764145161407",
+    songTitle: "斐德若篇",
+    songCreators: "蘇格拉底, 柏拉圖",
+    createdAt: "2025-11-26T08:20:21.423Z"
+  }
+];
 
 // 渲染歌曲列表
 function renderSongs() {

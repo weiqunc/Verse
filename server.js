@@ -37,19 +37,18 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({
-  storage: storage,
-  // limits: { fileSize: 5 * 1024 * 1024 },
+  storage,
+  limits: { fileSize: 10 * 1024 * 1024 }, // 10MB
   fileFilter: (req, file, cb) => {
-    const allowedTypes = /jpeg|jpg|png|gif|webp/;
-    const extname = allowedTypes.test(
-      path.extname(file.originalname).toLowerCase()
-    );
-    const mimetype = allowedTypes.test(file.mimetype);
-
-    if (mimetype && extname) {
-      return cb(null, true);
+    const allowedExts = /\.(jpeg|jpg|png|gif|webp)$/i;
+    const allowedMime = /^image\/(jpeg|png|gif|webp)$/;
+    if (
+      allowedExts.test(file.originalname) &&
+      allowedMime.test(file.mimetype)
+    ) {
+      cb(null, true);
     } else {
-      cb(new Error("只接受圖片檔案（JPEG, PNG, GIF, WebP）！"));
+      cb(new Error("僅支援 JPEG, PNG, GIF, WebP (10MB)"), false);
     }
   }
 });
@@ -143,6 +142,111 @@ app.post("/api/upload-song", upload.single("image"), async (req, res) => {
         }
       }
     }
+
+    app.post(
+      "/api/upload-classical",
+      upload.single("image"),
+      async (req, res) => {
+        try {
+          // ===== 1. 與歌曲相同：取所有欄位 =====
+          const { title, composer, othername, albums, releasedate, notes } =
+            req.body;
+
+          if (!title || !composer || !albums) {
+            return res
+              .status(400)
+              .json({ error: "請填寫必填欄位（名稱、作曲家、專輯）" });
+          }
+
+          // ===== 2. 與歌曲相同：建構物件 =====
+          const newClassical = {
+            id: `cls${Date.now()}`,
+            title: title.trim(),
+            othername: othername ? othername.trim() : "",
+            composer: composer.split(",").map((c) => c.trim()),
+            releasedate: releasedate || "",
+            albums: albums.trim(),
+            image: req.file ? `images/${req.file.filename}` : "",
+            notes: notes ? notes.trim() : ""
+          };
+
+          console.log("📝 準備新增古典:", newClassical.title);
+
+          // ===== 3. 與歌曲相同：讀取 main.js =====
+          const mainJsPath = path.join(__dirname, "main.js");
+          let mainJsContent = await fs.readFile(mainJsPath, "utf8");
+
+          // ===== 4. 與歌曲相同：重複檢查 =====
+          const classicalArrayMatch = mainJsContent.match(
+            /const classical = \[([\s\S]*?)\];/
+          );
+          if (classicalArrayMatch) {
+            const classicalArrayContent = classicalArrayMatch[1];
+            const duplicatePattern = new RegExp(
+              `title:\\s*["']${newClassical.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}["']`,
+              "i"
+            );
+            if (duplicatePattern.test(classicalArrayContent)) {
+              if (req.file) await fs.unlink(req.file.path);
+              return res.status(400).json({
+                error: `${newClassical.title} 已存在`
+              });
+            }
+          }
+
+          // ===== 5. 與歌曲相同：定位陣列 =====
+          const classicalArrayStart = mainJsContent.indexOf(
+            "const classical = ["
+          );
+          if (classicalArrayStart === -1)
+            throw new Error("找不到 classical 陣列");
+
+          const searchFrom = classicalArrayStart + "const classical = [".length;
+          let classicalArrayEnd = mainJsContent.indexOf("];", searchFrom);
+          if (classicalArrayEnd === -1)
+            throw new Error("找不到 classical 結束");
+
+          // ===== 6. 與歌曲相同：檢查現有內容 =====
+          const classicalContent = mainJsContent.slice(
+            searchFrom,
+            classicalArrayEnd
+          );
+          const hasExistingClassical = classicalContent.trim().length > 0;
+
+          // ===== 7. 與歌曲相同：生成插入碼 =====
+          const newClassicalCode = `${hasExistingClassical ? "," : ""}
+{
+    id: "${newClassical.id}",
+    title: "${newClassical.title}",
+    othername: "${newClassical.othername}",
+    composer: ${JSON.stringify(newClassical.composer)},
+    releasedate: "${newClassical.releasedate}",
+    albums: "${newClassical.albums}",
+    image: "${newClassical.image}",
+    notes: "${newClassical.notes.replace(/"/g, '\\"')}"
+}`;
+
+          // ===== 8. 與歌曲相同：插入 + 寫回 =====
+          mainJsContent =
+            mainJsContent.slice(0, classicalArrayEnd) +
+            newClassicalCode +
+            mainJsContent.slice(classicalArrayEnd);
+
+          await fs.writeFile(mainJsPath, mainJsContent, "utf8");
+
+          console.log("✅ 古典新增成功:", newClassical.title);
+          res.json({
+            success: true,
+            message: "古典音樂上傳成功！頁面將自動重新整理。",
+            classical: newClassical
+          });
+        } catch (error) {
+          console.error("❌ 古典上傳錯誤:", error);
+          if (req.file) await fs.unlink(req.file.path).catch(console.error);
+          res.status(500).json({ error: error.message });
+        }
+      }
+    );
 
     // 找到 songs 陣列位置
     const songsArrayStart = mainJsContent.indexOf("const songs = [");

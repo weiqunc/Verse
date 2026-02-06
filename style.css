@@ -34,8 +34,8 @@
   --color-primary-hover: var(--color-peach-600);
   --color-border: rgba(var(--color-brown-600-rgb), 0.2);
   --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
-  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  --font-family-base:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --space-8: 8px;
   --space-12: 12px;
   --space-16: 16px;
@@ -45,8 +45,8 @@
   --radius-base: 8px;
   --radius-lg: 12px;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
-    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
   --duration-normal: 250ms;
 }
 
@@ -236,7 +236,8 @@ main {
   border-radius: var(--radius-lg);
   padding: var(--space-12);
   cursor: pointer;
-  transition: transform var(--duration-normal),
+  transition:
+    transform var(--duration-normal),
     box-shadow var(--duration-normal);
   box-shadow: var(--shadow-sm);
   gap: var(--space-16);
@@ -270,6 +271,12 @@ main {
 .song-info {
   flex: 0 0 200px;
   min-width: 0;
+}
+
+.classical-song-info {
+  flex: 0 0 500px !important;
+  text-align: left;
+  margin: 0 0 0 30px;
 }
 
 .song-card-content h3 {
@@ -649,7 +656,8 @@ textarea.form-control {
   border-radius: var(--radius-lg);
   padding: var(--space-24);
   cursor: pointer;
-  transition: transform var(--duration-normal),
+  transition:
+    transform var(--duration-normal),
     box-shadow var(--duration-normal);
   box-shadow: var(--shadow-sm);
   text-align: center;
@@ -713,7 +721,8 @@ textarea.form-control {
   border-radius: var(--radius-lg);
   padding: var(--space-24);
   box-shadow: var(--shadow-sm);
-  transition: transform var(--duration-normal),
+  transition:
+    transform var(--duration-normal),
     box-shadow var(--duration-normal);
   position: relative;
 }
@@ -865,7 +874,9 @@ textarea.form-control {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   text-align: center;
-  transition: background var(--duration-fast), color var(--duration-fast);
+  transition:
+    background var(--duration-fast),
+    color var(--duration-fast);
 }
 
 .modal-link:hover {
@@ -1346,6 +1357,10 @@ textarea.form-control {
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
+  }
+
+  .classical-grid {
+    overflow: visible;
   }
 
   @keyframes slideDown {

@@ -31,21 +31,14 @@
 
       <nav id="nav">
         <ul>
-          <li>
-            <a href="#home" data-page="home" class="nav-link active">首頁</a>
-          </li>
+          <li><a href="#home" data-page="home" class="nav-link active">首頁</a></li>
           <li><a href="#songs" data-page="songs" class="nav-link">歌曲</a></li>
-          <li>
-            <a href="#artists" data-page="artists" class="nav-link">歌手</a>
-          </li>
+          <li><a href="#classical" data-page="classical" class="nav-link">古典</a></li>
           <li><a href="#poems" data-page="poems" class="nav-link">文章</a></li>
-          <li>
-            <a href="#favorites" data-page="favorites" class="nav-link">剪影</a>
-          </li>
-          <li>
-            <a href="#upload" data-page="upload" class="nav-link">新增</a>
-          </li>
-          </li>
+          <li><a href="#favorites" data-page="favorites" class="nav-link">剪影</a></li>
+          <li><a href="#upload" data-page="upload" class="nav-link">新增</a></li>
+
+
         </ul>
       </nav>
       <!-- 覆蓋層：手機版選單展開時顯示灰色遮罩 -->
@@ -80,8 +73,8 @@
               <div class="stat-label">位歌手</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number" id="statPoems">0</div>
-              <div class="stat-label">段文章</div>
+              <div class="stat-number" id="statClassicals">0</div>
+              <div class="stat-label">首古典</div>
             </div>
           </div>
 
@@ -126,6 +119,20 @@
             <div id="homeSongGrid" class="song-grid"></div>
           </div>
 
+
+          <div class="home-section-block">
+            <div class="section-header">
+              <h2>古典音樂</h2>
+              <a
+                href="#classical"
+                class="view-all"
+                onclick="showPage('classical'); return false;"
+                >查看全部 →</a
+              >
+            </div>
+            <div id="homeClassicalGrid" class="song-grid"></div>
+          </div>
+
           <!-- 最新詩詞 -->
           <div class="home-section-block">
             <div class="section-header">
@@ -168,6 +175,31 @@
         </div>
         <div class="song-grid" id="songGrid"></div>
       </div>
+
+      <div id="classical" class="page">
+  <h2 style="text-align: center; margin-bottom: 32px; font-size: 2rem;">古典音樂</h2>
+          <div
+          class="filter-controls"
+          style="margin-bottom: 24px; text-align: center"
+        >
+          <select
+            id="songSort"
+            class="form-control"
+            style="max-width: 200px; margin: 0 auto"
+          >
+            <option value="dateAdded">按加入日期排序</option>
+            <option value="releaseDate">按發行日期排序</option>
+            <option value="alphabet">按字母排序</option>
+          </select>
+
+          <select id="sortOrder" class="form-control" style="max-width: 120px;">
+            <option value="desc">遞減</option>
+            <option value="asc">遞增</option>
+          </select>
+        </div>
+  <div class="song-grid" id="classicalGrid"></div>  <!-- 模仿 song-grid -->
+</div>
+
 
       <!-- 詩詞頁面 -->
       <div id="poems" class="page">
@@ -297,7 +329,6 @@
                   <option value="獨立音樂">獨立音樂</option>
                   <option value="經典">經典</option>
                   <option value="爵士">爵士</option>
-                  <option value="古典">古典</option>
                   <option value="嘻哈">嘻哈</option>
                   <option value="R&B">R&B</option>
                   <option value="其他">其他</option>
@@ -454,6 +485,86 @@
             <div id="uploadPoemStatus" class="upload-status"></div>
           </form>
         </div>
+
+                <!-- 🔄 分隔線 -->
+        <div class="section-separator">
+          <div class="separator-line"></div>
+          <div class="separator-text">或</div>
+          <div class="separator-line"></div>
+        </div>
+
+        <div class="upload-block">
+  <div class="upload-block-header">
+    <h2>新增古典音樂</h2>
+    <div class="upload-divider"></div>
+  </div>
+  <form id="uploadClassicalForm" enctype="multipart/form-data">
+    <!-- 簡化欄位：標題、作曲家、表演者、描述、圖片、音頻檔案 (新增 file type="audio") -->
+    <div class="form-group">
+      <label for="classicalTitle">作品名稱<span style="color: rgb(255, 68, 68);">*</span>（請以逗號分隔，中間不需空格。）</label>
+      <input type="text" id="classicalTitle" name="title" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="classicalComposer">作曲家<span style="color: rgb(255, 68, 68);">*</span></label>
+      <input type="text" id="classicalComposer" name="composer" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="classicalOthername">別稱</label>
+      <input type="text" id="classicalOthername" name="othername" class="form-control">
+    </div>
+                  <div class="form-group">
+                <label for="classicalAlbum">專輯</label>
+                <input
+                  type="text"
+                  id="classicalAlbum"
+                  name="albums"
+                  class="form-control"
+                  placeholder="e.g. String Quintet in E major, Op. 13, No. 5, G. 275"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="classicalReleaseDate">發行日期</label>
+                <input
+                  type="date"
+                  id="ReleaseDate"
+                  name="release_date"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+              <label for="classicalTranslation">筆記</label>
+              <textarea
+                id="classicalTranslation"
+                name="notes"
+                class="form-control"
+                rows="4"
+                placeholder="寫點什麼..."                
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="classicalImage">封面圖片（JPG, PNG）</label>
+              <input
+                type="file"
+                id="classicalImage"
+                name="image"
+                class="form-control"
+                accept="image/*"
+              />
+              <div id="classicalImagePreview" class="image-preview"></div>
+            </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn--primary">上傳</button>
+      <button type="reset" class="btn btn--secondary">重置</button>
+    </div>
+    <div id="uploadClassicalStatus" class="upload-status"></div>
+  </form>
+</div>
+
       </div>
       </div>
 

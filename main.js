@@ -8190,6 +8190,858 @@ But that was when I ruled the world`,
     image: "images/1764176591328-105700147.jpg",
     original_artist: [],
     rating: ""
+  },
+  {
+    id: "song1764177674712",
+    title: "大人中",
+    creators: ["盧廣仲"],
+    lyricist: ["盧廣仲", "討海人", "威廉霍華(陳綺貞)"],
+    composer: ["盧廣仲"],
+    albums: "大人中",
+    release_date: "2014-04-18",
+    language: "中文",
+    genre: "",
+    lyrics: `安靜的人 想很多
+說話的人 專心說
+上班的人 在五樓
+下班的人 獲得自由
+
+勉強的人 不快樂
+快樂的人 那就是我
+你也想 跟我一樣
+雨下起來唱了首歌
+
+遠方 遠方 哪裡才是遠方
+原來愛人不在身邊 就叫
+遠方 遠方
+還好我愛的人永遠住在我心臟
+
+長大後誰不是離家出走
+茫茫人海裡游
+抬起頭才發現
+流眼淚的星星正在放棄我
+請擁抱我
+萬一我不小心墜落
+
+不想勤勞 想放空
+太常失敗 好想成功
+車水馬龍裡我抓著
+支持我活著的 快樂
+
+遠方 遠方 哪裡才是遠方
+原來愛人不在身邊 就叫
+遠方 遠方
+還好我愛的人永遠住在我心臟
+
+長大後誰不是離家出走
+茫茫人海裡游
+抬起頭才發現
+流眼淚的星星正在放棄我
+請擁抱我
+萬一我不小心墜落
+
+長大後我們都離家出走
+茫茫人海裡游
+抬起頭才發現
+流眼淚的星星正在看著我
+他說 加油 讓我為你
+感到光榮
+
+雨過天清涼涼的
+我不用再擔心什麼
+那些 花都 怒放了
+愛人的人 獲得自由`,
+    image: "images/1764177674392-985761306.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1764178559431",
+    title: "太陽",
+    creators: ["陳綺貞"],
+    lyricist: ["陳綺貞"],
+    composer: ["陳綺貞"],
+    albums: "太陽",
+    release_date: "2009-01-22",
+    language: "中文",
+    genre: "",
+    lyrics: `我膽小的對自己說，
+就是這樣嗎?
+
+我是你夜裡的太陽，
+也是你，影子裡的悲傷。
+
+我問我 這世界是否，一如往常?
+讓我照耀你安息的時光。
+
+你是我 小心維護的夢，
+我疲倦的享受著，
+誰也無法代替你的光芒。
+
+我是我 一碰就碎的太陽，
+我熱切的希望，
+能在消失之前，
+得到信仰。
+
+我膽小的對自己說
+就是這樣嗎?
+
+我是你眼裡的太陽，
+也是你鏡子裡的驕傲。
+
+我問我 這世界是否,一如往常?
+需要我在擁擠午夜發光。
+
+你是我 小心維護的夢。
+我疲倦的享受著，
+誰也無法代替的孤傲。
+
+我是我 疲倦流浪的太陽。
+我熱切的希望，
+能在消失之前，
+得到信仰。
+
+你是我 小心維護的夢。
+我疲倦的享受著，
+誰也無法靠近的孤傲。
+
+我是我 疲倦流浪的太陽。
+無法為自己，
+無法為誰，靜止下來。
+
+我是我 一碰就碎的太陽，
+我熱切的希望，
+能在消失之前，
+得到 得到 得到 信仰`,
+    image: "images/1764178558927-3934674.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1764178998605",
+    title: "馬と鹿",
+    creators: ["米津玄師"],
+    lyricist: ["米津玄師"],
+    composer: ["米津玄師"],
+    albums: "STRAY SHEEP",
+    release_date: "2019-09-11",
+    language: "日文",
+    genre: "",
+    lyrics: `歪んで傷だらけの春
+傷痕累累的春天
+
+麻酔も打たずに歩いた
+繼續前進的路途上不需要麻醉
+
+体の奥底で響く
+刻骨銘心般地強烈的吶喊
+
+生きたりないと強く
+想要更堅強的活下去
+
+まだ　味わうさ
+啊…還想繼續品嚐
+
+噛み終えたガムの味
+嚼完後口香糖的味道
+
+噛みきれないままの心で
+未被徹底消磨的心靈也在
+
+一つ一つ無くした果てに
+一個個漸漸失去的最後
+
+漸く残ったもの
+所剩下的
+
+これが愛じゃなければ
+倘若這不能稱為愛的話
+
+何と呼ぶのか僕は知らなかった
+我又將如何為此註解
+
+呼べよ 花の名前を
+呼喊吧 那花的名字
+
+ただ一つだけ　張り裂けるぐらいに
+僅僅一個          像要撕心裂肺般
+
+鼻先が触れる　呼吸が止まる
+輕觸著鼻尖       就連呼吸也停歇
+
+痛みは消えないままでいい
+疼痛就這樣無法消去也無所謂
+
+Oh…
+Oh…
+
+疲れたその目で何を言う
+疲憊不堪的眼神彷彿在表達著什麼
+
+傷跡隠して歩いた
+藏匿著傷痕繼續前進
+
+そのくせ影をばらまいた
+映照的身影仍凌亂的散佈著
+
+気づいて欲しかった
+多麼希望妳能發現
+
+まだ歩けるか　
+我還能繼續走下去嗎
+
+噛み締めた砂の味
+已經嘗過足夠的砂塵
+
+夜露で濡れた芝生の上
+因夜露而浸濕的草皮上
+
+逸(はや)る胸に尋ねる言葉
+精神抖擻的身子正找尋著這詞語的意義
+
+終わるにはまだ早いだろう
+說要結束還為時尚早吧
+
+誰も悲しまぬように　
+為了不再讓任何人感到傷悲
+
+微笑むことが上手くできなかった
+而不擅長地強顏露出笑容
+
+ひとつ、ただひとつでいい
+只要一次、僅此一次就好
+
+守れるだけで
+只要能守住
+
+それでよかったのに
+明明只要能守住就好
+
+あまりにくだらない
+過於無趣的
+
+願いが消えない
+這個願望不會消逝
+
+誰にも奪えない魂
+任誰也無法奪去的靈魂
+
+
+何に例えよ　君と僕を
+該怎麼打比方好呢？ 妳與我兩人
+
+踵に残る似た傷を
+腳跟上殘留的相似傷痕
+
+晴れ間を結えば　
+雨過天晴後重新綁緊鞋帶
+
+まだ続く
+就能繼續堅持
+
+行こう、花も咲かないうちに
+走吧、趁著花朵們未盛開之前
+
+これが愛じゃなければ
+倘若這不能稱為愛的話
+
+何と呼ぶのか僕は知らなかった
+我又將如何為此註解
+
+呼べよ、恐れるままに　花の名前を
+即便畏懼仍吶喊著   那朵花的名字
+
+君じゃなきゃダメだと
+非妳不可般地
+
+鼻先が触れる　呼吸が止まる
+碰觸著鼻尖       就連呼吸也停歇
+
+痛みは消えないままでいい
+疼痛就這樣無法消退也無所謂
+
+あまりにくだらない　
+過於無趣的
+
+願いが消えない 止まない
+這份願望將永不消逝，永不停歇
+
+
+翻譯：Kevin0917`,
+    image: "images/1764178998115-199809989.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1764580743443",
+    title: "blue",
+    creators: ["yung kai"],
+    lyricist: ["yung kai"],
+    composer: ["yung kai"],
+    albums: "blue",
+    release_date: "2024-08-02",
+    language: "英文",
+    genre: "",
+    lyrics: `Your morning eyes, I could stare like watching stars
+I could walk you by, and I'll tell without a thought
+You'd be mine
+Would you mind if i took your hand tonight
+Know you're all that I want this life
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The oceans colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me
+
+My love will always stay by you
+I'll keep it safe so don't you worry a thing, I'll tell you i love you more
+It's stuck with you forever so promise you won't let it go
+I'll trust the universe will always bring me to you
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The oceans colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me`,
+    image: "images/1764580743440-869234899.jpeg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1764695480218",
+    title: "踊り子",
+    creators: ["Vaundy"],
+    lyricist: ["Vaundy"],
+    composer: ["Vaundy"],
+    albums: "replica",
+    release_date: "2023-11-15",
+    language: "日文",
+    genre: "",
+    lyrics: `ねぇ、どっかに置いてきたような
+nee, dokka ni oite ki ta yo u na
+吶、雖然我想起了一兩件
+
+事が一つ二つ浮いているけど
+koto ga hitotsu futatsu uite i ru ke do
+我不知不覺遺忘的事情
+
+ねぇ、ちゃんと拾っておこう
+nee, cyan to hirotte o ko u
+吶、就讓我們好好地撿起來吧
+
+はじけて忘れてしまう前に
+ha ji ke te wasure te shi ma u mae ni
+在它綻開並忘記之前
+
+
+回り出した　あの子と僕の未来が
+mawari dashi ta     a no ko to boku no mirai ga
+開始轉動的　那孩子與我的未來
+
+止まりどっかで　またやり直せたら
+tomari dokka de     ma ta ya ri naose ta ra
+已經停止　要是我能在其他地方重頭來過的話
+
+回り出した　あの子と僕が被害者
+mawari dashi ta     a no ko to boku ga higai sya
+開始轉動的　那孩子與我裝出了
+
+づらでどっかを　また練り歩けたらな
+zu ra de dokka wo     ma ta neri aruke ta ra na
+被害者的模樣　要是我能在地方地方緩步前進的話
+
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+
+あのね、私あなたに会ったの
+a no ne, watashi a na ta ni atta no
+那個啊、我見到了你啊
+
+夢の中に置いてきたけどね
+yume no naka ni oite ki ta ke do ne
+雖然我將你留在了夢裡呢
+
+ねぇ、どうして私が好きなの
+nee, do u shi te watashi ga suki na no
+吶、為什麼你喜歡我呢
+
+一度しか会ったことがないのにね
+ichido shi ka atta ko to ga na i no ni ne
+明明我們只有見過一次面呢
+
+
+思いを蹴って
+omoi wo kette
+我們一起
+
+二人でしてんだ
+futari de shi te n da
+踢開了感受
+
+壊（わす）れない愛を歌う
+wasure na i ai wo utau
+歌頌出不會壞掉（忘記）的愛情吧
+
+言葉を二人に課して
+kotoba wo futari ni kashi te
+我們賦予雙方言語
+
+誓いをたてんだ
+chikai wo ta te n da
+並就此發誓
+
+忘れない愛を歌うようにね
+wasure na i ai wo utau yo u ni ne
+只願我們將會歌頌出不會忘記的愛情
+
+
+回り出した　あの子と僕の未来が
+mawari dashi ta     a no ko to boku no mirai ga
+開始轉動的　那孩子與我的未來
+
+止まりどっかで　またやり直せたら
+tomari dokka de     ma ta ya ri naose ta ra
+已經停止　要是我能在其他地方重頭來過的話
+
+回り出した　あの子と僕が被害者
+mawari dashi ta     a no ko to boku ga higai sya
+開始轉動的　那孩子與我裝出了
+
+づらでどっかを　また練り歩けたらな
+zu ra de dokka wo     ma ta neri aruke ta ra na
+被害者的模樣　要是我能在地方地方緩步前進的話
+
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+とぅるるる　とぅるるる　とぅるる
+tu ru ru ru     tu ru ru ru     tu ru ru
+嘟嚕嚕嚕嚕　嘟嚕嚕嚕嚕　嘟嚕嚕
+
+
+回り出した　あの子と僕の未来が
+mawari dashi ta     a no ko to boku no mirai ga
+開始轉動的　那孩子與我的未來
+
+止まりどっかで　またやり直せたら
+tomari dokka de     ma ta ya ri naose ta ra
+已經停止　要是我能在其他地方重頭來過的話
+
+回り出した　あの子と僕が被害者
+mawari dashi ta     a no ko to boku ga higai sya
+開始轉動的　那孩子與我裝出了
+
+づらでどっかを　また練り歩けたらな
+zu ra de dokka wo     ma ta neri aruke ta ra na
+被害者的模樣　要是我能在地方地方緩步前進的話
+
+
+時代に乗って僕たちは
+jidai ni notte boku ta chi wa
+乘上了時代的我們
+
+変わらず愛に生きるだろう
+kawarazu ai ni iki ru da ro u
+將會一成不變地活在愛裡吧
+
+僕らが散って残るのは
+boku ra ga chitte nokoru no wa
+我們所散落在地的
+
+変わらぬ愛の歌なんだろうな
+kawaranu ai no uta na n da ro u na
+應該是一成不變的情歌呢
+
+
+
+中文翻譯：月勳`,
+    image: "images/1764695479734-94362212.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1765778514052",
+    title: "不為誰而作的歌",
+    creators: ["林俊傑"],
+    lyricist: ["林秋離"],
+    composer: ["林俊傑"],
+    albums: "和自己對話 From M.E. To Myself",
+    release_date: "2015-12-03",
+    language: "中文",
+    genre: "",
+    lyrics: `原諒我這一首
+不為誰而作的歌
+感覺上彷彿窗外的夜色
+曾經有那一刻
+回頭竟然認不得
+需要 從記憶再摸索
+的人 和他們關心的
+的地方 和那些走過的 請等一等
+
+夢為努力澆了水
+愛在背後往前推
+當我抬起頭才發覺
+我是不是忘了誰
+累到整夜不能睡
+夜色哪裡都是美
+一定有個人 他
+躲過 避過 閃過 瞞過
+他是誰
+他是誰
+
+
+原諒我這一首
+不為誰而作的歌
+感覺上彷彿窗外的夜色
+曾經有那一刻
+回頭竟然認不得
+需要 從記憶再摸索
+的人 和他們關心的
+的地方 和那些走過的
+
+夢為努力澆了水
+愛在背後往前推
+當我抬起頭才發覺
+我是不是忘了誰
+累到整夜不能睡
+夜色哪裡都是美
+一定有個人 他
+躲過 避過 閃過 瞞過
+他是誰
+他是誰
+
+
+也許在真實面對自己才不顧一切
+去探究當初我害怕面對
+
+夢為努力澆了水
+愛在背後往前推
+當我抬起頭才發覺
+我是不是忘了誰
+累到整夜不能睡
+夜色哪裡都是美
+一定有個他
+躲過 避過 閃過 瞞過
+他是誰
+他是誰
+他是誰`,
+    image: "images/1765778513710-307799232.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1765779080247",
+    title: "那些你很冒險的夢",
+    creators: ["林俊傑"],
+    lyricist: ["王雅君"],
+    composer: ["林俊傑"],
+    albums: "學不會 2012/01/12",
+    release_date: "2012-01-12",
+    language: "中文",
+    genre: "",
+    lyrics: `當兩顆心開始震動 
+當你瞳孔學會閃躲
+當愛慢慢被遮住只剩下 黑 
+距離像影子被拉拖  
+
+當愛的故事剩聽說 
+我找不到你單純的面孔
+當生命每分每秒都為你 轉動
+心多執著就加倍心痛
+
+那些你很冒險的夢 我陪你去瘋
+摺紙飛機碰到雨天 終究會墜落 
+太殘忍的話我直說 因為愛很重
+你卻不想懂 只往反方向走
+ 
+
+當愛的故事剩聽說 
+我找不到你單純的面孔 
+當生命每分每秒都為你 轉動 
+心有多執著 就加倍心痛
+
+我不想放手 你鬆開的左手
+你愛的放縱 我白不回天空
+我輸了累了 當你再也不回頭
+
+那些你很冒險的夢 我陪你去瘋
+摺紙飛機碰到雨天 終究會墜落
+太殘忍的話我直說 因為愛很重
+你卻不想懂 只往反方向走 
+你真的不懂 我的愛已降落`,
+    image: "images/1765779080077-626333556.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1765781306896",
+    title: "一千年以後",
+    creators: ["林俊傑"],
+    lyricist: ["李瑞洵"],
+    composer: ["林俊傑"],
+    albums: "編號89757",
+    release_date: "2005-04-01",
+    language: "中文",
+    genre: "",
+    lyrics: `心 跳亂了節奏 夢也不自由
+愛 是個絕對承諾 不說 撐到一千年以後
+
+放任無奈 淹沒塵埃
+我在廢墟之中守著妳走來 喔
+我的淚光 承載不了 喔
+所有一切妳要的愛
+
+因為在 一千年以後 世界早已沒有我
+無法深情挽著你的手 淺吻著你額頭
+別等到 一千年以後 所有人都遺忘了我
+那時紅色黃昏的沙漠 能有誰
+解開纏繞千年的寂寞
+
+放任無奈 淹沒塵埃
+我在廢墟之中守著妳走來 喔
+我的淚光 承載不了 喔
+所有一切你需要的愛
+
+因為在 一千年以後 世界早已沒有我
+無法深情挽著你的手 淺吻著你額頭
+別等到 一千年以後 所有人都遺忘了我
+那時紅色黃昏的沙漠 能有誰
+解開纏繞千年的寂寞
+
+無法深情挽著你的手 淺吻著你額頭
+別等到 一千年以後 所有人都遺忘了我
+那時紅色黃昏的沙漠 能有誰
+解開纏繞千年的寂寞 OH~~~
+纏繞千年的寂寞`,
+    image: "images/1765781306727-892189238.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1765781811906",
+    title: "飛雲之下",
+    creators: ["韓紅", "林俊傑"],
+    lyricist: ["易家揚"],
+    composer: ["林俊傑"],
+    albums: "飛雲之下",
+    release_date: "2018-04-23",
+    language: "中文",
+    genre: "",
+    lyrics: `風 讓雲長出花 漫天的花
+無聲開在烏雲之下
+然後 又飄到哪裡呀
+喔
+
+漫步在人海的人 你過得好嗎
+是不是又想念家
+心中那炙熱的夢啊
+它多久沒說話
+
+在飛雲之下 以為忘了的家
+在耳裡說話
+叫我別煩心那些痛與怕
+喔 半路上的我 穿上回憶和風沙
+在飛雲之下
+我看著海峽
+走月光沙灘
+我也承認我還是會想他
+喔 且慢 前面聽說風很大
+
+心 在雲裡摩擦 又酸又麻
+但是思念在夢裡爬
+以後 還有誰值得等嗎
+喔
+孤單是件風衣 它裹起了怕
+然而我很勇敢啊
+沒人記得我也沒差
+未來在等我去拿
+
+在飛雲之下 以為忘了的家
+在耳裡說話
+叫我別煩心那些痛與怕
+喔 半路上的我 穿上回憶和風沙
+在飛雲之下 我看著海峽
+走月光沙灘
+我也承認我還是會想他
+喔 且慢
+且慢
+前面聽說風很大
+喔
+
+在飛雲之下 以為忘了的家
+在耳裡說話
+叫我別煩心那些痛與怕
+半路上的我 穿上回憶和風沙
+
+飛雲之下 我看著海峽
+走月光沙灘
+我也承認我還是會想他
+且慢 前面聽說風很大
+喔`,
+    image: "images/1765781811567-52024056.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1766760544516",
+    title: "將故事寫成我們",
+    creators: ["林俊傑"],
+    lyricist: ["方文山"],
+    composer: ["林俊傑"],
+    albums: "將故事寫成我們",
+    release_date: "2019-09-20",
+    language: "中文",
+    genre: "",
+    lyrics: `這最美的秘密 是我們都在製造巧遇
+誰說幸福 只是一種 遠方的消息
+思念持續著濃郁 夢甘甜下去 誓言繼續
+陪妳 累積所有回憶
+
+暖手的是熱茶 暖心的是 妳一句話
+許給你一個家 再圍上 我的牽掛
+
+這故事 開始一個人 我認真 寫成了我們
+這段緣分 沒有人轉身
+妳也 開始修改劇本 加重我的戲分
+初心單純 給了妳的吻
+
+這一生 原本一個人 妳堅持 廝守成我們
+所有未來 說好了一起等
+青春 的誓言扎了根 願望比誰都深
+過了門 永遠是 一家人
+
+這最美的秘密 是我們都在製造巧遇
+誰說幸福 只是一種 遠方的消息
+思念持續著濃郁 夢甘甜下去 誓言繼續
+陪妳 累積所有回憶
+
+暖手的是熱茶 暖心的是 妳一句話
+許給你一個家 再圍上 我的牽掛
+
+這故事 開始一個人 我認真 寫成了我們
+走過紅塵 再也不怕冷
+某天離開 這一座城 我去哪妳都跟
+微笑的說 妳是我的人 wo~
+
+這一生 原本一個人 妳堅持 廝守成我們
+卻小小聲 牽著手在默認
+感動的眼神 說願意 走進我的人生
+進了門 開了燈 一家人
+
+執子之手 如此溫柔 天長地久 並肩走
+妳深情 凝望著我說 幸福 是妳 有了我
+
+這劇本 開始一個人 我認真 寫成了我們
+走過紅塵 再也不怕冷
+某天離開 這一座城 我去哪妳都跟
+微笑的說 妳是我的人
+
+這一生 原本一個人 妳堅持 廝守成我們
+卻小小聲 牽著手在默認
+感動的眼神 說願意 走進我的人生
+進了門 開了燈 一家人
+
+盼來生 依然是 一家人`,
+    image: "images/1766760544176-107935208.jpg",
+    original_artist: [],
+    rating: ""
+  },
+  {
+    id: "song1766760639487",
+    title: "交換餘生",
+    creators: ["林俊傑"],
+    lyricist: ["易家揚"],
+    composer: ["林俊傑"],
+    albums: "交換餘生",
+    release_date: "2020-09-16",
+    language: "中文",
+    genre: "",
+    lyrics: `孤單聽雨的貓往時間裂縫裡看到了我
+雷電交加之外的另一些我
+
+烏雲靜止以後 跳進平行時空
+那些我 旅行中的妳我
+回憶胡亂穿梭 墜落
+
+交換餘生 是我 非我 苦與樂
+陰天之後總有續命的晴空
+如果我們幾經轉折 結局一樣不動
+也才算無愧這分合
+
+定位心海的錨讓時間停頓的像慢動作
+妳說命運很壞吧幸好有我
+
+如果沒有以後 如果平行失控
+那些我 不同人生的我
+會以什麼方式 哭過
+
+交換餘生 是我 非我 苦與樂
+陰天之後總有續命的晴空
+如果我們幾經轉折 結局一樣不動
+也才算無愧這分合
+
+雲等風 人等夢 愛輾過時光等什麼
+記不住 認不出 淚眼中誰一樣臉紅
+
+等妳說 等我說 一等就是一個宇宙
+日升換月落 真愛換寂寞
+
+交換餘生 也許 忘了 第幾夢
+那時我們身處第幾號時空
+因為我們手心緊握 記憶也能緊扣
+可不怕前方的蟲洞
+
+愛是時間的古董`,
+    image: "images/1766760639146-289438118.jpg",
+    original_artist: [],
+    rating: ""
   }
 ];
 
@@ -8235,6 +9087,16 @@ const poems = [
     language: "英文",
     translation:
       "我姑姑以前住過巴黎\r\n我記得她會回家告訴我們\r\n身在國外的各種事情\r\n\r\n我記得\r\n她說她有次跳進塞納河\r\n光著腳\r\n微笑著\r\n看也沒看就往下一跳\r\n落入了………塞納河中\r\n河水寒微骨，她傷風感冒整個月\r\n卻說她會再一次躍身其中\r\n敬那些做夢的人，哪怕他們有點傻\r\n敬那些痛著的心，敬我們製造的混亂\r\n\r\n她捕捉到一種感覺\r\n高不見頂的蒼穹\r\n畫框中的夕陽\r\n她泡在酒精裡\r\n一點一滴死去\r\n我將永遠記得那份熱情\r\n敬那些做夢的人\r\n哪怕他們有點傻\r\n敬那些痛著的心\r\n敬我們製造的混亂\r\n\r\n她告訴我\r\n正是那一絲絲瘋狂\r\n讓我們看見新的色彩\r\n誰知道它將帶我們前往何方\r\n因此世界才需要我們\r\n所以讓叛逆者上場吧\r\n那些石頭激起的漣漪\r\n畫家、詩人和劇作\r\n敬那些做夢的傻瓜\r\n哪怕他們顯得瘋狂\r\n敬那些破碎的心\r\n敬那些我們製造的混亂\r\n\r\n我的初衷全都來自於\r\n她、雪與塞納河\r\n始終帶著微笑\r\n她說她會再一次\r\n躍身其中"
+  },
+  {
+    id: "poem1765778607444",
+    title: "不為誰而作的歌",
+    creators: ["林俊傑"],
+    lyrics:
+      "生者互助\r\n\r\n宇宙最渺小的一個神\r\n正巧和那個最偉大的同名\r\n\r\n祂們叫 「謝謝」",
+    image: "",
+    language: "白話文",
+    translation: ""
   }
 ];
 
@@ -8446,6 +9308,48 @@ const favorites = [
     songTitle: "斐德若篇",
     songCreators: "蘇格拉底, 柏拉圖",
     createdAt: "2025-11-26T08:20:21.423Z"
+  },
+  {
+    id: "fav1764177701069",
+    lyrics: `長大後誰不是離家出走
+茫茫人海裡游`,
+    note: "",
+    songId: "song1764177674712",
+    songTitle: "大人中",
+    songCreators: "盧廣仲",
+    createdAt: "2025-11-26T17:21:41.069Z"
+  },
+  {
+    id: "fav1764580773975",
+    lyrics: `I'll imagine we fell in love`,
+    note: "",
+    songId: "song1764580743443",
+    songTitle: "blue",
+    songCreators: "yung kai",
+    createdAt: "2025-12-01T09:19:33.975Z"
+  }
+];
+
+const classical = [
+  {
+    id: "cls1",
+    title: "String Quintet in E Major, Op. 11, No. 5, G. 275: III. Minuetto",
+    othername: "",
+    composer: ["Luigi Boccherini"],
+    release_date: "1771-01-01",
+    albums: "String Quintet in E major, Op. 13, No. 5, G. 275",
+    image: "images/ab67616d00001e026fb90fd9a0c655fecc35f20d.jpeg",
+    notes: ``
+  },
+  {
+    id: "cls1770392802474",
+    title: "The Barber of Seville: Overture",
+    othername: "",
+    composer: ["Gioachino Rossini"],
+    releasedate: "",
+    albums: "Rossini-Ouvertures",
+    image: "images/1770392802470-970699518.jpeg",
+    notes: ""
   }
 ];
 
@@ -8533,8 +9437,8 @@ function renderSongs() {
                   song.id
                 }', 'song')">
                     <img src="${song.image || "images/gray.jpg"}" alt="${
-        song.title
-      }" />
+                      song.title
+                    }" />
                     <div class="song-card-content">
                         <div class="song-info">
                             <h3>${song.title}</h3>
@@ -8606,6 +9510,122 @@ function renderPoems() {
     .join("");
 }
 
+function renderClassical() {
+  const classicalGrid = document.getElementById("classicalGrid");
+  if (!classicalGrid) {
+    console.error("❌ classicalGrid 元素不存在！");
+    return;
+  }
+
+  const sortByElement = document.getElementById("classicalSort");
+  const sortOrderElement = document.getElementById("classicalOrder");
+  const sortBy = sortByElement ? sortByElement.value : "dateAdded";
+  const sortOrder = sortOrderElement ? sortOrderElement.value : "desc"; // desc=遞減, asc=遞增
+
+  let sortedClassicals = [...classical];
+
+  switch (sortBy) {
+    case "dateAdded":
+      // 按加入日期排序（ID中的時間戳）
+      sortedClassicals.sort((a, b) => {
+        const timeA = parseInt(a.id.replace("classical", "")) || 0;
+        const timeB = parseInt(b.id.replace("classical", "")) || 0;
+        return sortOrder === "desc" ? timeB - timeA : timeA - timeB;
+      });
+      console.log(
+        `✅ 按加入日期${sortOrder === "desc" ? "遞減" : "遞增"}排序完成`
+      );
+      break;
+    case "releaseDate":
+      // 按發行日期排序 - 統一使用 release_date 欄位
+      sortedClassicals.sort((a, b) => {
+        // 🔴 只使用 release_date 欄位，格式為 YYYY-MM-DD
+        const dateA = new Date(a.release_date || "1000-01-01");
+        const dateB = new Date(b.release_date || "1000-01-01");
+
+        // 檢查日期是否有效
+        if (isNaN(dateA.getTime())) {
+          console.warn(
+            `無效的發行日期 A: ${a.release_date} (歌曲: ${a.title})`
+          );
+          dateA.setFullYear(1000, 0, 1);
+        }
+        if (isNaN(dateB.getTime())) {
+          console.warn(
+            `無效的發行日期 B: ${b.release_date} (歌曲: ${b.title})`
+          );
+          dateB.setFullYear(1000, 0, 1);
+        }
+
+        // 根據排序方向返回結果
+        return sortOrder === "desc"
+          ? dateB.getTime() - dateA.getTime()
+          : dateA.getTime() - dateB.getTime();
+      });
+
+      console.log(
+        `✅ 按發行日期${sortOrder === "desc" ? "遞減" : "遞增"}排序完成`
+      );
+      break;
+
+    case "alphabet":
+      // 按字母排序
+      sortedClassicals.sort((a, b) => {
+        const result = a.title.localeCompare(b.title, "zh-TW");
+        return sortOrder === "desc" ? -result : result;
+      });
+      console.log(`✅ 按字母${sortOrder === "desc" ? "遞減" : "遞增"}排序完成`);
+      break;
+
+    default:
+      console.log("✅ 使用預設排序");
+  }
+
+  classicalGrid.innerHTML = sortedClassicals
+    .map((classical) => {
+      const composer =
+        classical.composer && classical.composer.length > 0
+          ? classical.composer.join(", ")
+          : "";
+      const albums = classical.albums || "";
+
+      return `
+                <div class="song-card" onclick="showClassicalDetail('${
+                  classical.id
+                }', 'classical')">
+                    <img src="${classical.image || "images/gray.jpg"}" alt="${
+                      classical.title
+                    }" />
+                    <div class="song-card-content">
+                        <div class="song-info classical-song-info">
+                            <h3>${classical.title}</h3>
+                            <p class="composer">${composer}</p>
+                            ${
+                              albums
+                                ? `<p class="album mobile-show">${albums}</p>`
+                                : ""
+                            }
+                        </div>
+                        
+                        <div class="song-meta desktop-only">
+                            ${
+                              albums
+                                ? `<div class="meta-item"><span class="meta-label">專輯：</span>${albums}</div>`
+                                : ""
+                            }
+                        </div>
+                    </div>
+                    <div class="song-card-arrow">→</div>
+                </div>
+            `;
+    })
+    .join("");
+
+  console.log(
+    `✅ 已渲染 ${sortedClassicals.length} 首歌曲，排序: ${sortBy} ${sortOrder}`
+  );
+}
+
 // 顯示歌曲/詩詞詳情
 function showSongDetail(id, type) {
   const data = type === "song" ? songs : poems;
@@ -8618,8 +9638,8 @@ function showSongDetail(id, type) {
       <a href="#${
         type === "song" ? "songs" : "poems"
       }" class="back-btn" onclick="goBack('${
-    type === "song" ? "songs" : "poems"
-  }')">← 返回</a>
+        type === "song" ? "songs" : "poems"
+      }')">← 返回</a>
       <div class="song-detail-header">
         ${item.image ? `<img src="${item.image}" alt="${item.title}">` : ""}
         <h1>${item.title}</h1>
@@ -8628,25 +9648,21 @@ function showSongDetail(id, type) {
       <a href="#" class="favorite-link" onclick="openFavoriteModal('${
         item.id
       }', '${item.title.replace(/'/g, "\\'")}', '${
-    item.creators ? item.creators.join(", ").replace(/'/g, "\\'") : ""
-  }'); return false;">
+        item.creators ? item.creators.join(", ").replace(/'/g, "\\'") : ""
+      }'); return false;">
   收藏歌詞
 </a>
       ${generateSongMeta(item)} 
       <div class="lyrics">${item.lyrics}</div>
 
        <!-- 🔴 新增刪除按鈕 (只在歌曲頁面顯示) -->
-      ${
-        type === "song"
-          ? `
+      ${`
           <button class="delete-song-btn" onclick="deleteSong('${
             item.id
           }', '${item.title.replace(/'/g, "\\'")}'); return false;">
               刪除歌曲
           </button>
-      `
-          : ""
-      }
+      `}
     </div>
   `;
   // 切換到詳情頁面
@@ -8654,6 +9670,32 @@ function showSongDetail(id, type) {
 
   // 顯示前後導航按鈕
   updateNavigationButtons(id, type);
+}
+
+function showClassicalDetail(id) {
+  const item = classical.find((c) => c.id === id);
+  if (!item) {
+    console.error("找不到古典音樂 ID:", id);
+    return showPage("classical");
+  }
+
+  const songDetail = document.getElementById("songDetail");
+  songDetail.innerHTML = `
+    <a href="#" class="back-btn" onclick="showPage('classical'); return false;">← 返回古典音樂</a>
+    <div class="song-detail-header">
+      ${item.image ? `<img src="${item.image}" alt="${item.title}">` : ""}
+      <h1>${item.title}</h1>
+      <p class="artist">${item.composer || "未知作曲家"}</p>
+      ${item.othername ? `<p>${item.othername}</p>` : ""}
+    </div>
+    <div class="song-detail-meta">
+      ${item.albums ? `<div class="meta-row"><span class="meta-label">專輯:</span> <span>${item.albums}</span></div>` : ""}
+      ${item.release_date ? `<div class="meta-row"><span class="meta-label">發行:</span> <span>${item.release_date}</span></div>` : ""}
+      ${item.notes ? `<div class="meta-row"><span class="meta-label">註記:</span> <span>${item.notes}</span></div>` : ""}
+    </div>
+  `;
+  showPage("songDetail");
+  console.log("顯示古典詳情:", item.title); // 除錯用
 }
 
 // 更新導航按鈕
@@ -8737,6 +9779,7 @@ document.getElementById("menuBtn").addEventListener("click", () => {
 // 初始化
 renderSongs();
 renderPoems();
+renderClassical();
 
 function toggleMenu() {
   const nav = document.getElementById("nav");
@@ -8847,10 +9890,11 @@ document
 function renderHomeStats() {
   const statSongs = document.getElementById("statSongs");
   const statArtists = document.getElementById("statArtists");
-  const statPoems = document.getElementById("statPoems");
+  const statClassicals = document.getElementById("statClassicals");
 
   if (statSongs) statSongs.textContent = songs.filter((s) => s && s.id).length;
-  if (statPoems) statPoems.textContent = poems.filter((p) => p && p.id).length;
+  if (statClassicals)
+    statClassicals.textContent = classical.filter((p) => p && p.id).length;
 
   const artists = getArtists();
   if (statArtists) statArtists.textContent = artists.length;
@@ -8939,6 +9983,35 @@ function renderHomePoems() {
     })
     .join("");
 }
+classical;
+
+function renderHomeClassical() {
+  const homeClassicalGrid = document.getElementById("homeClassicalGrid");
+  if (!homeClassicalGrid) return;
+
+  const validClassicals = classical.filter((s) => s && s.id);
+  const latestClassicals = validClassicals.slice(-4).reverse();
+
+  homeClassicalGrid.innerHTML = latestClassicals
+    .map((classical) => {
+      const composer = classical.composer ? classical.composer.join(", ") : "";
+      const albums = classical.albums || "";
+
+      return `
+      <div class="song-card" onclick="showClassicalDetail('${classical.id}', 'classical')">
+        <img src="${classical.image || "images/gray.jpg"}" alt="${classical.title}">
+        <div class="song-card-content">
+          <div class="song-info classical-song-info">
+            <h3>${classical.title}</h3>
+            <p class="creator">${composer}</p>
+          </div>
+          <div class="classical-card-arrow">→</div>
+        </div>
+      </div>
+    `;
+    })
+    .join("");
+}
 
 // 渲染整個首頁
 function renderHomePage() {
@@ -8947,6 +10020,7 @@ function renderHomePage() {
   renderHomeArtists();
   renderHomeSongs();
   renderHomePoems();
+  renderHomeClassical();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -8966,6 +10040,8 @@ document.addEventListener("DOMContentLoaded", function () {
   renderFavorites();
 
   renderHomeRecentFavorites(); // 🔴 新增這行
+
+  renderClassical();
 
   const songSortSelect = document.getElementById("songSort");
   const sortOrderSelect = document.getElementById("sortOrder");
@@ -9061,9 +10137,8 @@ function showArtistDetail(artistName) {
 
   // 更新標題
   document.getElementById("artistName").textContent = artist.name;
-  document.getElementById(
-    "artistSongCount"
-  ).textContent = `共 ${artist.count} 首歌曲`;
+  document.getElementById("artistSongCount").textContent =
+    `共 ${artist.count} 首歌曲`;
 
   // 渲染該歌手的所有歌曲
   const artistSongGrid = document.getElementById("artistSongGrid");
@@ -9347,12 +10422,6 @@ function generateSongMeta(item) {
   `;
 
   // 🔴 詩詞相關欄位
-  if (item.dynasty) {
-    metaItems.push({
-      label: "朝代",
-      value: item.dynasty
-    });
-  }
 
   if (item.poem_type) {
     metaItems.push({
@@ -9361,39 +10430,10 @@ function generateSongMeta(item) {
     });
   }
 
-  if (item.author_info) {
-    metaItems.push({
-      label: "作者簡介",
-      value: item.author_info
-    });
-  }
-
-  if (item.background) {
-    metaItems.push({
-      label: "創作背景",
-      value: item.background
-    });
-  }
-
   if (item.translation) {
     metaItems.push({
       label: "翻譯",
       value: item.translation
-    });
-  }
-
-  if (item.annotation) {
-    metaItems.push({
-      label: "註釋",
-      value: item.annotation
-    });
-  }
-
-  // 通用欄位
-  if (item.albums) {
-    metaItems.push({
-      label: "專輯",
-      value: item.albums
     });
   }
 
@@ -9417,23 +10457,6 @@ function generateSongMeta(item) {
       value: item.genre
     });
   }
-
-  if (item.rating) {
-    const ratingNum = parseInt(item.rating) || 0;
-    let stars = "";
-    for (let i = 1; i <= 5; i++) {
-      if (i <= ratingNum) {
-        stars += "⭐";
-      } else {
-        stars += "☆";
-      }
-    }
-    metaItems.push({
-      label: "評分",
-      value: `${stars} (${ratingNum}/5)`
-    });
-  }
-
   if (metaItems.length === 0) return "";
 
   return `
@@ -9932,4 +10955,62 @@ document
     } catch (error) {
       statusDiv.innerHTML = `<p style="color: var(--color-error);">網路錯誤：${error.message}</p>`;
     }
+  });
+
+// 古典音樂上傳
+// ===== 古典上傳（與歌曲完全相同邏輯） =====
+document
+  .getElementById("uploadClassicalForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const statusDiv = document.getElementById("uploadClassicalStatus");
+
+    statusDiv.textContent = "⏳ 上傳中...";
+    statusDiv.className = "upload-status active";
+
+    try {
+      const response = await fetch("/api/upload-classical", {
+        method: "POST",
+        body: formData
+      });
+      const result = await response.json();
+
+      if (response.ok) {
+        statusDiv.innerHTML = `✅ ${result.message}`;
+        this.reset();
+        setTimeout(() => window.location.reload(), 2000); // ✅ 與歌曲相同
+      } else {
+        statusDiv.innerHTML = `❌ ${result.error}`;
+      }
+    } catch (error) {
+      statusDiv.innerHTML = `❌ 連線錯誤：${error.message}`;
+    }
+  });
+
+// ===== 古典音樂圖片預覽（與歌曲完全相同） =====
+document
+  .getElementById("classicalImage")
+  .addEventListener("change", function (e) {
+    const file = e.target.files[0];
+    const preview = document.getElementById("classicalImagePreview");
+
+    // ✅ 清空舊預覽
+    preview.innerHTML = "";
+
+    if (file) {
+      // ✅ 建立 URL + 顯示圖片
+      const imgUrl = URL.createObjectURL(file);
+      preview.innerHTML = `
+      <img src="${imgUrl}" alt="預覽" style="max-width: 200px; max-height: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+    `;
+    }
+  });
+
+// ===== 重置時清理預覽 =====
+document
+  .querySelector('#uploadClassicalForm [type="reset"]')
+  .addEventListener("click", function () {
+    document.getElementById("classicalImagePreview").innerHTML = "";
+    document.getElementById("classicalImage").value = "";
   });

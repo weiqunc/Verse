@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>verse</title>
+    <title>Verse｜歌曲與文字收藏</title>
+    <meta name="description" content="整理喜愛的歌曲、文章與古典音樂，搜尋內容並收藏打動你的文字。" />
+    <meta name="theme-color" content="#ffad69" />
+    <link rel="icon" href="verse.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#mainContent">跳到主要內容</a>
+    <noscript><p class="noscript-notice">Verse 需要啟用 JavaScript 才能載入收藏與切換頁面。</p></noscript>
     <button
       class="big-post-arrow prev-post-arrow"
       id="prevPostBtn"
@@ -26,8 +31,8 @@
 
     <header>
       <h3></h3>
-      <img src="verse.png" class="verse" />
-      <button class="menu" id="menuBtn">&#9776;</button>
+      <img src="verse.png" class="verse" alt="Verse" />
+      <button class="menu" id="menuBtn" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="nav">&#9776;</button>
 
       <nav id="nav">
         <ul>
@@ -42,10 +47,11 @@
         </ul>
       </nav>
       <!-- 覆蓋層：手機版選單展開時顯示灰色遮罩 -->
-      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      <div class="overlay" id="overlay" data-action="menu-toggle"></div>
     </header>
 
-    <main>
+    <main id="mainContent" tabindex="-1">
+      <p id="dataStatus" role="status" aria-live="polite">正在讀取收藏資料…</p>
       <!-- 首頁 -->
 
       <div id="home" class="page active">
@@ -84,7 +90,7 @@
               <a
                 href="#favorites"
                 class="view-all"
-                onclick="showPage('favorites'); return false;"
+                data-navigate="favorites"
                 >查看全部</a
               >
             </div>
@@ -98,7 +104,7 @@
               <a
                 href="#artists"
                 class="view-all"
-                onclick="showPage('artists'); return false;"
+                data-navigate="artists"
                 >查看全部 →</a
               >
             </div>
@@ -112,7 +118,7 @@
               <a
                 href="#songs"
                 class="view-all"
-                onclick="showPage('songs'); return false;"
+                data-navigate="songs"
                 >查看全部 →</a
               >
             </div>
@@ -126,7 +132,7 @@
               <a
                 href="#classical"
                 class="view-all"
-                onclick="showPage('classical'); return false;"
+                data-navigate="classical"
                 >查看全部 →</a
               >
             </div>
@@ -140,7 +146,7 @@
               <a
                 href="#poems"
                 class="view-all"
-                onclick="showPage('poems'); return false;"
+                data-navigate="poems"
                 >查看全部 →</a
               >
             </div>
@@ -173,6 +179,7 @@
             <option value="asc">遞增</option>
           </select>
         </div>
+        <div class="collection-search" role="search" aria-label="搜尋歌曲"><div class="search-field"><label for="songsSearch">搜尋歌曲</label><input type="search" id="songsSearch" class="form-control" placeholder="名稱、創作者或內容" autocomplete="off"></div><div class="search-language"><label for="songsLanguageFilter">語言</label><select id="songsLanguageFilter" class="form-control"><option value="">所有語言</option></select></div><button type="button" class="btn btn--secondary search-clear" data-clear-search="songs">清除篩選</button><p id="songsResultCount" class="result-count" role="status" aria-live="polite"></p></div>
         <div class="song-grid" id="songGrid"></div>
       </div>
 
@@ -183,7 +190,7 @@
           style="margin-bottom: 24px; text-align: center"
         >
           <select
-            id="songSort"
+            id="classicalSort"
             class="form-control"
             style="max-width: 200px; margin: 0 auto"
           >
@@ -192,11 +199,12 @@
             <option value="alphabet">按字母排序</option>
           </select>
 
-          <select id="sortOrder" class="form-control" style="max-width: 120px;">
+          <select id="classicalOrder" class="form-control" style="max-width: 120px;">
             <option value="desc">遞減</option>
             <option value="asc">遞增</option>
           </select>
         </div>
+  <div class="collection-search" role="search" aria-label="搜尋古典音樂"><div class="search-field"><label for="classicalSearch">搜尋古典音樂</label><input type="search" id="classicalSearch" class="form-control" placeholder="名稱、創作者或內容" autocomplete="off"></div><button type="button" class="btn btn--secondary search-clear" data-clear-search="classical">清除篩選</button><p id="classicalResultCount" class="result-count" role="status" aria-live="polite"></p></div>
   <div class="song-grid" id="classicalGrid"></div>  <!-- 模仿 song-grid -->
 </div>
 
@@ -206,6 +214,7 @@
         <h2 style="text-align: center; margin-bottom: 32px; font-size: 2rem">
           文章列表
         </h2>
+        <div class="collection-search" role="search" aria-label="搜尋文章"><div class="search-field"><label for="poemsSearch">搜尋文章</label><input type="search" id="poemsSearch" class="form-control" placeholder="名稱、創作者或內容" autocomplete="off"></div><div class="search-language"><label for="poemsLanguageFilter">語言</label><select id="poemsLanguageFilter" class="form-control"><option value="">所有語言</option></select></div><button type="button" class="btn btn--secondary search-clear" data-clear-search="poems">清除篩選</button><p id="poemsResultCount" class="result-count" role="status" aria-live="polite"></p></div>
         <div class="song-grid" id="poemGrid"></div>
       </div>
 
@@ -224,6 +233,7 @@
       <div id="upload" class="page">
         <div class="upload-section">
           <h1>新增內容</h1>
+          <p id="uploadModeNotice" class="mode-notice">此頁需要 Verse server 才能新增內容。唯讀預覽仍可瀏覽、搜尋與匯出。</p>
           <div class="upload-block">
             <div class="upload-block-header">
               <h2>新增歌曲</h2>
@@ -350,19 +360,20 @@
                 <textarea
                   id="songLyrics"
                   name="lyrics"
+                  required
                   class="form-control"
                   rows="10"
                 ></textarea>
               </div>
 
               <div class="form-group">
-                <label for="songImage">封面圖片（支援 JPG, PNG）</label>
+                <label for="songImage">封面圖片（JPEG、PNG、GIF、WebP，上限 10MB）</label>
                 <input
                   type="file"
                   id="songImage"
                   name="image"
                   class="form-control"
-                  accept="image/*"
+                  accept="image/jpeg,image/png,image/gif,image/webp"
                 />
                 <div id="imagePreview" class="image-preview"></div>
               </div>
@@ -465,13 +476,13 @@
 
             <!-- 圖片上傳 -->
             <div class="form-group">
-              <label for="poemImage">封面圖片（JPG, PNG）</label>
+              <label for="poemImage">封面圖片（JPEG、PNG、GIF、WebP，上限 10MB）</label>
               <input
                 type="file"
                 id="poemImage"
                 name="image"
                 class="form-control"
-                accept="image/*"
+                accept="image/jpeg,image/png,image/gif,image/webp"
               />
               <div id="poemImagePreview" class="image-preview"></div>
             </div>
@@ -520,7 +531,6 @@
                   name="albums"
                   class="form-control"
                   placeholder="e.g. String Quintet in E major, Op. 13, No. 5, G. 275"
-                  required
                 />
               </div>
 
@@ -528,7 +538,7 @@
                 <label for="classicalReleaseDate">發行日期</label>
                 <input
                   type="date"
-                  id="ReleaseDate"
+                  id="classicalReleaseDate"
                   name="release_date"
                   class="form-control"
                 />
@@ -546,13 +556,13 @@
             </div>
 
             <div class="form-group">
-              <label for="classicalImage">封面圖片（JPG, PNG）</label>
+              <label for="classicalImage">封面圖片（JPEG、PNG、GIF、WebP，上限 10MB）</label>
               <input
                 type="file"
                 id="classicalImage"
                 name="image"
                 class="form-control"
-                accept="image/*"
+                accept="image/jpeg,image/png,image/gif,image/webp"
               />
               <div id="classicalImagePreview" class="image-preview"></div>
             </div>
@@ -595,7 +605,7 @@
           <a
             href="#"
             class="back-btn"
-            onclick="showPage('artists'); return false;"
+            data-navigate="artists"
             >← 返回歌手清單</a
           >
           <h1 id="artistName"></h1>
@@ -609,6 +619,7 @@
           <h1>收藏的句子</h1>
           <p>這裡收藏著打動你心的歌詞片段</p>
 
+          <div class="collection-search" role="search" aria-label="搜尋收藏片段"><div class="search-field"><label for="favoritesSearch">搜尋收藏片段</label><input type="search" id="favoritesSearch" class="form-control" placeholder="名稱、創作者或內容" autocomplete="off"></div><button type="button" class="btn btn--secondary search-clear" data-clear-search="favorites">清除篩選</button><p id="favoritesResultCount" class="result-count" role="status" aria-live="polite"></p></div>
           <div id="favoriteGrid" class="favorite-grid"></div>
 
           <div id="emptyFavorites" class="empty-state">
@@ -619,11 +630,11 @@
       </div>
 
       <!-- 收藏歌詞的浮動表單 -->
-      <div id="favoriteModal" class="modal">
-        <div class="modal-content">
+      <div id="favoriteModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="favoriteModalTitle">
           <div class="modal-header">
-            <h2>收藏歌詞</h2>
-            <button class="modal-close" onclick="closeFavoriteModal()">
+            <h2 id="favoriteModalTitle">收藏歌詞</h2>
+            <button type="button" class="modal-close" aria-label="關閉收藏表單" data-action="favorite-close">
               &times;
             </button>
           </div>
@@ -649,24 +660,15 @@
                 placeholder="寫點什麼..."
               ></textarea>
             </div>
+            <p id="favoriteStatus" class="favorite-status" role="status" aria-live="polite"></p>
             <input type="hidden" id="favoriteSongId" />
             <input type="hidden" id="favoriteSongTitle" />
             <input type="hidden" id="favoriteSongCreators" />
           </div>
           <div class="modal-footer">
             <div class="modal-footer modal-footer--no-border">
-              <a
-                href="#"
-                class="modal-link modal-link--primary"
-                onclick="saveFavorite(); return false;"
-                >儲存</a
-              >
-              <a
-                href="#"
-                class="modal-link"
-                onclick="closeFavoriteModal(); return false;"
-                >取消</a
-              >
+              <button type="button" id="favoriteSaveButton" class="modal-link modal-link--primary" data-action="favorite-save">儲存</button>
+              <button type="button" class="modal-link" data-action="favorite-close">取消</button>
             </div>
           </div>
         </div>
@@ -675,149 +677,26 @@
 
       <!-- 在現有的 upload 頁面後面加入詩詞上傳頁面 -->
 
-      <!-- 匯入匯出控制面板 -->
-      <div
-        id="import-export-panel"
-        style="
-          position: fixed;
-          bottom: 30px;
-          right: 30px;
-          background: white;
-          padding: 15px;
-          border: 2px solid #ff9a0c;
-          border-radius: 8px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          z-index: 1000;
-          min-width: 250px;
-          font-family: Arial, sans-serif;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-          "
-        >
-          <h4 style="margin: 0; color: #007bff">資料管理</h4>
-          <button
-            onclick="togglePanel()"
-            style="
-              background: none;
-              border: none;
-              font-size: 18px;
-              cursor: pointer;
-              padding: 0;
-              width: 25px;
-              height: 25px;
-            "
-          >
-            ✕
-          </button>
+      <aside id="import-export-panel" class="data-panel" aria-labelledby="dataPanelTitle" hidden>
+        <div class="data-panel-heading">
+          <h2 id="dataPanelTitle">資料管理</h2>
+          <button type="button" class="btn btn--secondary" data-action="panel-toggle" aria-label="關閉資料管理">關閉</button>
         </div>
-
         <div id="panel-content">
-          <!-- 查看資料 -->
-          <button
-            onclick="viewLocalData()"
-            style="
-              width: 100%;
-              margin: 5px 0;
-              padding: 8px 12px;
-              background: #ffb143;
-              color: white;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              font-size: 14px;
-            "
-          >
-            查看本地資料
-          </button>
-
-          <!-- 匯出資料 -->
-          <button
-            onclick="exportLocalData()"
-            style="
-              width: 100%;
-              margin: 5px 0;
-              padding: 8px 12px;
-              background: #ffb413;
-              color: white;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              font-size: 14px;
-            "
-          >
-            匯出本地資料
-          </button>
-
-          <!-- 匯入資料 -->
-          <input
-            type="file"
-            id="importFileInput"
-            accept=".json"
-            style="display: none"
-            onchange="handleImportFile()"
-          />
-          <button
-            onclick="document.getElementById('importFileInput').click()"
-            style="
-              width: 100%;
-              margin: 5px 0;
-              padding: 8px 12px;
-              background: #ffc107;
-              color: #ffffff;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              font-size: 14px;
-            "
-          >
-            匯入資料檔案
-          </button>
-
-          <!-- 狀態顯示 -->
-          <div
-            id="operation-status"
-            style="
-              margin-top: 10px;
-              padding: 8px;
-              border-radius: 4px;
-              font-size: 12px;
-              display: none;
-            "
-          ></div>
+          <button type="button" class="btn btn--secondary" data-action="view-data">查看收藏數量</button>
+          <button type="button" class="btn btn--secondary" data-action="export-data">匯出收藏</button>
+          <input type="file" id="importFileInput" accept=".json,application/json" hidden />
+          <button type="button" class="btn btn--primary" data-import-trigger data-action="import-select">匯入收藏</button>
+          <p id="operation-status" class="operation-status" role="status" aria-live="polite" hidden></p>
         </div>
-      </div>
-
-      <!-- 顯示/隱藏面板的按鈕 -->
-      <button
-        id="toggle-panel-btn"
-        onclick="togglePanel()"
-        class="desktop-only"
-        style="
-          position: fixed;
-          bottom: 30px;
-          right: 30px;
-          background: #ffad69;
-          color: white;
-          border: none;
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          cursor: pointer;
-          font-size: 18px;
-          z-index: 999;
-          display: none;
-        "
-      >
-        ⚙️
-      </button>
+      </aside>
+      <button type="button" id="toggle-panel-btn" class="data-panel-toggle" data-action="panel-toggle" aria-controls="import-export-panel" aria-expanded="false" aria-label="開啟資料管理" title="資料管理">⚙</button>
     </main>
 
+    <dialog id="importDialog" class="import-dialog" aria-labelledby="importDialogTitle">
+      <div class="import-dialog-heading"><h2 id="importDialogTitle">匯入預覽</h2><button type="button" class="btn btn--secondary" data-action="import-close" aria-label="關閉匯入預覽">關閉</button></div>
+      <div id="importPreview"></div>
+    </dialog>
     <script src="main.js"></script>
   </body>
 </html>

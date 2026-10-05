@@ -2,3 +2,7 @@ node_modules/
 .env
 *.log
 .DS_Store
+data.json.backup
+data.json.*.tmp
+data.json.backup.*.tmp
+__pycache__/
